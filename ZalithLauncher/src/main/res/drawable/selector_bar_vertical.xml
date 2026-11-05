@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:gravity="start"
-        android:top="@dimen/_8sdp"
-        android:bottom="@dimen/_8sdp"
-        android:width="@dimen/_3sdp">
-        <shape>
-            <corners android:radius="@dimen/_4sdp" />
-            <solid android:color="@color/settings_category"/>
+        android:gravity="center_vertical|fill_horizontal"
+        android:left="@dimen/_8sdp"
+        android:right="@dimen/_8sdp"
+        android:top="@dimen/_4sdp"
+        android:bottom="@dimen/_4sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_50sdp" />
+            <solid android:color="@color/background_item_selected" />
         </shape>
     </item>
 </layer-list>

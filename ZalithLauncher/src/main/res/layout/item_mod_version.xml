@@ -26,7 +26,7 @@
         android:layout_width="@dimen/_20sdp"
         android:layout_height="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_4sdp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/ripple_circle"
         android:contentDescription="@string/about_access_link"
         android:src="@drawable/ic_launch_link"
         android:scaleType="centerInside"

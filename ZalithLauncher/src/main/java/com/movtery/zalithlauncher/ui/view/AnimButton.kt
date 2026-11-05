@@ -8,6 +8,7 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
+import com.google.android.material.color.MaterialColors
 import com.movtery.zalithlauncher.R
 import net.kdt.pojavlaunch.Tools
 
@@ -20,7 +21,9 @@ open class AnimButton @JvmOverloads constructor(
         isAllCaps = false
         setRipple()
         stateListAnimator = AnimatorInflater.loadStateListAnimator(context, R.xml.anim_scale)
-        translationZ = Tools.dpToPx(4f)
+        translationZ = 0f
+        minimumHeight = Tools.dpToPx(40f).toInt()
+        setTextColor(MaterialColors.getColor(this, com.google.android.material.R.attr.colorOnSecondaryContainer, currentTextColor))
     }
 
     override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {

@@ -13,51 +13,53 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="@dimen/_44sdp"
         android:background="@color/background_menu_top"
+        android:paddingHorizontal="@dimen/_8sdp"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.movtery.zalithlauncher.ui.view.AnimTextView
             android:id="@+id/app_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_12sdp"
-            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/ripple_pill"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            android:textAppearance="@style/TextAppearance.Launcher.Title"
             android:textColor="@color/menu_bar_text"
-            android:textSize="@dimen/_16ssp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/download_button"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="0dp"
-            android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginVertical="@dimen/_3sdp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:background="@drawable/ripple_circle"
+            android:contentDescription="@string/setting_category_download"
+            android:padding="@dimen/_7sdp"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_download"
-            android:scaleX="1.04"
-            android:scaleY="1.04"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/setting_button"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="#FFF" />
+            app:tint="?attr/colorOnSurfaceVariant" />
 
         <ImageButton
             android:id="@+id/setting_button"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="0dp"
-            android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginVertical="@dimen/_3sdp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:background="@drawable/ripple_circle"
+            android:contentDescription="@string/setting_category_launcher"
+            android:padding="@dimen/_7sdp"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_menu_settings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorOnSurfaceVariant" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -68,23 +70,8 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/progress_layout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/top_layout" />
-
-    <View
-        android:id="@+id/shadowView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_4sdp"
-        android:background="@drawable/shadow_gradient_down"
-        app:layout_constraintTop_toBottomOf="@id/top_layout" />
-
-    <View
-        android:id="@+id/progress_shadowView"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_4sdp"
-        android:background="@drawable/shadow_gradient_up"
-        app:layout_constraintBottom_toTopOf="@+id/progress_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <com.kdt.mcgui.ProgressLayout
         android:id="@+id/progress_layout"

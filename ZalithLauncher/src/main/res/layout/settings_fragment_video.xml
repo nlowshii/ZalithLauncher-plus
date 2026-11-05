@@ -26,7 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/setting_category_video"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/renderer_layout"
@@ -53,7 +54,8 @@
                     android:layout_below="@+id/renderer_title"
                     android:layout_alignParentStart="true"
                     android:layout_toStartOf="@id/renderer_download"
-                    android:text="@string/generic_default" />
+                    android:text="@string/generic_default"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <ImageButton
                     android:id="@+id/renderer_download"
@@ -63,7 +65,7 @@
                     android:layout_centerVertical="true"
                     android:contentDescription="@string/setting_category_download"
                     android:src="@drawable/ic_download"
-                    android:background="?android:attr/selectableItemBackgroundBorderless"/>
+                    android:background="@drawable/ripple_circle"/>
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -91,7 +93,8 @@
                     android:layout_below="@+id/renderer_local_import_title"
                     android:layout_alignParentStart="true"
                     android:layout_toStartOf="@id/renderer_local_import_manage"
-                    android:text="@string/setting_renderer_local_import_desc" />
+                    android:text="@string/setting_renderer_local_import_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <ImageButton
                     android:id="@+id/renderer_local_import_manage"
@@ -101,7 +104,7 @@
                     android:layout_centerVertical="true"
                     android:contentDescription="@string/setting_renderer_local_manage"
                     android:src="@drawable/ic_setting"
-                    android:background="?android:attr/selectableItemBackgroundBorderless"/>
+                    android:background="@drawable/ripple_circle"/>
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -129,7 +132,8 @@
                     android:layout_below="@+id/driver_title"
                     android:layout_alignParentStart="true"
                     android:layout_toStartOf="@id/driver_download"
-                    android:text="@string/generic_default" />
+                    android:text="@string/generic_default"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <ImageButton
                     android:id="@+id/driver_download"
@@ -139,7 +143,7 @@
                     android:layout_centerVertical="true"
                     android:contentDescription="@string/setting_category_download"
                     android:src="@drawable/ic_download"
-                    android:background="?android:attr/selectableItemBackgroundBorderless"/>
+                    android:background="@drawable/ripple_circle"/>
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -167,7 +171,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/ignoreNotch"
-                    android:text="@string/setting_ignore_notch_desc" />
+                    android:text="@string/setting_ignore_notch_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/ignoreNotch"
@@ -203,7 +208,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/ignoreNotchLauncher"
-                    android:text="@string/setting_launcher_ignore_notch_desc" />
+                    android:text="@string/setting_launcher_ignore_notch_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/ignoreNotchLauncher"
@@ -239,7 +245,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_resolution_scaler_desc" />
+                    android:text="@string/setting_resolution_scaler_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/resolutionRatio"
@@ -272,7 +279,8 @@
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
                     android:background="@drawable/background_text"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -300,7 +308,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/sustainedPerformance"
-                    android:text="@string/setting_limit_overheating_throttling" />
+                    android:text="@string/setting_limit_overheating_throttling"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/sustainedPerformance"
@@ -335,7 +344,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/alternate_surface"
-                    android:text="@string/setting_use_surface_view_desc" />
+                    android:text="@string/setting_use_surface_view_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/alternate_surface"
@@ -370,7 +380,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/force_vsync"
-                    android:text="@string/setting_limit_overheating_throttling" />
+                    android:text="@string/setting_limit_overheating_throttling"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/force_vsync"
@@ -405,7 +416,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/vsync_in_zink"
-                    android:text="@string/setting_vsync_in_zink_desc" />
+                    android:text="@string/setting_vsync_in_zink_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/vsync_in_zink"
@@ -440,7 +452,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/zinkPreferSystemDriver"
-                    android:text="@string/setting_vulkan_driver_system_desc" />
+                    android:text="@string/setting_vulkan_driver_system_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/zinkPreferSystemDriver"

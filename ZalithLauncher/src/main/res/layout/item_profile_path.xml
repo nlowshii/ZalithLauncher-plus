@@ -55,7 +55,7 @@
         android:id="@+id/operate"
         android:layout_width="@dimen/_28sdp"
         android:layout_height="@dimen/_28sdp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/ripple_circle"
         android:contentDescription="@string/profiles_path_settings"
         android:scaleType="centerCrop"
         android:scaleX="0.8"

@@ -1,13 +1,18 @@
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@android:id/background">
-        <color android:color="@color/background_app"/>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_8sdp" />
+            <solid android:color="@color/edit_box_fill" />
+        </shape>
     </item>
-
 
     <item android:id="@android:id/progress">
         <clip>
-             <color android:color='@color/menu_progress'/>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/_8sdp" />
+                <solid android:color="@color/menu_progress" />
+            </shape>
         </clip>
     </item>
 

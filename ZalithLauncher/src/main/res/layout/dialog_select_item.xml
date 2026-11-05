@@ -50,7 +50,7 @@
         android:layout_width="@dimen/_18sdp"
         android:layout_height="@dimen/_18sdp"
         android:layout_marginEnd="@dimen/_12sdp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/ripple_circle"
         android:contentDescription="@string/generic_close"
         android:src="@drawable/ic_close"
         app:layout_constraintBottom_toTopOf="@+id/messageView"

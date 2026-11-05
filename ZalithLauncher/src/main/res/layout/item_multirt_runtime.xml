@@ -58,7 +58,7 @@
             android:id="@+id/multirt_view_removebtn"
             android:layout_width="@dimen/_28sdp"
             android:layout_height="match_parent"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/ripple_circle"
             android:contentDescription="@string/multirt_delete_runtime"
             android:paddingVertical="@dimen/padding_heavy"
             android:scaleType="fitCenter"

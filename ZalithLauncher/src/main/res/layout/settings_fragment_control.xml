@@ -26,7 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/setting_category_control"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/disableGestures_layout"
@@ -53,7 +54,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/disableGestures"
-                    android:text="@string/setting_disable_gestures_desc" />
+                    android:text="@string/setting_disable_gestures_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/disableGestures"
@@ -88,7 +90,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/disableDoubleTap"
-                    android:text="@string/setting_disable_swap_hand_desc" />
+                    android:text="@string/setting_disable_swap_hand_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/disableDoubleTap"
@@ -123,7 +126,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_longpress_trigger_desc" />
+                    android:text="@string/setting_longpress_trigger_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/timeLongPressTrigger"
@@ -144,7 +148,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -164,7 +169,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/pedit_control"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/buttonscale_layout"
@@ -191,7 +197,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_button_scale_desc" />
+                    android:text="@string/setting_button_scale_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/buttonscale"
@@ -212,7 +219,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -240,7 +248,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/buttonAllCaps"
-                    android:text="@string/setting_button_allcaps_desc" />
+                    android:text="@string/setting_button_allcaps_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/buttonAllCaps"
@@ -267,7 +276,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/setting_category_virtual_mouse"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/mousescale_layout"
@@ -294,7 +304,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_mouse_scale_desc" />
+                    android:text="@string/setting_mouse_scale_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/mousescale"
@@ -315,7 +326,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -343,7 +355,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_mouse_speed_desc" />
+                    android:text="@string/setting_mouse_speed_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/mousespeed"
@@ -364,7 +377,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -389,7 +403,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/mouse_start"
-                    android:text="@string/setting_mouse_start_desc" />
+                    android:text="@string/setting_mouse_start_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/mouse_start"
@@ -423,7 +438,8 @@
                     android:layout_below="@+id/custom_mouse_title"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:text="@string/custom_mouse_desc" />
+                    android:text="@string/custom_mouse_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -443,7 +459,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/setting_category_gyro_controls"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/enableGyro_layout"
@@ -470,7 +487,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/enableGyro"
-                    android:text="@string/setting_enable_gyro_desc" />
+                    android:text="@string/setting_enable_gyro_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/enableGyro"
@@ -505,7 +523,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_gyro_sensitivity_desc" />
+                    android:text="@string/setting_gyro_sensitivity_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/gyroSensitivity"
@@ -526,7 +545,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -554,7 +574,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_gyro_sample_rate_description" />
+                    android:text="@string/setting_gyro_sample_rate_description"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/gyroSampleRate"
@@ -575,7 +596,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -603,7 +625,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/gyroSmoothing"
-                    android:text="@string/setting_gyro_smoothing_desc" />
+                    android:text="@string/setting_gyro_smoothing_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/gyroSmoothing"
@@ -639,7 +662,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/gyroInvertX"
-                    android:text="@string/setting_gyro_invert_x_axis_description" />
+                    android:text="@string/setting_gyro_invert_x_axis_description"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/gyroInvertX"
@@ -674,7 +698,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/gyroInvertY"
-                    android:text="@string/setting_gyro_invert_y_axis_description" />
+                    android:text="@string/setting_gyro_invert_y_axis_description"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/gyroInvertY"
@@ -701,7 +726,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/setting_category_controller_settings"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/changeControllerBindings_layout"
@@ -726,7 +752,8 @@
                     android:layout_below="@+id/changeControllerBindings_title"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:text="@string/setting_remap_controller_desc" />
+                    android:text="@string/setting_remap_controller_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -752,7 +779,8 @@
                     android:layout_below="@+id/resetControllerBindings_title"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:text="@string/setting_wipe_controller_desc" />
+                    android:text="@string/setting_wipe_controller_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
@@ -780,7 +808,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_deadzone_scale_desc" />
+                    android:text="@string/setting_deadzone_scale_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/gamepad_deadzone_scale"
@@ -801,7 +830,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>

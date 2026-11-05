@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black_or_white">#FFFFFF</color>
-
-    <color name="background_app">#181818</color>
-    <color name="background_app_error">#431A1A</color>
-    <color name="background_overlay">#464646</color>
-    <color name="background_status_bar">#242424</color>
-    <color name="background_menu_top">#232323</color>
-    <color name="background_menu_top_error">#E62E0909</color>
-    <color name="background_menu_element">#1F7281</color>
-    <color name="background_ripple_effect">#DCDCDC</color>
-
-    <color name="button_background">#3C3C3C</color>
-    <color name="button_background_selected">#5B5B5B</color>
-    <color name="dialog_background">#232323</color>
-
-    <color name="menu_bar">#555555</color>
-    <color name="menu_overlay">#BE232323</color>
-    <color name="menu_progress">#888888</color>
-
-    <color name="background_item">#BF2E2E2E</color>
-    <color name="background_item_selected">#D8373737</color>
-    <color name="background_item_disabled">#D8452828</color>
-    <color name="background_sponsor_intermediate">#80BD6C2D</color>
-    <color name="background_sponsor_advanced">#80B83C1F</color>
-
-    <color name="edit_box_fill">#4C4C4C</color>
-    <color name="edit_box_fill_selected">#636363</color>
-
-    <color name="mod_category_fill">#804C4C4C</color>
-    <color name="text_background_fill">#B3434343</color>
-
-    <color name="settings_category">#31E2D4</color>
-
-    <color name="icon_color">#FFFFFF</color>
-
-    <color name="primary_text">#FFFFFF</color>
+    <color name="md_primary">#B8C4FF</color>
+    <color name="md_on_primary">#0B2166</color>
+    <color name="md_primary_container">#2D4488</color>
+    <color name="md_on_primary_container">#DBE1FF</color>
+    <color name="md_secondary">#C0C6DC</color>
+    <color name="md_on_secondary">#2A3042</color>
+    <color name="md_secondary_container">#404659</color>
+    <color name="md_on_secondary_container">#DCE2F9</color>
+    <color name="md_tertiary">#E2BBDB</color>
+    <color name="md_on_tertiary">#42274A</color>
+    <color name="md_tertiary_container">#5A3D62</color>
+    <color name="md_on_tertiary_container">#FFD6F8</color>
+    <color name="md_error">#FFB4AB</color>
+    <color name="md_on_error">#690005</color>
+    <color name="md_error_container">#93000A</color>
+    <color name="md_on_error_container">#FFDAD6</color>
+    <color name="md_background">#1F2024</color>
+    <color name="md_on_background">#E3E2E6</color>
+    <color name="md_surface">#1F2024</color>
+    <color name="md_on_surface">#E3E2E6</color>
+    <color name="md_surface_variant">#44464F</color>
+    <color name="md_on_surface_variant">#C5C6D0</color>
+    <color name="md_outline">#8F909A</color>
+    <color name="md_outline_variant">#44464F</color>
+    <color name="md_inverse_surface">#E3E2E6</color>
+    <color name="md_inverse_on_surface">#2F3033</color>
+    <color name="md_inverse_primary">#485E92</color>
+    <color name="md_surface_dim">#131316</color>
+    <color name="md_surface_bright">#3A3B40</color>
+    <color name="md_surface_container_lowest">#191A1E</color>
+    <color name="md_surface_container_low">#25262B</color>
+    <color name="md_surface_container">#2B2C31</color>
+    <color name="md_surface_container_high">#37383E</color>
+    <color name="md_surface_container_highest">#424349</color>
+    <color name="md_scrim">#000000</color>
+    <color name="md_favorite">#FF8A8F</color>
+    <color name="md_sponsor_intermediate">#80BD6C2D</color>
+    <color name="md_sponsor_advanced">#80B83C1F</color>
 </resources>

@@ -51,7 +51,7 @@
         android:layout_height="@dimen/_24sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:src="@drawable/ic_menu_delete_forever"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/ripple_circle"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

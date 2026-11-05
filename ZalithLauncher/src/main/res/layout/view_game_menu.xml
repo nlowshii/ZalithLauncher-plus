@@ -176,7 +176,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="-"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -200,7 +200,7 @@
                         android:layout_centerVertical="true"
                         android:layout_toStartOf="@id/resolution_scaler_value"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="+"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -313,7 +313,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="-"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -337,7 +337,7 @@
                         android:layout_centerVertical="true"
                         android:layout_toStartOf="@id/timeLongPressTrigger_value"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="+"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -381,7 +381,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="-"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -405,7 +405,7 @@
                         android:layout_centerVertical="true"
                         android:layout_toStartOf="@id/mouse_speed_value"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="+"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -533,7 +533,7 @@
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
                             android:gravity="center_horizontal"
-                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:background="@drawable/ripple_circle"
                             android:text="-"
                             android:textSize="@dimen/_16sdp"
                             tools:ignore="HardcodedText" />
@@ -557,7 +557,7 @@
                             android:layout_centerVertical="true"
                             android:layout_toStartOf="@id/gyro_sensitivity_value"
                             android:gravity="center_horizontal"
-                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:background="@drawable/ripple_circle"
                             android:text="+"
                             android:textSize="@dimen/_16sdp"
                             tools:ignore="HardcodedText" />
@@ -691,7 +691,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="-"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -714,7 +714,7 @@
                         android:layout_centerVertical="true"
                         android:layout_toStartOf="@id/hotbar_width_value"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="+"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -758,7 +758,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="-"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />
@@ -781,7 +781,7 @@
                         android:layout_centerVertical="true"
                         android:layout_toStartOf="@id/hotbar_height_value"
                         android:gravity="center_horizontal"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/ripple_circle"
                         android:text="+"
                         android:textSize="@dimen/_16sdp"
                         tools:ignore="HardcodedText" />

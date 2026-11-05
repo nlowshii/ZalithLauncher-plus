@@ -4,10 +4,10 @@
     <item>
         <shape
             android:shape="rectangle" >
-            <corners android:radius="@dimen/_4sdp" />
+            <corners android:radius="@dimen/_8sdp" />
             <padding
-                android:left="@dimen/_4sdp"
-                android:right="@dimen/_4sdp" />
+                android:left="@dimen/_8sdp"
+                android:right="@dimen/_8sdp" />
             <solid
                 android:color="@color/mod_category_fill" />
         </shape>

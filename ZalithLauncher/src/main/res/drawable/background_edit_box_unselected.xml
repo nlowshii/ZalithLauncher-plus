@@ -4,7 +4,7 @@
     <item>
         <shape
             android:shape="rectangle" >
-            <corners android:radius="@dimen/_6sdp" />
+            <corners android:radius="@dimen/_12sdp" />
             <padding
                 android:bottom="@dimen/padding_input_bottom"
                 android:top="@dimen/padding_input_top" />

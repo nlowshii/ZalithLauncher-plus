@@ -35,7 +35,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/ic_edit"
             android:scaleType="fitCenter"
-            android:background="?android:attr/selectableItemBackgroundBorderless" />
+            android:background="@drawable/ripple_circle" />
 
     </RelativeLayout>
 

@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 
+import com.google.android.material.color.DynamicColors;
+
 import com.movtery.zalithlauncher.InfoDistributor;
 import com.movtery.zalithlauncher.context.ContextExecutor;
 import com.movtery.zalithlauncher.context.LocaleHelper;
@@ -66,6 +68,7 @@ public class PojavApplication extends Application {
 		
 		try {
 			super.onCreate();
+			DynamicColors.applyToActivitiesIfAvailable(this);
 			PathManager.DIR_DATA = getDir("files", MODE_PRIVATE).getParent();
 			PathManager.DIR_CACHE = getCacheDir();
 			PathManager.DIR_ACCOUNT_NEW = PathManager.DIR_DATA + "/accounts";

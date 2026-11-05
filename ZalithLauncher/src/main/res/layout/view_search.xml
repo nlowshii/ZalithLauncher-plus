@@ -30,7 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="@dimen/_12sdp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/ripple_circle"
         android:contentDescription="@string/generic_search"
         android:src="@drawable/ic_search"
         android:scaleType="centerInside"

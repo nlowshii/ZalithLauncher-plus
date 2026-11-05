@@ -150,7 +150,7 @@ class FileRecyclerViewCreator(
                     } else if (file.name.endsWith(ModUtils.DISABLE_JAR_FILE_SUFFIX)) {
                         ContextCompat.getDrawable(context, R.drawable.ic_disabled)
                     } else {
-                        getFileIcon(file, resources)
+                        getFileIcon(context, file)
                     }
 
                     FileIcon.FILE -> ContextCompat.getDrawable(context, R.drawable.ic_file)
@@ -170,11 +170,11 @@ class FileRecyclerViewCreator(
         }
 
         @SuppressLint("UseCompatLoadingForDrawables")
-        private fun getFileIcon(file: File, resources: Resources): Drawable {
+        private fun getFileIcon(context: Context, file: File): Drawable {
             return if (file.isDirectory) {
-                resources.getDrawable(R.drawable.ic_folder, resources.newTheme())
+                ContextCompat.getDrawable(context, R.drawable.ic_folder)!!
             } else {
-                resources.getDrawable(R.drawable.ic_file, resources.newTheme())
+                ContextCompat.getDrawable(context, R.drawable.ic_file)!!
             }
         }
     }

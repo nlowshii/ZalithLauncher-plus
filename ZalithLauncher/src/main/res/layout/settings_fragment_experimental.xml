@@ -26,7 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/setting_category_experimental_patches"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/dump_shaders_layout"
@@ -53,7 +54,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/dump_shaders"
-                    android:text="@string/setting_shader_dump_desc" />
+                    android:text="@string/setting_shader_dump_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/dump_shaders"
@@ -88,7 +90,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/bigCoreAffinity"
-                    android:text="@string/setting_force_big_core_desc" />
+                    android:text="@string/setting_force_big_core_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <Switch
                     android:id="@+id/bigCoreAffinity"
@@ -115,7 +118,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/setting_category_support"
-                android:textColor="@color/settings_category" />
+                android:textColor="@color/settings_category"
+                android:textStyle="bold" />
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
                 android:id="@+id/tcVibrateDuration_layout"
@@ -142,7 +146,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginHorizontal="@dimen/_12sdp"
-                    android:text="@string/setting_touch_controller_vibrate_duration_desc" />
+                    android:text="@string/setting_touch_controller_vibrate_duration_desc"
+                android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <SeekBar
                     android:id="@+id/tcVibrateDuration"
@@ -163,7 +168,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginVertical="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_12sdp"
-                    tools:text="0" />
+                    tools:text="0"
+                android:textColor="?attr/colorOnSurfaceVariant" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>

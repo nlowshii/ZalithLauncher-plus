@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="@dimen/_4sdp"
-    android:padding="@dimen/_8sdp"
+    android:padding="@dimen/_10sdp"
     android:background="@drawable/background_item"
     app:ripple_for_constraint="true">
 
@@ -50,6 +50,7 @@
             android:scrollHorizontally="true"
             android:singleLine="true"
             android:text="Title"
+            android:textAppearance="@style/TextAppearance.Launcher.Headline"
             tools:ignore="HardcodedText" />
 
         <com.google.android.flexbox.FlexboxLayout
@@ -66,13 +67,12 @@
 
     <ImageButton
         android:id="@+id/favorite"
-        android:layout_width="@dimen/_28sdp"
-        android:layout_height="@dimen/_28sdp"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:padding="@dimen/_6sdp"
         android:layout_marginEnd="@dimen/_8sdp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:src="@drawable/ic_favorite"
+        android:background="@drawable/ripple_circle"
+                android:src="@drawable/ic_favorite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/operate"
         app:layout_constraintTop_toTopOf="parent"
@@ -80,13 +80,12 @@
 
     <ImageButton
         android:id="@+id/operate"
-        android:layout_width="@dimen/_28sdp"
-        android:layout_height="@dimen/_28sdp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:scaleType="centerCrop"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:src="@drawable/ic_more"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:padding="@dimen/_6sdp"
+        android:background="@drawable/ripple_circle"
+        android:scaleType="centerInside"
+                android:src="@drawable/ic_more"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

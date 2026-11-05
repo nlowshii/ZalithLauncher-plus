@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="?android:attr/selectableItemBackgroundBorderless">
+    android:background="@drawable/ripple_rounded"
+    android:minWidth="@dimen/_96sdp"
+    android:padding="@dimen/_8sdp">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/user_icon"
         android:layout_width="@dimen/_52sdp"
         android:layout_height="@dimen/_52sdp"
@@ -15,15 +17,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Launcher.Avatar"
         tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_4sdp"
-        android:textSize="@dimen/_16ssp"
-        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:maxWidth="@dimen/_150sdp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.Launcher.Headline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_icon"
@@ -34,10 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_2sdp"
-        android:textSize="@dimen/_12ssp"
+        android:textAppearance="@style/TextAppearance.Launcher.Label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/user_name"
-        tools:text="LittleSkin"/>
+        tools:text="LittleSkin" />
 
 </com.movtery.zalithlauncher.ui.layout.AnimConstraintLayout>
