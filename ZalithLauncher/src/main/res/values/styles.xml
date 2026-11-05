@@ -71,12 +71,12 @@
         <item name="cornerSize">@dimen/_20sdp</item>
     </style>
 
-    <style name="ShapeAppearance.Launcher.Avatar">
+    <style name="ShapeAppearance.Launcher.Avatar" parent="ShapeAppearance.Material3.MediumComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">22%</item>
     </style>
 
-    <style name="ShapeAppearance.Launcher.Pill">
+    <style name="ShapeAppearance.Launcher.Pill" parent="ShapeAppearance.Material3.MediumComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
@@ -132,7 +132,7 @@
 
     <style name="Widget.Launcher.IconButton.Tonal" parent="Widget.Material3.Button.IconButton.Filled.Tonal" />
 
-    <style name="Widget.Launcher.ImageButton">
+    <style name="Widget.Launcher.ImageButton" parent="@android:style/Widget.ImageButton">
         <item name="android:background">@drawable/ripple_circle</item>
         <item name="android:scaleType">centerInside</item>
         <item name="android:padding">@dimen/_8sdp</item>
