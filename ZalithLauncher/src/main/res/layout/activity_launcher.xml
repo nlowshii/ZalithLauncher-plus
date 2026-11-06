@@ -10,60 +10,105 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_44sdp"
+        android:layout_height="@dimen/top_bar_height"
         android:background="@color/background_menu_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingHorizontal="@dimen/_8sdp"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/top_action_size"
+            android:layout_height="@dimen/top_action_size"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:background="@drawable/background_top_action"
+            android:contentDescription="@string/generic_return"
+            android:padding="@dimen/top_action_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            android:visibility="gone"
+            app:tint="?attr/colorOnSurfaceVariant" />
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="@dimen/top_action_size"
+            android:layout_height="@dimen/top_action_size"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:background="@drawable/background_top_action"
+            android:contentDescription="@string/generic_home"
+            android:padding="@dimen/top_action_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_home"
+            android:visibility="gone"
+            app:tint="?attr/colorOnSurfaceVariant" />
+
         <com.movtery.zalithlauncher.ui.view.AnimTextView
             android:id="@+id/app_title_text"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_8sdp"
-            android:background="@drawable/ripple_pill"
-            android:paddingHorizontal="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:ellipsize="end"
+            android:paddingHorizontal="@dimen/_6sdp"
             android:paddingVertical="@dimen/_4sdp"
+            android:singleLine="true"
             android:textAppearance="@style/TextAppearance.Launcher.Title"
-            android:textColor="@color/menu_bar_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="@color/menu_bar_text" />
+
+        <ImageButton
+            android:id="@+id/files_button"
+            android:layout_width="@dimen/top_action_size"
+            android:layout_height="@dimen/top_action_size"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/background_top_action"
+            android:contentDescription="@string/main_open_main_dir"
+            android:padding="@dimen/top_action_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_folder"
+            app:tint="?attr/colorOnSurfaceVariant" />
+
+        <ImageButton
+            android:id="@+id/account_button"
+            android:layout_width="@dimen/top_action_size"
+            android:layout_height="@dimen/top_action_size"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/background_top_action"
+            android:contentDescription="@string/account_add"
+            android:padding="@dimen/top_action_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_account"
+            app:tint="?attr/colorOnSurfaceVariant" />
 
         <ImageButton
             android:id="@+id/download_button"
-            android:layout_width="@dimen/_34sdp"
-            android:layout_height="@dimen/_34sdp"
-            android:layout_marginEnd="@dimen/_4sdp"
-            android:background="@drawable/ripple_circle"
+            android:layout_width="@dimen/top_action_size"
+            android:layout_height="@dimen/top_action_size"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/background_top_action"
             android:contentDescription="@string/setting_category_download"
-            android:padding="@dimen/_7sdp"
+            android:padding="@dimen/top_action_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_download"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/setting_button"
-            app:layout_constraintTop_toTopOf="parent"
             app:tint="?attr/colorOnSurfaceVariant" />
 
         <ImageButton
             android:id="@+id/setting_button"
-            android:layout_width="@dimen/_34sdp"
-            android:layout_height="@dimen/_34sdp"
-            android:background="@drawable/ripple_circle"
+            android:layout_width="@dimen/top_action_size"
+            android:layout_height="@dimen/top_action_size"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/background_top_action"
             android:contentDescription="@string/setting_category_launcher"
-            android:padding="@dimen/_7sdp"
+            android:padding="@dimen/top_action_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_menu_settings"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:tint="?attr/colorOnSurfaceVariant" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-    <!-- Holding most of the dynamic content -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/container_fragment"
         android:layout_width="match_parent"

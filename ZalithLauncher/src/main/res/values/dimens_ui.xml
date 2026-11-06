@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rail_width">@dimen/_96sdp</dimen>
+    <dimen name="rail_item_width">@dimen/_88sdp</dimen>
+    <dimen name="rail_item_height">@dimen/_76sdp</dimen>
+    <dimen name="rail_icon_size">@dimen/_32sdp</dimen>
+    <dimen name="top_bar_height">@dimen/_50sdp</dimen>
+    <dimen name="top_action_size">@dimen/_40sdp</dimen>
+    <dimen name="top_action_padding">@dimen/_9sdp</dimen>
+</resources>

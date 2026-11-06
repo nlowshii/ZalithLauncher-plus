@@ -12,7 +12,7 @@ import net.kdt.pojavlaunch.prefs.LauncherPreferences
 
 class AllSettings {
     companion object {
-        // Video
+
         @JvmStatic
         val renderer = StringSettingUnit("renderer", "opengles2")
 
@@ -43,7 +43,6 @@ class AllSettings {
         @JvmStatic
         val zinkPreferSystemDriver = BooleanSettingUnit("zinkPreferSystemDriver", false)
 
-        // Control
         @JvmStatic
         val disableGestures = BooleanSettingUnit("disableGestures", false)
 
@@ -92,7 +91,6 @@ class AllSettings {
         @JvmStatic
         val deadZoneScale = IntSettingUnit("gamepad_deadzone_scale", 100)
 
-        // Game
         @JvmStatic
         val versionIsolation = BooleanSettingUnit("versionIsolation", true)
 
@@ -116,7 +114,7 @@ class AllSettings {
 
         @JvmStatic
         val ramAllocation = lazy {
-            //涉及到Context初始化，需要进行懒加载
+
             IntSettingUnit("allocation", LauncherPreferences.findBestRAMAllocation(ContextExecutor.getApplication()))
         }
 
@@ -141,7 +139,6 @@ class AllSettings {
         @JvmStatic
         val gameMenuAlpha = IntSettingUnit("gameMenuAlpha", 100)
 
-        // Launcher
         @JvmStatic
         val checkLibraries = BooleanSettingUnit("checkLibraries", true)
 
@@ -159,6 +156,9 @@ class AllSettings {
 
         @JvmStatic
         val maxDownloadThreads = IntSettingUnit("maxDownloadThreads", 64)
+
+        @JvmStatic
+        val launcherLanguage = StringSettingUnit("launcherLanguage", "system")
 
         @JvmStatic
         val launcherTheme = StringSettingUnit("launcherTheme", "system")
@@ -181,7 +181,6 @@ class AllSettings {
         @JvmStatic
         val acceptPreReleaseUpdates = BooleanSettingUnit("acceptPreReleaseUpdates", false)
 
-        // Experimental
         @JvmStatic
         val dumpShaders = BooleanSettingUnit("dump_shaders", false)
 
@@ -191,7 +190,6 @@ class AllSettings {
         @JvmStatic
         val tcVibrateDuration = IntSettingUnit("tcVibrateDuration", 100)
 
-        // Other
         @JvmStatic
         val currentAccount = StringSettingUnit("currentAccount", "")
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Zalith Launcher -->
     <string name="generic_open">Mở</string>
     <string name="generic_close">Đóng</string>
     <string name="generic_return">Quay lại</string>
@@ -40,7 +39,7 @@
     <string name="generic_login">Đăng nhập</string>
     <string name="generic_wrong_tip">Đã xảy ra sự cố</string>
     <string name="generic_no_more_reminders">Không nhắc lại</string>
-    <string name="generic_no_network">Không kết nối được internet. Vui lòng kiểm tra kết nối mạng của thiết bị!</string>
+    <string name="generic_no_network">Không kết nối được internet, Vui lòng kiểm tra kết nối mạng của thiết bị!</string>
     <string name="generic_input_invalid">Nội dung đã nhập không hợp lệ, vui lòng nhập lại</string>
     <string name="generic_input_invalid_character">Tên chứa ký tự không hợp lệ: "%s"</string>
     <string name="generic_input_too_small">Giá trị đã nhập quá nhỏ, cần ít nhất là %s</string>
@@ -52,12 +51,10 @@
     <string name="generic_pre_release">Phiên bản phát hành trước</string>
     <string name="generic_beta">Phiên bản beta</string>
     <string name="generic_alpha">Phiên bản alpha</string>
-    <!-- Error -->
     <string name="error_fatal">%s đã gặp sự cố nghiêm trọng</string>
     <string name="error_no_version">Không có phiên bản!</string>
     <string name="error_show_more">Hiển thị chi tiết</string>
     <string name="error_show_less">Đóng chi tiết</string>
-    <!-- Launcher -->
     <string name="option_category_debug">Điều chỉnh</string>
     <string name="option_category_control">Kiểm soát</string>
     <string name="option_category_hotbar">Hộp kiểm tra thanh công cụ</string>
@@ -71,7 +68,7 @@
     <string name="option_hotbar_width">Chiều rộng hộp kiểm tra</string>
     <string name="option_hotbar_height">Chiều cao hộp kiểm tra</string>
     <string name="customctrl_editor_exit_title">Bạn có muốn rời đi?</string>
-    <string name="customctrl_editor_exit_msg">Các chỉnh sửa hiện tại sẽ không được lưu. Bạn có chắc chắn muốn thoát ngay không?</string>
+    <string name="customctrl_editor_exit_msg">Các chỉnh sửa hiện tại sẽ không được lưu, Bạn có chắc chắn muốn thoát ngay không?</string>
     <string name="customctrl_editor_exit">Thoát trình soạn thảo</string>
     <string name="global_save_and_exit">Lưu và thoát</string>
     <string name="version_snapshot">Phiên bản Snapshot</string>
@@ -80,14 +77,14 @@
     <string name="force_exit_confirm">Bạn có chắc chắn muốn tắt bằng cách ép buộc?</string>
     <string name="autoram_info_msg">Bộ nhớ đã được đặt là %d MB</string>
     <string name="memory_warning_msg">Bộ nhớ hiện có (%d) thấp hơn bộ nhớ được phân bổ (%d), điều này có thể gây ra sự cố trò chơi, nếu trò chơi bị sự cố, vui lòng thay đổi cấu hình!</string>
-    <string name="address_memory_warning_msg">Không gian bộ nhớ trống hiện có (%d) thấp hơn bộ nhớ được phân bổ (%d), điều này sẽ gây ra sự cố, nếu trò chơi bị sự cố, vui lòng điều chỉnh phân bổ bộ nhớ.</string>
+    <string name="address_memory_warning_msg">Không gian bộ nhớ trống hiện có (%d) thấp hơn bộ nhớ được phân bổ (%d), điều này sẽ gây ra sự cố, nếu trò chơi bị sự cố, vui lòng điều chỉnh phân bổ bộ nhớ</string>
     <string name="notif_channel_name">Thông thường</string>
     <string name="lazy_service_default_title">Dịch vụ Tiếp tân %s</string>
     <string name="progresslayout_tasks_in_progress">%d nhiệm vụ đang diễn ra</string>
     <string name="notification_terminate">Kết thúc</string>
     <string name="notification_game_runs">Trò chơi đang chạy!</string>
     <string name="tasks_ongoing">Nhiệm vụ đang được thực hiện, vui lòng chờ</string>
-    <string name="mc_download_failed">Tải xuống Minecraft thất bại! Điều này có thể do kết nối mạng kém, đặt tệp sai vị trí, v.v.</string>
+    <string name="mc_download_failed">Tải xuống Minecraft thất bại! Điều này có thể do kết nối mạng kém, đặt tệp sai vị trí, v.v</string>
     <string name="microsoft_login_retry_later">Hoạt động của bạn quá nhiều, vui lòng thử lại sau</string>
     <string name="storage_required">%s yêu cầu kết nối bộ nhớ ngoài, vui lòng kết nối lại và khởi động lại phần mềm</string>
     <string name="dialog_select_jar">Chọn tệp Jar</string>
@@ -97,7 +94,7 @@
     <string name="input_preview_tip">Xem trước khung nhập liệu, ghi lại đầu vào từ bàn phím mềm, chỉ để tham khảo:</string>
     <string name="dl_tampered_manifest_title">Cảnh báo xác minh tệp</string>
     <string name="dl_tampered_manifest"><![CDATA[Danh sách phiên bản trò chơi trên nguồn hình ảnh không khớp với danh sách phiên bản chính thức của Mojang, điều này có nghĩa là nó có thể đã bị thay đổi<br/>
-        <b>Hành động này không an toàn. Nếu bạn tiếp tục, thông tin cá nhân của bạn có thể gặp rủi ro!</b><br/>
+        <b>Hành động này không an toàn, Nếu bạn tiếp tục, thông tin cá nhân của bạn có thể gặp rủi ro!</b><br/>
         Nếu bạn vẫn muốn tiếp tục sử dụng nguồn hình ảnh, hãy nhấp vào "Tắt kiểm tra danh sách phiên bản trò chơi" để bắt đầu tải xuống lần nữa<br/>
         Nếu bạn muốn sử dụng nguồn tải xuống chính thức, hãy nhấp vào "Chuyển sang nguồn tải xuống chính thức" để bắt đầu tải xuống lần nữa<br/>]]></string>
     <string name="dl_turn_off_manifest_checks">Tắt kiểm tra danh sách phiên bản trò chơi</string>
@@ -105,12 +102,12 @@
     <string name="notif_download_finished">Trò chơi đã sẵn sàng để khởi chạy</string>
     <string name="notif_download_finished_desc">Nhấn vào đây để khởi chạy!</string>
     <string name="notification_permission_dialog_title">Yêu cầu quyền</string>
-    <string name="notification_permission_dialog_text">%s cần quyền đăng thông báo để ngăn chặn việc dừng tải xuống tệp trò chơi khi bạn rời khỏi ứng dụng. Nếu không có quyền này, khi bạn đưa %s vào nền, Android có thể dừng tiến trình tải xuống của bạn</string>
+    <string name="notification_permission_dialog_text">%s cần quyền đăng thông báo để ngăn chặn việc dừng tải xuống tệp trò chơi khi bạn rời khỏi ứng dụng, Nếu không có quyền này, khi bạn đưa %s vào nền, Android có thể dừng tiến trình tải xuống của bạn</string>
     <string name="notification_permission_toast">Bạn có thể thay đổi quyết định bất cứ lúc nào bằng cách vào \"Cài đặt hệ thống\"</string>
-    <string name="newdl_starting">Đang đọc siêu dữ liệu trò chơi…</string>
+    <string name="newdl_starting">Đang đọc siêu dữ liệu trò chơi</string>
     <string name="newdl_downloading_metadata">Đang tải siêu dữ liệu trò chơi (%s)</string>
-    <string name="newdl_downloading_game_files">Đang tải tệp trò chơi… (%d/%d, %.2f MB)</string>
-    <string name="newdl_downloading_game_files_size">Đang tải tệp trò chơi… (%.2f/%.2f MB, %.2f MB/s)</string>
+    <string name="newdl_downloading_game_files">Đang tải tệp trò chơi (%d/%d, %.2f MB)</string>
+    <string name="newdl_downloading_game_files_size">Đang tải tệp trò chơi (%.2f/%.2f MB, %.2f MB/s)</string>
     <string name="newdl_extracting_native_libraries">Đang giải nén thư viện gốc (%d/%d)</string>
     <string name="log_view_button_scroll_off">Tự động cuộn: Tắt</string>
     <string name="log_view_button_scroll_on">Tự động cuộn: Bật</string>
@@ -128,16 +125,15 @@
     <string name="mod_optifine_progress">Đang tải %s</string>
     <string name="mod_check_dialog_title">Báo cáo kiểm tra mod</string>
     <string name="mod_check_progress_message">Đang kiểm tra mod (%d / %d)</string>
-    <string name="mod_check_touch_controller">Phát hiện đã cài đặt mod Touch Controller (%s), launcher đã sẵn sàng kích hoạt proxy điều khiển để tương thích với mod.</string>
-    <string name="mod_check_sodium_or_embeddium">Đã phát hiện mod Sodium hoặc Embeddium được cài đặt (%s). Trình khởi chạy sẽ vô hiệu hóa cảnh báo của mod này hoặc ngăn chặn nó cố tình gây lỗi trên thiết bị Android. Tuy nhiên, xin lưu ý rằng cộng đồng của mod đã tuyên bố rõ ràng rằng họ sẽ không còn chấp nhận bất kỳ vấn đề nào liên quan đến thiết bị Android. Do đó, nếu bạn gặp bất kỳ vấn đề nào khi sử dụng mod này, đừng báo cáo chúng lên cộng đồng của mod!</string>
-    <string name="mod_check_physics">Mod vật lý hiện đang sử dụng (%s) chưa được vá (thay libPhysXJniBindings_64.so từ kiến trúc x86_64 sang arm64), sẽ bị sập khi khởi chạy.</string>
-    <string name="mod_check_mcef">MCEF (%s) không thể chạy trên Android. Nó thường được dùng làm phụ thuộc tiền xử cho WebDisplays/In-game Browser (trình duyệt).</string>
-    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) không thể chạy trực tiếp ở chế độ chơi đơn. Bạn phải chạy nó trên máy chủ (có thể sử dụng Termux), otherwise trò chơi sẽ bị crash.</string>
-    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 không thể chạy trên hệ điều hành Android.</string>
-    <string name="mod_check_imblocker">IMBlocker/In-GameIME (%s) không tương thích với Android và sẽ khiến trò chơi bị treo khi khởi động.</string>
-    <string name="mod_check_replay_mod">ReplayMod (%s) yêu cầu FFmpeg để render video. Vui lòng cài đặt plugin FFmpeg riêng\n%s\n%s</string>
-    <string name="mod_check_borderlesswindow">Borderless Window (%s) không tương thích với Android và sẽ khiến trò chơi bị treo khi khởi động.</string>
-    <!-- Controls -->
+    <string name="mod_check_touch_controller">Phát hiện đã cài đặt mod Touch Controller (%s), launcher đã sẵn sàng kích hoạt proxy điều khiển để tương thích với mod</string>
+    <string name="mod_check_sodium_or_embeddium">Đã phát hiện mod Sodium hoặc Embeddium được cài đặt (%s), Trình khởi chạy sẽ vô hiệu hóa cảnh báo của mod này hoặc ngăn chặn nó cố tình gây lỗi trên thiết bị Android, Tuy nhiên, xin lưu ý rằng cộng đồng của mod đã tuyên bố rõ ràng rằng họ sẽ không còn chấp nhận bất kỳ vấn đề nào liên quan đến thiết bị Android, Do đó, nếu bạn gặp bất kỳ vấn đề nào khi sử dụng mod này, đừng báo cáo chúng lên cộng đồng của mod!</string>
+    <string name="mod_check_physics">Mod vật lý hiện đang sử dụng (%s) chưa được vá (thay libPhysXJniBindings_64.so từ kiến trúc x86_64 sang arm64), sẽ bị sập khi khởi chạy</string>
+    <string name="mod_check_mcef">MCEF (%s) không thể chạy trên Android, Nó thường được dùng làm phụ thuộc tiền xử cho WebDisplays/In-game Browser (trình duyệt)</string>
+    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) không thể chạy trực tiếp ở chế độ chơi đơn, Bạn phải chạy nó trên máy chủ (có thể sử dụng Termux), otherwise trò chơi sẽ bị crash</string>
+    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 không thể chạy trên hệ điều hành Android</string>
+    <string name="mod_check_imblocker">IMBlocker/In-GameIME (%s) không tương thích với Android và sẽ khiến trò chơi bị treo khi khởi động</string>
+    <string name="mod_check_replay_mod">ReplayMod (%s) yêu cầu FFmpeg để render video, Vui lòng cài đặt plugin FFmpeg riêng\n%s\n%s</string>
+    <string name="mod_check_borderlesswindow">Borderless Window (%s) không tương thích với Android và sẽ khiến trò chơi bị treo khi khởi động</string>
     <string name="control_primary">Nhấp chuột trái</string>
     <string name="control_secondary">Nhấp chuột phải</string>
     <string name="control_mouse">Chuột</string>
@@ -186,10 +182,10 @@
     <string name="controls_info_desc">Mô tả:</string>
     <string name="controls_info_more">Thông tin chi tiết</string>
     <string name="controls_info_view">Xem thông tin</string>
-    <string name="controls_info_no_info">Không có mô tả nào cho bố cục điều khiển này…</string>
+    <string name="controls_info_no_info">Không có mô tả nào cho bố cục điều khiển này</string>
     <string name="controls_info_invalid">Tệp không hợp lệ:</string>
     <string name="controls_info_default_title">Bố cục điều khiển mặc định</string>
-    <string name="controls_info_default_desc">Đây là tệp bố cục điều khiển mặc định, nhấn để thao tác bố cục điều khiển này.</string>
+    <string name="controls_info_default_desc">Đây là tệp bố cục điều khiển mặc định, nhấn để thao tác bố cục điều khiển này</string>
     <string name="controls_set_default_message">Bạn có chắc chắn muốn đặt bố cục điều khiển này làm bố cục điều khiển mặc định không?</string>
     <string name="controls_nothing">Không có bố cục điều khiển nào ở đây, khởi động lại ứng dụng sẽ tạo một bố cục điều khiển mặc định mới</string>
     <string name="controls_tip_set_default">Nhấn giữ bố cục điều khiển để đặt nó làm bố cục điều khiển mặc định!</string>
@@ -212,7 +208,6 @@
     <string name="controller_dpad_right">Nút mũi tên phải</string>
     <string name="controller_remapper_operating_mode">Chế độ hiện tại</string>
     <string name="controller_remapper_expand_entry">Mở rộng để thay đổi mã nút</string>
-    <!-- Version -->
     <string name="version_manager_title">Quản lý Phiên bản</string>
     <string name="version_no_versions">Chưa cài đặt phiên bản nào</string>
     <string name="version_install_new">Cài đặt phiên bản mới</string>
@@ -221,7 +216,7 @@
     <string name="version_install_incompatible">Không tương thích với %s</string>
     <string name="version_install_exists">Đã có phiên bản với tên này!</string>
     <string name="version_install_no_versions">Không có phiên bản nào để chọn!</string>
-    <string name="version_install_cannot_use_mc_name">Nội dung bổ sung đã được chọn, và cần đảm bảo tính độc lập của lõi gốc. Vui lòng không sử dụng tên gốc!</string>
+    <string name="version_install_cannot_use_mc_name">Nội dung bổ sung đã được chọn, và cần đảm bảo tính độc lập của lõi gốc, Vui lòng không sử dụng tên gốc!</string>
     <string name="version_install_type_version">Tải và cài đặt dưới dạng phiên bản</string>
     <string name="version_install_type_mod">Tải và cài đặt dưới dạng Mod</string>
     <string name="version_install_optifine_and_forge">Một số phiên bản của OptiFine có thể không hoạt động trên Forge, nếu gặp sự cố crash hoặc không tương thích, hãy ưu tiên xóa bỏ OptiFine!</string>
@@ -237,11 +232,11 @@
     <string name="version_manager_shortcuts_crash_report_path">Thư mục báo cáo sự cố</string>
     <string name="version_manager_rename">Đổi tên phiên bản</string>
     <string name="version_manager_copy">Sao chép phiên bản</string>
-    <string name="version_manager_copy_tip">Sao chép phiên bản hiện tại thành một phiên bản mới với cách ly phiên bản được kích hoạt mặc định. Nếu "Sao chép tất cả tệp" bên dưới được kích hoạt, tất cả tệp được tạo bởi phiên bản hiện tại (gói tài nguyên, lưu trữ, thiết lập trò chơi, v.v.) cũng sẽ được sao chép.</string>
+    <string name="version_manager_copy_tip">Sao chép phiên bản hiện tại thành một phiên bản mới với cách ly phiên bản được kích hoạt mặc định, Nếu "Sao chép tất cả tệp" bên dưới được kích hoạt, tất cả tệp được tạo bởi phiên bản hiện tại (gói tài nguyên, lưu trữ, thiết lập trò chơi, v.v) cũng sẽ được sao chép</string>
     <string name="version_manager_copy_all">Sao chép tất cả tệp</string>
     <string name="version_manager_delete">Xóa phiên bản</string>
-    <string name="version_manager_delete_tip">Xóa phiên bản sẽ đồng thời xóa tất cả các tệp trong thư mục \"./versions/%s\", bao gồm các tài nguyên quan trọng như lưu trữ trò chơi, gói tài nguyên, mô-đun vv, ngay cả khi không bật cách ly phiên bản. Vì vậy, vui lòng chắc chắn đã sao lưu trước khi thực hiện thao tác này!</string>
-    <string name="version_manager_delete_tip_invalid">Phiên bản hiện tại thiếu tệp JSON phiên bản và vì vậy được coi là phiên bản không hợp lệ. Bạn không thể chọn phiên bản này. Nhấn Xác nhận để xóa phiên bản sai này.</string>
+    <string name="version_manager_delete_tip">Xóa phiên bản sẽ đồng thời xóa tất cả các tệp trong thư mục \"./versions/%s\", bao gồm các tài nguyên quan trọng như lưu trữ trò chơi, gói tài nguyên, mô-đun vv, ngay cả khi không bật cách ly phiên bản, Vì vậy, vui lòng chắc chắn đã sao lưu trước khi thực hiện thao tác này!</string>
+    <string name="version_manager_delete_tip_invalid">Phiên bản hiện tại thiếu tệp JSON phiên bản và vì vậy được coi là phiên bản không hợp lệ, Bạn không thể chọn phiên bản này, Nhấn Xác nhận để xóa phiên bản sai này</string>
     <string name="version_manager_task_in_progress">Đang thực hiện tác vụ, quản lý phiên bản tạm thời không khả dụng</string>
     <string name="version_manager_invalid">Phiên bản này không hợp lệ</string>
     <string name="version_manager_no_installed_version">Khởi động không tìm thấy bất kỳ phiên bản Minecraft nào đã được cài đặt!</string>
@@ -252,11 +247,9 @@
     <string name="version_manager_favorites_write_folder_name">Đặt tên cho yêu thích mới</string>
     <string name="version_manager_favorites_dialog_title">Thêm vào yêu thích</string>
     <string name="version_manager_favorites_dialog_no_folders">Chưa có yêu thích nào, vui lòng thêm yêu thích trước!</string>
-    <!-- Permissions -->
     <string name="permissions_manage_external_storage">%s cần quyền quản lý tất cả các tệp trên thiết bị để sử dụng tính năng này bình thường, vui lòng bật quyền!</string>
-    <string name="permissions_write_external_storage">%s yêu cầu quyền quản lý bộ nhớ. Nếu quyền này không được bật, có thể gây ra các vấn đề như tệp trò chơi không thể lưu hoặc giải nén đúng cách. Vui lòng cấp quyền để đảm bảo các chức năng hoạt động đúng.</string>
-    <string name="permissions_storage_for_renderer_config">Plugin renderer %s có thể có cài đặt. Nếu %s không có quyền lưu trữ, cài đặt sẽ không thể đọc. Hãy cấp quyền để hoạt động đúng.</string>
-    <!-- Profiles Path -->
+    <string name="permissions_write_external_storage">%s yêu cầu quyền quản lý bộ nhớ, Nếu quyền này không được bật, có thể gây ra các vấn đề như tệp trò chơi không thể lưu hoặc giải nén đúng cách, Vui lòng cấp quyền để đảm bảo các chức năng hoạt động đúng</string>
+    <string name="permissions_storage_for_renderer_config">Plugin renderer %s có thể có cài đặt, Nếu %s không có quyền lưu trữ, cài đặt sẽ không thể đọc, Hãy cấp quyền để hoạt động đúng</string>
     <string name="profiles_path_title">Quản lý đường dẫn trò chơi</string>
     <string name="profiles_path_default">Đường dẫn mặc định</string>
     <string name="profiles_path_settings">Mở cài đặt đường dẫn</string>
@@ -265,10 +258,9 @@
     <string name="profiles_path_create_new_title">Đặt tên cho đường dẫn này</string>
     <string name="profiles_path_delete_title">Xóa đường dẫn này</string>
     <string name="profiles_path_delete_message">Trình khởi động sẽ xóa đường dẫn này, nhưng không xóa các tệp được lưu trong đường dẫn tương ứng, sau khi xóa vẫn có thể thêm lại đường dẫn này</string>
-    <!-- Profile -->
     <string name="pedit_isolation_enabled">Bật cách ly phiên bản</string>
-    <string name="pedit_reset_icon">Điều này sẽ đặt lại biểu tượng tùy chỉnh bạn đã thiết lập và thao tác không thể hoàn tác. Bạn có chắc chắn muốn đặt lại biểu tượng phiên bản không?</string>
-    <string name="pedit_unsaved_tip">Bạn đã thực hiện thay đổi đối với cấu hình phiên bản này. Quay trở lại trực tiếp sẽ mất những thay đổi này. Bạn có chắc chắn muốn quay trở lại trực tiếp không?</string>
+    <string name="pedit_reset_icon">Điều này sẽ đặt lại biểu tượng tùy chỉnh bạn đã thiết lập và thao tác không thể hoàn tác, Bạn có chắc chắn muốn đặt lại biểu tượng phiên bản không?</string>
+    <string name="pedit_unsaved_tip">Bạn đã thực hiện thay đổi đối với cấu hình phiên bản này, Quay trở lại trực tiếp sẽ mất những thay đổi này, Bạn có chắc chắn muốn quay trở lại trực tiếp không?</string>
     <string name="pedit_control">Bố cục điều khiển</string>
     <string name="pedit_custom_path">Đường dẫn tùy chỉnh</string>
     <string name="pedit_default">（Sử dụng giá trị mặc định toàn cục）</string>
@@ -279,18 +271,17 @@
     <string name="profile_mods_disable">Vô hiệu hóa</string>
     <string name="profile_mods_enable">Kích hoạt</string>
     <string name="profile_mods_disable_or_enable">Vô hiệu hóa/Kích hoạt</string>
-    <!-- Account -->
     <string name="account_login_done">Đăng nhập hoàn tất</string>
     <string name="account_add">Thêm tài khoản</string>
     <string name="account_no_saved_accounts">Không có tài khoản đã lưu</string>
     <string name="account_remove">Tài khoản này sẽ bị xóa khỏi trình khởi động, bạn có chắc chắn muốn làm điều này không?</string>
     <string name="account_remove_login_type_title">Xóa phương thức đăng nhập: %s</string>
-    <string name="account_remove_login_type_message">Phương thức đăng nhập này sẽ được xóa khỏi trình khởi động, nhưng không xóa tài khoản hiện tại của bạn. Bạn có chắc chắn muốn làm như vậy không?</string>
+    <string name="account_remove_login_type_message">Phương thức đăng nhập này sẽ được xóa khỏi trình khởi động, nhưng không xóa tài khoản hiện tại của bạn, Bạn có chắc chắn muốn làm như vậy không?</string>
     <string name="account_microsoft_account">Tài khoản Microsoft</string>
-    <string name="account_microsoft_xerr_unauthorized">Thông tin đăng nhập tài khoản Microsoft của bạn có vẻ đã hết hạn, tình huống này thường xảy ra khi mật khẩu tài khoản bị thay đổi. Vui lòng xóa tài khoản hiện tại và đăng nhập lại để đặt lại thông tin đăng nhập của bạn.</string>
+    <string name="account_microsoft_xerr_unauthorized">Thông tin đăng nhập tài khoản Microsoft của bạn có vẻ đã hết hạn, tình huống này thường xảy ra khi mật khẩu tài khoản bị thay đổi, Vui lòng xóa tài khoản hiện tại và đăng nhập lại để đặt lại thông tin đăng nhập của bạn</string>
     <string name="account_local_account">Tài khoản ngoại tuyến</string>
     <string name="account_local_account_empty">Tên người dùng không được để trống!</string>
-    <string name="account_local_account_invalid">Tên người dùng hợp lệ chỉ hỗ trợ các chữ cái tiếng Anh (viết hoa hoặc viết thường), số và dấu gạch dưới. Độ dài tên người dùng phải từ 3 đến 16 ký tự. [RED;BOLD]Nếu không, trò chơi có thể không hoạt động đúng cách.[/RED;BOLD]\nVí dụ về tên người dùng hợp lệ: Name, Name_, Name123\nVí dụ về tên người dùng không hợp lệ: Name@, N ame, name_name_name_name\nTuy nhiên, nếu bạn đang sử dụng mod hoặc plugin để loại bỏ hạn chế này, bạn có thể tiếp tục sử dụng tên này. Nếu không, vui lòng đổi tên!</string>
+    <string name="account_local_account_invalid">Tên người dùng hợp lệ chỉ hỗ trợ các chữ cái tiếng Anh (viết hoa hoặc viết thường), số và dấu gạch dưới, Độ dài tên người dùng phải từ 3 đến 16 ký tự, [RED;BOLD]Nếu không, trò chơi có thể không hoạt động đúng cách[/RED;BOLD]\nVí dụ về tên người dùng hợp lệ: Name, Name_, Name123\nVí dụ về tên người dùng không hợp lệ: Name@, N ame, name_name_name_name\nTuy nhiên, nếu bạn đang sử dụng mod hoặc plugin để loại bỏ hạn chế này, bạn có thể tiếp tục sử dụng tên này, Nếu không, vui lòng đổi tên!</string>
     <string name="account_login_local_name">Tên người dùng</string>
     <string name="account_login_start">Bắt đầu đăng nhập!</string>
     <string name="account_login_microsoft_progress">Đang đăng nhập vào tài khoản Microsoft: %s</string>
@@ -301,8 +292,8 @@
     <string name="account_login_progress_checking">Đang kiểm tra mã</string>
     <string name="account_login_no_network">Không kết nối đến internet, đăng nhập đã bỏ qua!</string>
     <string name="account_login_skip">Đăng nhập tài khoản thất bại, bạn có muốn bỏ qua bước đăng nhập không?</string>
-    <string name="account_no_microsoft_account">Vui lòng đăng nhập ít nhất một tài khoản Minecraft bản quyền, chúng tôi không khuyến khích người dùng khởi động Minecraft mà không có tài khoản bản quyền.</string>
-    <string name="account_no_microsoft_account_local">Có vẻ như bạn chưa đăng nhập vào tài khoản bản quyền! Tài khoản ngoại tuyến là một giải pháp thay thế cho người chơi khi không thể kết nối mạng, không phải dành cho người chơi không có tài khoản bản quyền.</string>
+    <string name="account_no_microsoft_account">Vui lòng đăng nhập ít nhất một tài khoản Minecraft bản quyền, chúng tôi không khuyến khích người dùng khởi động Minecraft mà không có tài khoản bản quyền</string>
+    <string name="account_no_microsoft_account_local">Có vẻ như bạn chưa đăng nhập vào tài khoản bản quyền! Tài khoản ngoại tuyến là một giải pháp thay thế cho người chơi khi không thể kết nối mạng, không phải dành cho người chơi không có tài khoản bản quyền</string>
     <string name="account_no_microsoft_account_other">Có vẻ như bạn chưa đăng nhập vào tài khoản bản quyền! Bạn có chắc chắn muốn sử dụng đăng nhập bên ngoài mà không có tài khoản bản quyền không?</string>
     <string name="account_no_microsoft_account_continue">Bỏ qua và tiếp tục</string>
     <string name="account_continue_to_launch_the_game">Vẫn khởi động trò chơi</string>
@@ -315,14 +306,13 @@
     <string name="xerr_not_available">Xbox Live không khả dụng tại quốc gia/khu vực của bạn</string>
     <string name="minecraft_not_owned">Không tìm thấy hồ sơ Minecraft</string>
     <string name="no_minecraft_purchase">Vui lòng đảm bảo rằng bạn đã mua Minecraft, đăng nhập vào tài khoản của mình trên https://minecraft.net/ và thử lại</string>
-    <!-- Jre -->
     <string name="install_select_jre_environment">Chọn môi trường JRE</string>
     <string name="install_recommend_use_jre8">Trong môi trường thực thi, vui lòng sử dụng JRE 8 để đảm bảo tính ổn định</string>
     <string name="install_auto_select">Để trình khởi chạy quyết định</string>
     <string name="multirt_runtime_corrupt">Môi trường thực thi Java bị hỏng</string>
     <string name="multirt_runtime_incompatiblearch">Kiến trúc không tương thích: %s</string>
     <string name="multirt_config_title">Môi trường thực thi Java</string>
-    <string name="multirt_progress_caching">Đang lưu vào bộ nhớ đệm…</string>
+    <string name="multirt_progress_caching">Đang lưu vào bộ nhớ đệm</string>
     <string name="multirt_config_setdefault">Đặt làm mặc định</string>
     <string name="multirt_nocompatiblert">Không tìm thấy môi trường thực thi Java tương thích, phiên bản này yêu cầu Java %d hoặc mới hơn</string>
     <string name="multirt_nojava8rt">Không thể tìm thấy Java 8, để sử dụng tùy chọn này, bạn phải cài đặt Java 8</string>
@@ -330,7 +320,6 @@
     <string name="multirt_import">Nhập môi trường chạy</string>
     <string name="multirt_swap_setdefault">Chọn môi trường mặc định</string>
     <string name="multirt_provided_by_launcher">Tích hợp sẵn</string>
-    <!-- Custom Mouse & Background -->
     <string name="mouse_settings_speed_name">Tốc độ chuột ảo</string>
     <string name="mouse_settings_scale_name">Tỷ lệ chuột ảo</string>
     <string name="custom_mouse_add">Thêm chuột ảo</string>
@@ -349,7 +338,6 @@
     <string name="custom_background_selected">Đã thiết lập thành công hình nền cho %s:</string>
     <string name="custom_background_reset">Đã đặt lại hình nền cho %s</string>
     <string name="custom_background_nothing">Không có hình nền nào ở đây, hãy thêm một số hình ảnh!</string>
-    <!-- File -->
     <string name="file_folder_dialog_insert_name">Chèn tên thư mục</string>
     <string name="file_create_folder">Tạo thư mục</string>
     <string name="file_select_folder">Chọn thư mục</string>
@@ -372,15 +360,13 @@
     <string name="file_multi_select_mode">Bật chế độ chọn nhiều</string>
     <string name="file_multi_select_mode_title">Chọn nhiều mục</string>
     <string name="file_multi_select_mode_message">Hiện tại đã chọn tổng cộng %d mục</string>
-    <string name="file_operation_file">Đang thao tác tệp… (%s / %s, %d)</string>
+    <string name="file_operation_file">Đang thao tác tệp (%s / %s, %d)</string>
     <string name="file_jump_to_path">Nhảy đến đường dẫn</string>
     <string name="file_nothing">Không tìm thấy tệp nào cả!</string>
     <string name="file_invalid_length">Tên quá dài! (Độ dài hiện tại: %d, Độ dài tối đa: %d)</string>
-    <!-- Search View -->
     <string name="search_case_sensitive">Phân biệt chữ hoa chữ thường</string>
     <string name="search_only_show_results">Chỉ hiển thị kết quả tìm kiếm</string>
     <string name="search_count">%d kết quả tìm kiếm</string>
-    <!-- Main Page & Settings -->
     <string name="main_open_main_dir">Mở thư mục chính</string>
     <string name="main_install_jar_file">Thực thi tệp .jar</string>
     <string name="main_share_logs">Chia sẻ tệp nhật ký</string>
@@ -404,9 +390,9 @@
     <string name="setting_renderer_title">Bộ kết xuất</string>
     <string name="setting_renderer_from_plugins">Từ plugin %s</string>
     <string name="setting_renderer_local_import_title">Nhập khẩu Bộ xử lý đồ họa cục bộ</string>
-    <string name="setting_renderer_local_import_desc">Ngoài việc cài đặt plugin xử lý phần mềm, trình khởi chạy cũng hỗ trợ nhập khẩu plugin xử lý đồ họa từ địa phương. Tuy nhiên, một số thiết bị có thể không sử dụng được plugin đồ họa cục bộ, hãy sử dụng thận trọng!</string>
-    <string name="setting_renderer_local_import_restart">Bộ xử lý đồ họa mới đã được nhập khẩu. Vui lòng khởi động lại trình khởi chạy để tải!</string>
-    <string name="setting_renderer_local_import_failed">Không thể nhập khẩu plugin bộ xử lý đồ họa. Định dạng tệp nén có thể không đúng hoặc plugin có thể xung đột với các plugin khác!</string>
+    <string name="setting_renderer_local_import_desc">Ngoài việc cài đặt plugin xử lý phần mềm, trình khởi chạy cũng hỗ trợ nhập khẩu plugin xử lý đồ họa từ địa phương, Tuy nhiên, một số thiết bị có thể không sử dụng được plugin đồ họa cục bộ, hãy sử dụng thận trọng!</string>
+    <string name="setting_renderer_local_import_restart">Bộ xử lý đồ họa mới đã được nhập khẩu, Vui lòng khởi động lại trình khởi chạy để tải!</string>
+    <string name="setting_renderer_local_import_failed">Không thể nhập khẩu plugin bộ xử lý đồ họa, Định dạng tệp nén có thể không đúng hoặc plugin có thể xung đột với các plugin khác!</string>
     <string name="setting_renderer_local_manage">Quản lý plugin bộ xử lý đồ họa cục bộ</string>
     <string name="setting_renderer_local_delete">Bạn có chắc chắn muốn xóa plugin bộ xử lý đồ họa này không? Hành động này không thể hoàn tác!</string>
     <string name="setting_driver_title">Trình điều khiển Vulkan</string>
@@ -428,7 +414,7 @@
     <string name="setting_longpress_trigger_title">Kích hoạt độ trễ nhấn và giữ</string>
     <string name="setting_longpress_trigger_desc">Thay đổi độ trễ kích hoạt nhấn và giữ để phá hủy khối, loại bỏ vật phẩm</string>
     <string name="setting_button_scale_title">Thay đổi tỷ lệ bố cục điều khiển</string>
-    <string name="setting_button_scale_desc">Điều chỉnh tỷ lệ thu phóng tổng thể của bố cục điều khiển. Nếu các nút quá nhỏ, bạn có thể phóng to chúng.</string>
+    <string name="setting_button_scale_desc">Điều chỉnh tỷ lệ thu phóng tổng thể của bố cục điều khiển, Nếu các nút quá nhỏ, bạn có thể phóng to chúng</string>
     <string name="setting_mouse_scale_desc">Thay đổi kích thước của chuột ảo</string>
     <string name="setting_mouse_speed_desc">Thay đổi tốc độ di chuyển của chuột ảo</string>
     <string name="setting_mouse_start_title">Mở chuột ảo mặc định khi khởi chạy trò chơi</string>
@@ -479,7 +465,7 @@
     <string name="setting_force_big_core_title">Buộc trình kết xuất chạy trên lõi lớn</string>
     <string name="setting_force_big_core_desc">Buộc luồng kết xuất của Minecraft chạy trên lõi có tần số cao nhất</string>
     <string name="setting_touch_controller_vibrate_duration_title">Thời gian rung của mod TouchController</string>
-    <string name="setting_touch_controller_vibrate_duration_desc">Cài đặt thời gian rung cho mod này để phù hợp với các nhu cầu sử dụng khác nhau.</string>
+    <string name="setting_touch_controller_vibrate_duration_desc">Cài đặt thời gian rung cho mod này để phù hợp với các nhu cầu sử dụng khác nhau</string>
     <string name="setting_verify_manifest_title">Kiểm tra danh sách phiên bản trò chơi</string>
     <string name="setting_verify_manifest_desc">Khi bật, trình khởi chạy sẽ kiểm tra danh sách phiên bản trò chơi và thư viện</string>
     <string name="setting_resource_image_cache_title">Bộ nhớ đệm hình ảnh tài nguyên</string>
@@ -489,11 +475,11 @@
     <string name="setting_download_source_title">Nguồn tải xuống trò chơi</string>
     <string name="setting_download_source_desc">Chọn nguồn tải xuống lậu thay vì sử dụng nguồn tải xuống chính thức</string>
     <string name="setting_max_download_threads_title">Số luồng tải xuống tối đa</string>
-    <string name="setting_max_download_threads_desc">Số luồng đồng thời tối đa khi tải xuống nhiều tệp đồng thời, nhưng quá nhiều luồng sẽ khiến trình khởi động trệ. 64 luồng đã đủ!</string>
+    <string name="setting_max_download_threads_desc">Số luồng đồng thời tối đa khi tải xuống nhiều tệp đồng thời, nhưng quá nhiều luồng sẽ khiến trình khởi động trệ, 64 luồng đã đủ!</string>
     <string name="setting_version_isolation_title">Cách ly Phiên bản</string>
     <string name="setting_version_isolation_desc">Kích hoạt cách ly phiên bản cho phiên bản trò chơi\nKhi tắt, đường dẫn trò chơi sẽ là .minecraft/\nKhi bật, đường dẫn trò chơi sẽ thay đổi thành .minecraft/versions/&lt;tên phiên bản&gt;/</string>
     <string name="setting_version_custom_info_title">Thông tin tùy chỉnh</string>
-    <string name="setting_version_custom_info_desc">Thông tin tùy chỉnh sẽ hiển thị ở góc dưới bên trái của menu chính trong trò chơi và góc trên bên trái của màn hình gỡ lỗi F3. Sau khi thêm trường [zl_version], trình khởi chạy sẽ thay thế nó bằng số phiên bản của trình khởi chạy.</string>
+    <string name="setting_version_custom_info_desc">Thông tin tùy chỉnh sẽ hiển thị ở góc dưới bên trái của menu chính trong trò chơi và góc trên bên trái của màn hình gỡ lỗi F3, Sau khi thêm trường [zl_version], trình khởi chạy sẽ thay thế nó bằng số phiên bản của trình khởi chạy</string>
     <string name="setting_set_game_language_title">Tự động đặt ngôn ngữ trò chơi</string>
     <string name="setting_set_game_language_desc">Tự động đặt ngôn ngữ trò chơi thành ngôn ngữ đã chọn khi khởi động trò chơi</string>
     <string name="setting_set_game_language_list">Đặt ngôn ngữ trò chơi</string>
@@ -525,7 +511,7 @@
     <string name="setting_game_menu_memory_text_title">Văn bản tiền tố thông tin bộ nhớ</string>
     <string name="setting_game_menu_memory_text_desc">Bạn có thể tùy chỉnh văn bản tiền tố này theo nhu cầu của mình</string>
     <string name="setting_game_menu_info_refresh_rate_title">Tần suất làm mới thông tin</string>
-    <string name="setting_game_menu_info_refresh_rate_desc">Điều chỉnh tần suất làm mới thông tin hiển thị trên cửa sổ nổi menu game. Làm mới quá thường xuyên có thể gây ra vấn đề về hiệu suất.</string>
+    <string name="setting_game_menu_info_refresh_rate_desc">Điều chỉnh tần suất làm mới thông tin hiển thị trên cửa sổ nổi menu game, Làm mới quá thường xuyên có thể gây ra vấn đề về hiệu suất</string>
     <string name="setting_game_menu_location_title">Vị trí ban đầu của cửa sổ nổi menu trò chơi</string>
     <string name="setting_game_menu_location_center">Chính giữa</string>
     <string name="setting_game_menu_location_bottom_or_center">Chính giữa dưới</string>
@@ -538,16 +524,14 @@
     <string name="setting_game_menu_alpha_desc">Cài đặt độ mờ của cửa sổ nổi menu trò chơi</string>
     <string name="setting_reboot_tip">Cài đặt này đã được thay đổi, nhưng cần khởi động lại ứng dụng để có hiệu lực!</string>
     <string name="setting_zink_driver_adreno">Trình khởi động phát hiện thiết bị của bạn là GPU Adreno, bật tùy chọn này có thể khiến trình kết xuất Zink không hoạt động bình thường, bạn có chắc chắn muốn mở tùy chọn này không?</string>
-    <!-- Game -->
-    <string name="game_exit_message">Ứng dụng/trò chơi đã thoát với mã %d.</string>
-    <string name="game_singnal_message">Ứng dụng/trò chơi bị dừng do tín hiệu nghiêm trọng %d.</string>
-    <string name="game_exit_note">Để biết chi tiết về lỗi, vui lòng kiểm tra tệp nhật ký hoặc báo cáo sự cố. Nếu bạn không thể tự giải quyết vấn đề, hãy gửi tệp nhật ký hoặc báo cáo sự cố cho người có thể giúp bạn giải quyết!</string>
-    <string name="game_exit_no_screenshot">Vui lòng không chỉ chụp ảnh màn hình giao diện ứng dụng hiện tại, nếu không sẽ không ai biết điều gì đã xảy ra. Hãy chia sẻ tệp nhật ký hoặc báo cáo sự cố của bạn!</string>
+    <string name="game_exit_message">Ứng dụng/trò chơi đã thoát với mã %d</string>
+    <string name="game_singnal_message">Ứng dụng/trò chơi bị dừng do tín hiệu nghiêm trọng %d</string>
+    <string name="game_exit_note">Để biết chi tiết về lỗi, vui lòng kiểm tra tệp nhật ký hoặc báo cáo sự cố, Nếu bạn không thể tự giải quyết vấn đề, hãy gửi tệp nhật ký hoặc báo cáo sự cố cho người có thể giúp bạn giải quyết!</string>
+    <string name="game_exit_no_screenshot">Vui lòng không chỉ chụp ảnh màn hình giao diện ứng dụng hiện tại, nếu không sẽ không ai biết điều gì đã xảy ra, Hãy chia sẻ tệp nhật ký hoặc báo cáo sự cố của bạn!</string>
     <string name="game_autopick_runtime_failed">Không tìm thấy môi trường chạy phù hợp, đã được thiết lập thành môi trường chạy được chọn cho phiên bản hiện tại</string>
     <string name="game_tip">Trò chơi đang chạy, có thể mở nhật ký đầu ra qua menu để xem tình trạng trò chơi</string>
     <string name="game_tip_version">Phiên bản trò chơi đang khởi động:</string>
     <string name="game_tip_mc_info">Thông tin Minecraft:</string>
-    <!-- Download -->
     <string name="download_classify_mod">Tải về Mod</string>
     <string name="download_classify_modpack">Tải về Modpack</string>
     <string name="download_classify_resource_pack">Tải về gói tài nguyên</string>
@@ -577,7 +561,7 @@
     <string name="download_install_custom_name">Tên tệp tùy chỉnh</string>
     <string name="download_install_download_file">Đang tải tệp tài nguyên (%.2fMB / %.2fMB, tốc độ: %s/s)</string>
     <string name="download_install_dependencies">%s có các mod phụ thuộc hoặc mod không tương thích sau</string>
-    <string name="download_install_dependencies_tip">Vui lòng tải xuống các mod phụ thuộc cần thiết theo nhu cầu. Thiếu các mod phụ thuộc quan trọng hoặc cài đặt mod không tương thích có thể khiến trò chơi không thể chạy!</string>
+    <string name="download_install_dependencies_tip">Vui lòng tải xuống các mod phụ thuộc cần thiết theo nhu cầu, Thiếu các mod phụ thuộc quan trọng hoặc cài đặt mod không tương thích có thể khiến trò chơi không thể chạy!</string>
     <string name="download_install_dependencies_required">Cần thiết</string>
     <string name="download_install_dependencies_optional">Tùy chọn</string>
     <string name="download_install_dependencies_incompatible">Không tương thích</string>
@@ -587,22 +571,19 @@
     <string name="download_install">Tải xuống %s</string>
     <string name="download_install_is_adapt">Phiên bản hiện tại %s có sẵn</string>
     <string name="download_install_unpack_world_error">Không thể nhận dạng cấu trúc tệp, giải nén tự động thất bại, vui lòng xử lý tệp thủ công!</string>
-    <!-- ModPack -->
     <string name="select_modpack_local_tip">Vui lòng chọn một tệp gói tích hợp được hỗ trợ bởi trình khởi chạy!</string>
-    <string name="select_modpack_local_not_supported">Gói mod này không được hỗ trợ bởi trình khởi chạy! Trình khởi chạy chỉ hỗ trợ nhập gói mod ở định dạng Modrinth, CurseForge và MCBBS. Vui lòng kiểm tra xem gói mod của bạn có tuân thủ định dạng quy định không!</string>
-    <string name="select_modpack_local_installing_files">Đang cài đặt tệp trò chơi… (%d / %d)</string>
+    <string name="select_modpack_local_not_supported">Gói mod này không được hỗ trợ bởi trình khởi chạy! Trình khởi chạy chỉ hỗ trợ nhập gói mod ở định dạng Modrinth, CurseForge và MCBBS, Vui lòng kiểm tra xem gói mod của bạn có tuân thủ định dạng quy định không!</string>
+    <string name="select_modpack_local_installing_files">Đang cài đặt tệp trò chơi (%d / %d)</string>
     <string name="modpack_download_downloading_metadata">Đang tải dữ liệu meta của modpack (%.2fMB / %.2fMB, tốc độ: %s/s)</string>
     <string name="modpack_download_downloading_mods">Đang tải mod (%.2fMB / %.2fMB, tốc độ: %s/s)</string>
     <string name="modpack_download_downloading_mods_fc">Đang tải mod (số tệp đã tải: %d (%s), tổng số tệp: %d, tốc độ: %s/s)</string>
     <string name="modpack_download_applying_overrides">Đang áp dụng ghi đè (%d/%d)</string>
     <string name="modpack_install_download_failed">Không thể tải tệp gói tích hợp</string>
     <string name="modpack_prepare_mod_loader_installation">Đã cài đặt tất cả các mod, đang chuẩn bị cài đặt bộ nạp mod</string>
-    <!-- Clear Up -->
     <string name="clear_up_cache">Dọn dẹp bộ nhớ cache</string>
     <string name="clear_up_cache_desc">Kiểm tra và dọn dẹp các tệp bộ nhớ cache của ứng dụng, việc xóa bộ nhớ cache không ảnh hưởng đến việc sử dụng ứng dụng bình thường</string>
     <string name="clear_up_cache_not_found">Không tìm thấy tệp bộ nhớ cache</string>
     <string name="clear_up_cache_clean_up">Dọn dẹp hoàn tất, tổng cộng đã xóa %s tệp bộ nhớ cache</string>
-    <!-- Check Update -->
     <string name="update">Kiểm tra cập nhật</string>
     <string name="update_dialog_title">Phát hiện phiên bản mới</string>
     <string name="update_dialog_version">Phiên bản:</string>
@@ -615,9 +596,8 @@
     <string name="update_fail">Lỗi mạng, tạm thời không thể lấy cập nhật!</string>
     <string name="update_fail_code">Lỗi mạng, tạm thời không thể lấy cập nhật! Mã lỗi: %d</string>
     <string name="update_success">Gói cài đặt mới nhất đã được tải xuống, bạn có muốn cài đặt không? Vị trí gói cài đặt:</string>
-    <string name="update_downloading">Đang tải gói cài đặt… (%s / %s)</string>
+    <string name="update_downloading">Đang tải gói cài đặt (%s / %s)</string>
     <string name="update_downloading_tip">Đang lấy, nguồn cập nhật: %s</string>
-    <!-- Other Login -->
     <string name="other_login_server">Máy chủ Auth</string>
     <string name="other_login_email">Email hoặc tên người dùng</string>
     <string name="other_login_password">Mật khẩu</string>
@@ -631,23 +611,21 @@
     <string name="other_login_select_role_message">Tài khoản hiện tại có nhiều vai trò, vui lòng chọn vai trò bạn muốn sử dụng</string>
     <string name="other_login_registry_now">Chưa có tài khoản? Nhấn vào đây để đăng ký!</string>
     <string name="other_login_role_not_found">Không tìm thấy vai trò phù hợp với tài khoản hiện tại, vui lòng kiểm tra vai trò này có tồn tại trên máy chủ mà bạn đang sử dụng không!</string>
-    <!-- Splash -->
-    <string name="splash_screen_desc">Trình khởi chạy cần cài đặt những nội dung này để đảm bảo Minecraft có thể khởi chạy bình thường. Những nội dung này đã được bao gồm trong ứng dụng và cần được giải nén trước khi có thể sử dụng bình thường, hãy nhấp vào nút bên dưới để bắt đầu giải nén và cập nhật những nội dung này.</string>
-    <string name="splash_screen_installing">Trình khởi chạy đang giải nén những nội dung này, sau khi giải nén xong sẽ tự động vào giao diện chính, vui lòng chờ đợi.</string>
-    <string name="splash_screen_lwjgl">Thư viện trò chơi Java nhẹ, Minecraft phụ thuộc vào nó để chạy trò chơi.</string>
-    <string name="splash_screen_cacio">Cung cấp backend GUI di động cho OpenJDK.</string>
-    <string name="splash_screen_authlib_injector">Tiêm authlib qua thời gian chạy để cho phép đăng nhập ngoài trò chơi.</string>
-    <string name="splash_screen_components">Một số thành phần mà trình khởi động phụ thuộc.</string>
-    <string name="splash_screen_jre8">Môi trường Java 8, Minecraft 1.16- phụ thuộc vào Java 8.</string>
-    <string name="splash_screen_jre17">Môi trường Java 17, Minecraft 1.17+ phụ thuộc vào Java 17.</string>
-    <string name="splash_screen_jre21">Môi trường Java 21, Minecraft 1.20.5+ phụ thuộc vào Java 21.</string>
-    <string name="splash_screen_jre25">Môi trường Java 25, Minecraft 26.1+ phụ thuộc vào Java 25.</string>
+    <string name="splash_screen_desc">Trình khởi chạy cần cài đặt những nội dung này để đảm bảo Minecraft có thể khởi chạy bình thường, Những nội dung này đã được bao gồm trong ứng dụng và cần được giải nén trước khi có thể sử dụng bình thường, hãy nhấp vào nút bên dưới để bắt đầu giải nén và cập nhật những nội dung này</string>
+    <string name="splash_screen_installing">Trình khởi chạy đang giải nén những nội dung này, sau khi giải nén xong sẽ tự động vào giao diện chính, vui lòng chờ đợi</string>
+    <string name="splash_screen_lwjgl">Thư viện trò chơi Java nhẹ, Minecraft phụ thuộc vào nó để chạy trò chơi</string>
+    <string name="splash_screen_cacio">Cung cấp backend GUI di động cho OpenJDK</string>
+    <string name="splash_screen_authlib_injector">Tiêm authlib qua thời gian chạy để cho phép đăng nhập ngoài trò chơi</string>
+    <string name="splash_screen_components">Một số thành phần mà trình khởi động phụ thuộc</string>
+    <string name="splash_screen_jre8">Môi trường Java 8, Minecraft 1.16- phụ thuộc vào Java 8</string>
+    <string name="splash_screen_jre17">Môi trường Java 17, Minecraft 1.17+ phụ thuộc vào Java 17</string>
+    <string name="splash_screen_jre21">Môi trường Java 21, Minecraft 1.20.5+ phụ thuộc vào Java 21</string>
+    <string name="splash_screen_jre25">Môi trường Java 25, Minecraft 26.1+ phụ thuộc vào Java 25</string>
     <string name="splash_screen_apply">Đồng ý và cài đặt</string>
-    <!-- About -->
     <string name="about_tab">Giới thiệu về %s</string>
-    <string name="about_dec1">%s là một trình khởi chạy Minecraft dựa trên PojavLauncher, cho phép chạy Minecraft: Java Edition trên các thiết bị Android.</string>
-    <string name="about_dec2">%s tập trung vào việc tối ưu hóa trải nghiệm người dùng, thiết kế lại giao diện ứng dụng và thêm nhiều tính năng thực tế hơn, nhằm giảm bớt rào cản khi chơi và giúp nhiều người dễ dàng trải nghiệm Minecraft.</string>
-    <string name="about_dec3">%s sử dụng giấy phép mã nguồn mở GPL 3.0, giấy phép này mang tính "lan truyền". Bất kỳ mã nào sử dụng, sửa đổi hoặc phát sinh từ thư viện hoặc phần mềm GPL cũng phải áp dụng giấy phép GPL để mở mã nguồn. Nếu bạn có ý định phân phối phần mềm này, vui lòng tuân thủ các quy định liên quan của giấy phép mã nguồn mở GPL 3.0.</string>
+    <string name="about_dec1">%s là một trình khởi chạy Minecraft dựa trên PojavLauncher, cho phép chạy Minecraft: Java Edition trên các thiết bị Android</string>
+    <string name="about_dec2">%s tập trung vào việc tối ưu hóa trải nghiệm người dùng, thiết kế lại giao diện ứng dụng và thêm nhiều tính năng thực tế hơn, nhằm giảm bớt rào cản khi chơi và giúp nhiều người dễ dàng trải nghiệm Minecraft</string>
+    <string name="about_dec3">%s sử dụng giấy phép mã nguồn mở GPL 3.0, giấy phép này mang tính "lan truyền". Bất kỳ mã nào sử dụng, sửa đổi hoặc phát sinh từ thư viện hoặc phần mềm GPL cũng phải áp dụng giấy phép GPL để mở mã nguồn, Nếu bạn có ý định phân phối phần mềm này, vui lòng tuân thủ các quy định liên quan của giấy phép mã nguồn mở GPL 3.0</string>
     <string name="about_contributors">Những người đóng góp và Lời cảm ơn:</string>
     <string name="about_sponsors">Lời cảm ơn tới các nhà tài trợ:</string>
     <string name="about_sponsors_list">Xem danh sách nhà tài trợ</string>
@@ -667,24 +645,22 @@
     <string name="about_version_code">Mã phiên bản phần mềm:</string>
     <string name="about_last_update_time">Lần cập nhật cuối:</string>
     <string name="about_version_status">Trạng thái phiên bản:</string>
-    <!-- Newbie Guide -->
-    <string name="newbie_guide_general_close">Có thể nhấn nút này để đóng và quay lại giao diện trước đó.</string>
-    <string name="newbie_guide_general_refresh">Có thể nhấn nút này để làm mới nội dung hiện tại.</string>
+    <string name="newbie_guide_general_close">Có thể nhấn nút này để đóng và quay lại giao diện trước đó</string>
+    <string name="newbie_guide_general_refresh">Có thể nhấn nút này để làm mới nội dung hiện tại</string>
     <string name="newbie_guide_control_search">Khi số lượng bố cục điều khiển quá nhiều, có thể nhấn nút này để gọi ra hộp tìm kiếm, sử dụng nó để tìm bố cục điều khiển bạn muốn!</string>
     <string name="newbie_guide_control_import">Nhấn để mở trình quản lý tệp Android, chọn tệp bố cục điều khiển của bạn để nhập vào launcher!</string>
     <string name="newbie_guide_control_create">Bạn có thể nhấp vào nút này để nhanh chóng tạo bố cục điều khiển mới!</string>
-    <string name="newbie_guide_background_reset">Nhấp vào nút này để nhanh chóng đặt lại hình nền của giao diện hiện tại đang được chọn.</string>
+    <string name="newbie_guide_background_reset">Nhấp vào nút này để nhanh chóng đặt lại hình nền của giao diện hiện tại đang được chọn</string>
     <string name="newbie_guide_background_import">Nhấp vào để mở trình quản lý tệp của Android, chọn tệp hình nền của bạn để nhập vào trình khởi động!</string>
     <string name="newbie_guide_mouse_import">Nhấp vào để vào trình quản lý tệp gốc, chọn tệp hình ảnh chuột ảo của bạn để nhập vào trình khởi động!</string>
-    <string name="newbie_guide_file_search">Muốn tìm kiếm tệp nhanh chóng? Nhấp vào nút này, triệu hồi hộp tìm kiếm, sử dụng nó để tìm kiếm tệp.</string>
+    <string name="newbie_guide_file_search">Muốn tìm kiếm tệp nhanh chóng? Nhấp vào nút này, triệu hồi hộp tìm kiếm, sử dụng nó để tìm kiếm tệp</string>
     <string name="newbie_guide_file_import">Nhấp vào để vào trình quản lý tệp của Android, chọn tệp bạn muốn nhập, sau đó nhập vào trình khởi động!</string>
-    <string name="newbie_guide_file_create_folder">Nhấp vào nút này để tạo một thư mục mới trong thư mục hiện tại.</string>
-    <string name="newbie_guide_file_select">Nhấp để xác nhận chọn thư mục này.</string>
-    <string name="newbie_guide_mod_search">Nhấp vào để triệu hồi hộp tìm kiếm, sử dụng nó để nhanh chóng tìm kiếm Mod bạn muốn tìm.</string>
-    <string name="newbie_guide_mod_import">Chọn một tệp Mod trong trình quản lý tệp gốc, có thể nhập nó vào thư mục Mod hiện tại.</string>
-    <string name="newbie_guide_mod_download">Nhấp vào để vào trang tải xuống Mod, bạn có thể tìm kiếm và tải xuống Mod trực tuyến ở đó.</string>
-    <string name="newbie_guide_game_menu">Bạn có thể kéo cửa sổ nổi của menu trò chơi đến bất kỳ vị trí nào trên màn hình.</string>
-    <!-- Sponsorship Related -->
+    <string name="newbie_guide_file_create_folder">Nhấp vào nút này để tạo một thư mục mới trong thư mục hiện tại</string>
+    <string name="newbie_guide_file_select">Nhấp để xác nhận chọn thư mục này</string>
+    <string name="newbie_guide_mod_search">Nhấp vào để triệu hồi hộp tìm kiếm, sử dụng nó để nhanh chóng tìm kiếm Mod bạn muốn tìm</string>
+    <string name="newbie_guide_mod_import">Chọn một tệp Mod trong trình quản lý tệp gốc, có thể nhập nó vào thư mục Mod hiện tại</string>
+    <string name="newbie_guide_mod_download">Nhấp vào để vào trang tải xuống Mod, bạn có thể tìm kiếm và tải xuống Mod trực tuyến ở đó</string>
+    <string name="newbie_guide_game_menu">Bạn có thể kéo cửa sổ nổi của menu trò chơi đến bất kỳ vị trí nào trên màn hình</string>
     <string name="request_sponsorship_title">Hỗ trợ phát triển của tôi</string>
-    <string name="request_sponsorship_message">Phần lớn nội dung của phần mềm này do một mình tôi phát triển và bảo trì. Nếu bạn thấy phần mềm này hữu ích và có điều kiện, mong bạn xem xét tài trợ cho tôi, để tôi có thêm động lực tiếp tục phát triển và cải tiến, cảm ơn sự ủng hộ của bạn!</string>
+    <string name="request_sponsorship_message">Phần lớn nội dung của phần mềm này do một mình tôi phát triển và bảo trì, Nếu bạn thấy phần mềm này hữu ích và có điều kiện, mong bạn xem xét tài trợ cho tôi, để tôi có thêm động lực tiếp tục phát triển và cải tiến, cảm ơn sự ủng hộ của bạn!</string>
 </resources>

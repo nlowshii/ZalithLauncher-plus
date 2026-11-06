@@ -21,45 +21,48 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingBottom="@dimen/_12sdp"
-            android:paddingTop="@dimen/_4sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_12sdp"
             android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:background="@drawable/background_group"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_6sdp">
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/about_button"
                 style="@style/Widget.Launcher.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/_18sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/_12sdp">
+                    android:padding="@dimen/_10sdp">
 
                     <FrameLayout
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_40sdp"
-                        android:background="@drawable/background_icon_container">
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:background="@drawable/background_tile_icon">
 
                         <ImageView
                             android:id="@+id/about_icon"
-                            android:layout_width="@dimen/_22sdp"
-                            android:layout_height="@dimen/_22sdp"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_about"
-                            app:tint="?attr/colorOnSecondaryContainer"
-                            tools:ignore="ContentDescription" />
+                            app:tint="?attr/colorOnSecondaryContainer" />
                     </FrameLayout>
 
                     <TextView
@@ -73,8 +76,7 @@
                     <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_chevron_right"
-                        tools:ignore="ContentDescription" />
+                        android:src="@drawable/ic_chevron_right" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -83,46 +85,46 @@
                 style="@style/Widget.Launcher.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/_18sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/_12sdp">
+                    android:padding="@dimen/_10sdp">
 
                     <FrameLayout
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_40sdp"
-                        android:background="@drawable/background_icon_container">
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:background="@drawable/background_tile_icon">
 
                         <ImageView
                             android:id="@+id/custom_control_icon"
-                            android:layout_width="@dimen/_22sdp"
-                            android:layout_height="@dimen/_22sdp"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_menu_custom_controls"
-                            app:tint="?attr/colorOnSecondaryContainer"
-                            tools:ignore="ContentDescription" />
+                            app:tint="?attr/colorOnSecondaryContainer" />
                     </FrameLayout>
 
                     <TextView
+                        android:text="@string/custom_control_title"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginHorizontal="@dimen/_12sdp"
-                        android:text="@string/custom_control_title"
                         android:textAppearance="@style/TextAppearance.Launcher.Headline" />
 
                     <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_chevron_right"
-                        tools:ignore="ContentDescription" />
+                        android:src="@drawable/ic_chevron_right" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -131,46 +133,46 @@
                 style="@style/Widget.Launcher.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/_18sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/_12sdp">
+                    android:padding="@dimen/_10sdp">
 
                     <FrameLayout
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_40sdp"
-                        android:background="@drawable/background_icon_container">
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:background="@drawable/background_tile_icon">
 
                         <ImageView
                             android:id="@+id/open_main_dir_icon"
-                            android:layout_width="@dimen/_22sdp"
-                            android:layout_height="@dimen/_22sdp"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_folder"
-                            app:tint="?attr/colorOnSecondaryContainer"
-                            tools:ignore="ContentDescription" />
+                            app:tint="?attr/colorOnSecondaryContainer" />
                     </FrameLayout>
 
                     <TextView
+                        android:text="@string/main_open_main_dir"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginHorizontal="@dimen/_12sdp"
-                        android:text="@string/main_open_main_dir"
                         android:textAppearance="@style/TextAppearance.Launcher.Headline" />
 
                     <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_chevron_right"
-                        tools:ignore="ContentDescription" />
+                        android:src="@drawable/ic_chevron_right" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -179,46 +181,46 @@
                 style="@style/Widget.Launcher.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/_18sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/_12sdp">
+                    android:padding="@dimen/_10sdp">
 
                     <FrameLayout
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_40sdp"
-                        android:background="@drawable/background_icon_container">
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:background="@drawable/background_tile_icon">
 
                         <ImageView
                             android:id="@+id/install_jar_icon"
-                            android:layout_width="@dimen/_22sdp"
-                            android:layout_height="@dimen/_22sdp"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_java"
-                            app:tint="?attr/colorOnSecondaryContainer"
-                            tools:ignore="ContentDescription" />
+                            app:tint="?attr/colorOnSecondaryContainer" />
                     </FrameLayout>
 
                     <TextView
+                        android:text="@string/main_install_jar_file"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginHorizontal="@dimen/_12sdp"
-                        android:text="@string/main_install_jar_file"
                         android:textAppearance="@style/TextAppearance.Launcher.Headline" />
 
                     <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_chevron_right"
-                        tools:ignore="ContentDescription" />
+                        android:src="@drawable/ic_chevron_right" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -227,46 +229,46 @@
                 style="@style/Widget.Launcher.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/_18sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/_12sdp">
+                    android:padding="@dimen/_10sdp">
 
                     <FrameLayout
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_40sdp"
-                        android:background="@drawable/background_icon_container">
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:background="@drawable/background_tile_icon">
 
                         <ImageView
                             android:id="@+id/share_logs_icon"
-                            android:layout_width="@dimen/_22sdp"
-                            android:layout_height="@dimen/_22sdp"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_share"
-                            app:tint="?attr/colorOnSecondaryContainer"
-                            tools:ignore="ContentDescription" />
+                            app:tint="?attr/colorOnSecondaryContainer" />
                     </FrameLayout>
 
                     <TextView
+                        android:text="@string/main_share_logs"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginHorizontal="@dimen/_12sdp"
-                        android:text="@string/main_share_logs"
                         android:textAppearance="@style/TextAppearance.Launcher.Headline" />
 
                     <ImageView
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_chevron_right"
-                        tools:ignore="ContentDescription" />
+                        android:src="@drawable/ic_chevron_right" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -279,7 +281,9 @@
         style="@style/Widget.Launcher.Card.Panel"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:cardCornerRadius="@dimen/_28sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/launcher_menu"
@@ -290,7 +294,7 @@
             android:id="@+id/play_buttons_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/_12sdp">
+            android:padding="@dimen/_14sdp">
 
             <include
                 android:id="@+id/view_account"
@@ -306,11 +310,12 @@
                 android:id="@+id/version"
                 style="@style/Widget.Launcher.Card.Tonal"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_48sdp"
-                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:clickable="true"
                 android:focusable="true"
+                app:cardCornerRadius="@dimen/_18sdp"
                 app:layout_constraintBottom_toTopOf="@+id/play_button"
                 app:layout_constraintEnd_toStartOf="@+id/manager_profile_button"
                 app:layout_constraintStart_toStartOf="parent">
@@ -324,11 +329,10 @@
 
                     <ImageView
                         android:id="@+id/version_icon"
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
                         android:scaleType="centerInside"
-                        android:src="@drawable/ic_minecraft"
-                        tools:ignore="ContentDescription" />
+                        android:src="@drawable/ic_minecraft" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -372,12 +376,12 @@
 
             <ImageButton
                 android:id="@+id/manager_profile_button"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="@dimen/_44sdp"
+                android:layout_height="@dimen/_44sdp"
                 android:layout_marginBottom="@dimen/_16sdp"
-                android:background="@drawable/ripple_circle"
+                android:background="@drawable/background_top_action"
                 android:contentDescription="@string/version_manager_title"
-                android:padding="@dimen/_8sdp"
+                android:padding="@dimen/_9sdp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_setting"
                 app:layout_constraintBottom_toTopOf="@+id/play_button"
@@ -388,7 +392,7 @@
                 android:id="@+id/play_button"
                 style="@style/Widget.Launcher.Button.Filled"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_44sdp"
+                android:layout_height="@dimen/_48sdp"
                 android:text="@string/main_launch"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

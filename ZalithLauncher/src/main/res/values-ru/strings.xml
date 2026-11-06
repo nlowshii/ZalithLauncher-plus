@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Zalith Launcher -->
     <string name="generic_open">Открыть</string>
     <string name="generic_close">Закрыть</string>
     <string name="generic_return">Вернуться</string>
@@ -40,7 +39,7 @@
     <string name="generic_login">Войти</string>
     <string name="generic_wrong_tip">Что-то пошло не так</string>
     <string name="generic_no_more_reminders">Больше не напоминать</string>
-    <string name="generic_no_network">Нет подключения к интернету. Пожалуйста, проверьте сетевое подключение вашего устройства!</string>
+    <string name="generic_no_network">Нет подключения к интернету, Пожалуйста, проверьте сетевое подключение вашего устройства!</string>
     <string name="generic_input_invalid">Введенные данные неверны, пожалуйста, попробуйте ещё раз</string>
     <string name="generic_input_invalid_character">Имя содержит недопустимый символ: "%s"</string>
     <string name="generic_input_too_small">Введенное значение слишком маленькое, минимум %s</string>
@@ -52,12 +51,10 @@
     <string name="generic_pre_release">Предрелизная версия</string>
     <string name="generic_beta">Бета-версия</string>
     <string name="generic_alpha">Альфа-версия</string>
-    <!-- Error -->
     <string name="error_fatal">%s неожиданно завершил работу</string>
     <string name="error_no_version">Версия не найдена!</string>
     <string name="error_show_more">Показать подробности</string>
     <string name="error_show_less">Скрыть подробности</string>
-    <!-- Launcher -->
     <string name="option_category_debug">Отладка</string>
     <string name="option_category_control">Управление</string>
     <string name="option_category_hotbar">Коробка обнаружения панели быстрого доступа</string>
@@ -71,7 +68,7 @@
     <string name="option_hotbar_width">Ширина коробки обнаружения</string>
     <string name="option_hotbar_height">Высота коробки обнаружения</string>
     <string name="customctrl_editor_exit_title">Выйти?</string>
-    <string name="customctrl_editor_exit_msg">Текущие изменения не будут сохранены. Вы уверены, что хотите выйти прямо сейчас?</string>
+    <string name="customctrl_editor_exit_msg">Текущие изменения не будут сохранены, Вы уверены, что хотите выйти прямо сейчас?</string>
     <string name="customctrl_editor_exit">Выйти из редактора</string>
     <string name="global_save_and_exit">Сохранить и выйти</string>
     <string name="version_snapshot">Снимок</string>
@@ -79,15 +76,15 @@
     <string name="version_beta">Бета</string>
     <string name="force_exit_confirm">Вы уверены, что хотите принудительно закрыть?</string>
     <string name="autoram_info_msg">Память установлена на %d МБ</string>
-    <string name="memory_warning_msg">Доступная память (%d) ниже выделенной (%d), это может привести к сбою игры. Если игра закроется, измените конфигурацию!</string>
-    <string name="address_memory_warning_msg">Доступное свободное пространство памяти (%d) ниже выделенного (%d), это приведет к сбою. Если игра закроется, отрегулируйте выделение памяти.</string>
+    <string name="memory_warning_msg">Доступная память (%d) ниже выделенной (%d), это может привести к сбою игры, Если игра закроется, измените конфигурацию!</string>
+    <string name="address_memory_warning_msg">Доступное свободное пространство памяти (%d) ниже выделенного (%d), это приведет к сбою, Если игра закроется, отрегулируйте выделение памяти</string>
     <string name="notif_channel_name">Обычный</string>
     <string name="lazy_service_default_title">Служба ресепшн %s</string>
     <string name="progresslayout_tasks_in_progress">%d задач в процессе</string>
     <string name="notification_terminate">Завершить</string>
     <string name="notification_game_runs">Игра запущена!</string>
     <string name="tasks_ongoing">Задачи выполняются, пожалуйста, подождите</string>
-    <string name="mc_download_failed">Не удалось загрузить Minecraft! Это может быть связано с плохим подключением к интернету, неправильным размещением файлов и т.д.</string>
+    <string name="mc_download_failed">Не удалось загрузить Minecraft! Это может быть связано с плохим подключением к интернету, неправильным размещением файлов и т.д</string>
     <string name="microsoft_login_retry_later">Ваши действия слишком часты, попробуйте позже</string>
     <string name="storage_required">%s требует подключения внешнего хранилища, пожалуйста, подключите его и перезапустите программу</string>
     <string name="dialog_select_jar">Выбрать файл Jar</string>
@@ -96,21 +93,21 @@
     <string name="notif_error_occured_desc">Нажмите, чтобы увидеть подробности</string>
     <string name="input_preview_tip">Предварительный просмотр ввода, перехват ввода с экранной клавиатуры, только для справки:</string>
     <string name="dl_tampered_manifest_title">Предупреждение о проверке файла</string>
-    <string name="dl_tampered_manifest"><![CDATA[Список версий игры на зеркальном источнике не соответствует официальному списку версий Mojang, что может указывать на возможность подделки.<br/>
-        <b>Это небезопасно. Если вы продолжите, ваши личные данные могут быть под угрозой!</b><br/>
-        Если вы все равно хотите продолжить использование зеркального источника, нажмите "Закрыть проверку списка версий игры" и начните загрузку снова.<br/>
-        Если вы хотите использовать официальный источник загрузки, нажмите "Переключиться на официальный источник загрузки" и начните загрузку снова.<br/>]]></string>
+    <string name="dl_tampered_manifest"><![CDATA[Список версий игры на зеркальном источнике не соответствует официальному списку версий Mojang, что может указывать на возможность подделки<br/>
+        <b>Это небезопасно, Если вы продолжите, ваши личные данные могут быть под угрозой!</b><br/>
+        Если вы все равно хотите продолжить использование зеркального источника, нажмите "Закрыть проверку списка версий игры" и начните загрузку снова<br/>
+        Если вы хотите использовать официальный источник загрузки, нажмите "Переключиться на официальный источник загрузки" и начните загрузку снова<br/>]]></string>
     <string name="dl_turn_off_manifest_checks">Отключить проверку списка версий игры</string>
     <string name="dl_switch_to_official_site">Переключиться на официальный источник загрузки</string>
     <string name="notif_download_finished">Игра готова к запуску</string>
     <string name="notif_download_finished_desc">Нажмите здесь, чтобы запустить ее!</string>
     <string name="notification_permission_dialog_title">Запрос разрешения</string>
-    <string name="notification_permission_dialog_text">%s требует разрешения на отправку уведомлений, чтобы предотвратить остановку загрузки файлов игры, когда вы покидаете приложение. Без этого разрешения Android может остановить вашу загрузку, когда %s находится в фоновом режиме</string>
+    <string name="notification_permission_dialog_text">%s требует разрешения на отправку уведомлений, чтобы предотвратить остановку загрузки файлов игры, когда вы покидаете приложение, Без этого разрешения Android может остановить вашу загрузку, когда %s находится в фоновом режиме</string>
     <string name="notification_permission_toast">Вы можете изменить свое решение в любое время, перейдя в \"Системные настройки\"</string>
-    <string name="newdl_starting">Чтение метаданных игры…</string>
+    <string name="newdl_starting">Чтение метаданных игры</string>
     <string name="newdl_downloading_metadata">Загрузка метаданных игры (%s)</string>
-    <string name="newdl_downloading_game_files">Загрузка файлов игры… (%d/%d, %.2f MB)</string>
-    <string name="newdl_downloading_game_files_size">Загрузка игровых файлов… (%.2f/%.2f МБ, %.2f МБ/с)</string>
+    <string name="newdl_downloading_game_files">Загрузка файлов игры (%d/%d, %.2f MB)</string>
+    <string name="newdl_downloading_game_files_size">Загрузка игровых файлов (%.2f/%.2f МБ, %.2f МБ/с)</string>
     <string name="newdl_extracting_native_libraries">Извлечение нативных библиотек (%d/%d)</string>
     <string name="log_view_button_scroll_off">Автопрокрутка: Выкл</string>
     <string name="log_view_button_scroll_on">Автопрокрутка: Вкл</string>
@@ -128,16 +125,15 @@
     <string name="mod_optifine_progress">Загрузка %s</string>
     <string name="mod_check_dialog_title">Отчёт проверки модов</string>
     <string name="mod_check_progress_message">Проверка модов (%d / %d)</string>
-    <string name="mod_check_touch_controller">Обнаружено, что мод Touch Controller (%s) установлен, загрузчик готов активировать прокси управления для адаптации мода.</string>
-    <string name="mod_check_sodium_or_embeddium">Обнаружен установленный мод Sodium или Embeddium (%s). Лаунчер отключит предупреждения этого мода или предотвратит его намеренный сбой на устройствах Android. Однако обратите внимание, что сообщество мода прямо заявило, что больше не принимает никаких проблем, связанных с устройствами Android. Поэтому, если у вас возникнут проблемы при использовании этого мода, не сообщайте о них в сообщество мода!</string>
-    <string name="mod_check_physics">Используемый в данный момент физический мод (%s) не запатчен (замена libPhysXJniBindings_64.so с архитектуры x86_64 на arm64), при запуске он будет аварийно завершаться.</string>
-    <string name="mod_check_mcef">MCEF (%s) не может работать на Android. Он обычно используется как предварительная зависимость для WebDisplays/In-game Browser (браузер).</string>
-    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) не может запускаться напрямую в одиночном режиме. Вы должны запускать его на сервере (можно использовать Termux), иначе игра вылетит.</string>
-    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 не может работать на Android.</string>
-    <string name="mod_check_imblocker">IMBlocker/In-GameIME (%s) не совместим с Android и вызывает сбой игры при запуске.</string>
-    <string name="mod_check_replay_mod">ReplayMod (%s) требует FFmpeg для рендеринга видео. Пожалуйста, установите плагин FFmpeg отдельно\n%s\n%s</string>
-    <string name="mod_check_borderlesswindow">Borderless Window (%s) не совместим с Android и вызывает сбой игры при запуске.</string>
-    <!-- Controls -->
+    <string name="mod_check_touch_controller">Обнаружено, что мод Touch Controller (%s) установлен, загрузчик готов активировать прокси управления для адаптации мода</string>
+    <string name="mod_check_sodium_or_embeddium">Обнаружен установленный мод Sodium или Embeddium (%s), Лаунчер отключит предупреждения этого мода или предотвратит его намеренный сбой на устройствах Android, Однако обратите внимание, что сообщество мода прямо заявило, что больше не принимает никаких проблем, связанных с устройствами Android, Поэтому, если у вас возникнут проблемы при использовании этого мода, не сообщайте о них в сообщество мода!</string>
+    <string name="mod_check_physics">Используемый в данный момент физический мод (%s) не запатчен (замена libPhysXJniBindings_64.so с архитектуры x86_64 на arm64), при запуске он будет аварийно завершаться</string>
+    <string name="mod_check_mcef">MCEF (%s) не может работать на Android, Он обычно используется как предварительная зависимость для WebDisplays/In-game Browser (браузер)</string>
+    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) не может запускаться напрямую в одиночном режиме, Вы должны запускать его на сервере (можно использовать Termux), иначе игра вылетит</string>
+    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 не может работать на Android</string>
+    <string name="mod_check_imblocker">IMBlocker/In-GameIME (%s) не совместим с Android и вызывает сбой игры при запуске</string>
+    <string name="mod_check_replay_mod">ReplayMod (%s) требует FFmpeg для рендеринга видео, Пожалуйста, установите плагин FFmpeg отдельно\n%s\n%s</string>
+    <string name="mod_check_borderlesswindow">Borderless Window (%s) не совместим с Android и вызывает сбой игры при запуске</string>
     <string name="control_primary">Левая кнопка</string>
     <string name="control_secondary">Правая кнопка</string>
     <string name="control_mouse">Мышь</string>
@@ -186,10 +182,10 @@
     <string name="controls_info_desc">Описание:</string>
     <string name="controls_info_more">Подробности</string>
     <string name="controls_info_view">Просмотреть информацию</string>
-    <string name="controls_info_no_info">У этой раскладки управления нет описания…</string>
+    <string name="controls_info_no_info">У этой раскладки управления нет описания</string>
     <string name="controls_info_invalid">Неверный файл:</string>
     <string name="controls_info_default_title">Раскладка управления по умолчанию</string>
-    <string name="controls_info_default_desc">Это файл раскладки управления по умолчанию, нажмите, чтобы управлять этой раскладкой.</string>
+    <string name="controls_info_default_desc">Это файл раскладки управления по умолчанию, нажмите, чтобы управлять этой раскладкой</string>
     <string name="controls_set_default_message">Вы уверены, что хотите установить эту раскладку управления как раскладку по умолчанию?</string>
     <string name="controls_nothing">Здесь нет раскладки управления, перезапуск приложения сгенерирует новую раскладку управления по умолчанию</string>
     <string name="controls_tip_set_default">Нажмите и удерживайте макет управления, чтобы установить его в качестве макета управления по умолчанию!</string>
@@ -212,7 +208,6 @@
     <string name="controller_dpad_right">Правая кнопка D-pad</string>
     <string name="controller_remapper_operating_mode">Текущий режим</string>
     <string name="controller_remapper_expand_entry">Разверните, чтобы изменить код кнопки</string>
-    <!-- Version -->
     <string name="version_manager_title">Управление версиями</string>
     <string name="version_no_versions">Нет установленных версий</string>
     <string name="version_install_new">Установить новую версию</string>
@@ -221,7 +216,7 @@
     <string name="version_install_incompatible">Не совместимо с %s</string>
     <string name="version_install_exists">Версия с таким именем уже существует!</string>
     <string name="version_install_no_versions">Нет доступных версий для выбора!</string>
-    <string name="version_install_cannot_use_mc_name">Выбран дополнительный контент, и необходимо обеспечить независимость оригинального ядра. Пожалуйста, не используйте оригинальное имя!</string>
+    <string name="version_install_cannot_use_mc_name">Выбран дополнительный контент, и необходимо обеспечить независимость оригинального ядра, Пожалуйста, не используйте оригинальное имя!</string>
     <string name="version_install_type_version">Загрузить и установить как версию</string>
     <string name="version_install_type_mod">Загрузить и установить как мод</string>
     <string name="version_install_optifine_and_forge">Некоторые версии OptiFine могут не работать на Forge, если возникнут сбои или проблемы совместимости, пожалуйста, рассмотрите возможность удаления OptiFine в первую очередь!</string>
@@ -237,11 +232,11 @@
     <string name="version_manager_shortcuts_crash_report_path">Папка с отчетами об ошибках</string>
     <string name="version_manager_rename">Переименовать версию</string>
     <string name="version_manager_copy">Копировать версию</string>
-    <string name="version_manager_copy_tip">Копировать текучую версию в качестве новой, с по умолчанию включенным изоляцией версий. Если ниже включено "Копировать все файлы", то будут также скопированы все файлы, сгенерированные текучую версию (пакеты ресурсов, сохранения, настройки игры и др.).</string>
+    <string name="version_manager_copy_tip">Копировать текучую версию в качестве новой, с по умолчанию включенным изоляцией версий, Если ниже включено "Копировать все файлы", то будут также скопированы все файлы, сгенерированные текучую версию (пакеты ресурсов, сохранения, настройки игры и др)</string>
     <string name="version_manager_copy_all">Копировать все файлы</string>
     <string name="version_manager_delete">Удалить версию</string>
-    <string name="version_manager_delete_tip">При удалении версии также будут удалены все файлы в каталог \"./versions/%s\", включая важные ресурсы, такие как сохранения игр, пакеты ресурсов, моды и другое. Даже если изоляция версий не включена. Поэтому обязательно создайте резервную копию перед выполнением этой операции!</string>
-    <string name="version_manager_delete_tip_invalid">Текущая версия не содержит файл JSON версии, поэтому она считается недействительной. Вы не можете выбрать эту версию. Нажмите «Подтвердить», чтобы удалить эту ошибочную версию.</string>
+    <string name="version_manager_delete_tip">При удалении версии также будут удалены все файлы в каталог \"./versions/%s\", включая важные ресурсы, такие как сохранения игр, пакеты ресурсов, моды и другое, Даже если изоляция версий не включена, Поэтому обязательно создайте резервную копию перед выполнением этой операции!</string>
+    <string name="version_manager_delete_tip_invalid">Текущая версия не содержит файл JSON версии, поэтому она считается недействительной, Вы не можете выбрать эту версию, Нажмите «Подтвердить», чтобы удалить эту ошибочную версию</string>
     <string name="version_manager_task_in_progress">Задача в процессе, управление версиями временно недоступно</string>
     <string name="version_manager_invalid">Эта версия недействительна</string>
     <string name="version_manager_no_installed_version">Запускатель не нашёл установленную версию Minecraft!</string>
@@ -252,11 +247,9 @@
     <string name="version_manager_favorites_write_folder_name">Назвать новый фаворит</string>
     <string name="version_manager_favorites_dialog_title">Добавить в избранное</string>
     <string name="version_manager_favorites_dialog_no_folders">Еще нет избранного, пожалуйста, добавьте избранное сначала!</string>
-    <!-- Permissions -->
     <string name="permissions_manage_external_storage">%s требует разрешения на управление всеми файлами устройства для правильной работы этой функции, пожалуйста, включите разрешение!</string>
-    <string name="permissions_write_external_storage">Для работы %s требуется разрешение на управление хранилищем. Если разрешение не предоставлено, могут возникнуть проблемы, такие как невозможность сохранения или распаковки игровых файлов. Пожалуйста, предоставьте разрешение для обеспечения корректной работы.</string>
-    <string name="permissions_storage_for_renderer_config">Выбранный рендер-плагин %s может иметь настройки. Если у %s нет доступа к хранилищу, их нельзя прочитать. Разрешите доступ для корректной работы.</string>
-    <!-- Profiles Path -->
+    <string name="permissions_write_external_storage">Для работы %s требуется разрешение на управление хранилищем, Если разрешение не предоставлено, могут возникнуть проблемы, такие как невозможность сохранения или распаковки игровых файлов, Пожалуйста, предоставьте разрешение для обеспечения корректной работы</string>
+    <string name="permissions_storage_for_renderer_config">Выбранный рендер-плагин %s может иметь настройки, Если у %s нет доступа к хранилищу, их нельзя прочитать, Разрешите доступ для корректной работы</string>
     <string name="profiles_path_title">Управление путями игры</string>
     <string name="profiles_path_default">Путь по умолчанию</string>
     <string name="profiles_path_settings">Открыть настройки пути</string>
@@ -265,10 +258,9 @@
     <string name="profiles_path_create_new_title">Назовите этот путь</string>
     <string name="profiles_path_delete_title">Удалить этот путь</string>
     <string name="profiles_path_delete_message">Лаунчер удалит этот путь, но не удалит файлы, сохраненные в соответствующем пути, после удаления этот путь все еще можно будет добавить снова</string>
-    <!-- Profile -->
     <string name="pedit_isolation_enabled">Включить изоляцию версий</string>
-    <string name="pedit_reset_icon">Это сбросит установленную вами пользовательскую иконку, и операция необратима. Вы уверены, что хотите сбросить иконку версии?</string>
-    <string name="pedit_unsaved_tip">Вы внесли изменения в конфигурацию этой версии. Прямой возврат приведет к потере этих изменений. Вы уверены, что хотите непосредственно вернуться?</string>
+    <string name="pedit_reset_icon">Это сбросит установленную вами пользовательскую иконку, и операция необратима, Вы уверены, что хотите сбросить иконку версии?</string>
+    <string name="pedit_unsaved_tip">Вы внесли изменения в конфигурацию этой версии, Прямой возврат приведет к потере этих изменений, Вы уверены, что хотите непосредственно вернуться?</string>
     <string name="pedit_control">Раскладка управления</string>
     <string name="pedit_custom_path">Пользовательский путь</string>
     <string name="pedit_default">(Использовать глобальное значение по умолчанию)</string>
@@ -279,18 +271,17 @@
     <string name="profile_mods_disable">Отключить</string>
     <string name="profile_mods_enable">Включить</string>
     <string name="profile_mods_disable_or_enable">Отключить/Включить</string>
-    <!-- Account -->
     <string name="account_login_done">Вход выполнен</string>
     <string name="account_add">Добавить аккаунт</string>
     <string name="account_no_saved_accounts">Нет сохранённых аккаунтов</string>
     <string name="account_remove">Этот аккаунт будет удалён из лаунчера, вы уверены, что хотите это сделать?</string>
     <string name="account_remove_login_type_title">Удалить способ входа: %s</string>
-    <string name="account_remove_login_type_message">Этот способ входа будет удален из запускателя, но не удален существующий аккаунт. Вы уверены, что хотите это сделать?</string>
+    <string name="account_remove_login_type_message">Этот способ входа будет удален из запускателя, но не удален существующий аккаунт, Вы уверены, что хотите это сделать?</string>
     <string name="account_microsoft_account">Аккаунт Microsoft</string>
-    <string name="account_microsoft_xerr_unauthorized">Ваша информация для входа в аккаунт Microsoft, похоже, устарела. Это часто происходит, когда пароль аккаунта был изменён. Пожалуйста, удалите текущий аккаунт и войдите в свой аккаунт снова, чтобы сбросить вашу информацию для входа.</string>
+    <string name="account_microsoft_xerr_unauthorized">Ваша информация для входа в аккаунт Microsoft, похоже, устарела, Это часто происходит, когда пароль аккаунта был изменён, Пожалуйста, удалите текущий аккаунт и войдите в свой аккаунт снова, чтобы сбросить вашу информацию для входа</string>
     <string name="account_local_account">Локальный аккаунт</string>
     <string name="account_local_account_empty">Имя пользователя не может быть пустым!</string>
-    <string name="account_local_account_invalid">Допустимое имя пользователя может содержать только английские буквы (в любом регистре), цифры и символы подчеркивания. Длина имени должна быть от 3 до 16 символов. [RED;BOLD]В противном случае игра может работать некорректно.[/RED;BOLD]\nПримеры допустимых имен: Name, Name_, Name123\nПримеры недопустимых имен: Name@, N ame, name_name_name_name\nОднако, если вы используете моды или плагины, снимающие это ограничение, вы можете продолжить использовать это имя. В противном случае, пожалуйста, переименуйте его!</string>
+    <string name="account_local_account_invalid">Допустимое имя пользователя может содержать только английские буквы (в любом регистре), цифры и символы подчеркивания, Длина имени должна быть от 3 до 16 символов, [RED;BOLD]В противном случае игра может работать некорректно[/RED;BOLD]\nПримеры допустимых имен: Name, Name_, Name123\nПримеры недопустимых имен: Name@, N ame, name_name_name_name\nОднако, если вы используете моды или плагины, снимающие это ограничение, вы можете продолжить использовать это имя, В противном случае, пожалуйста, переименуйте его!</string>
     <string name="account_login_local_name">Имя пользователя</string>
     <string name="account_login_start">Начать вход!</string>
     <string name="account_login_microsoft_progress">Вход в учетную запись Microsoft: %s</string>
@@ -301,8 +292,8 @@
     <string name="account_login_progress_checking">Проверка токена</string>
     <string name="account_login_no_network">Не подключен к Интернету, вход пропущен!</string>
     <string name="account_login_skip">Авторизация на учетную запись не удалась, хотите ли вы пропустить шаг авторизации?</string>
-    <string name="account_no_microsoft_account">Пожалуйста, войдите хотя бы в один лицензионный аккаунт Minecraft, мы не рекомендуем запускать Minecraft без лицензионного аккаунта.</string>
-    <string name="account_no_microsoft_account_local">Похоже, вы не вошли в лицензионный аккаунт! Локальный аккаунт — это резервный вариант для игроков, когда они не могут подключиться к сети, а не предназначен для игроков, у которых нет лицензионного аккаунта.</string>
+    <string name="account_no_microsoft_account">Пожалуйста, войдите хотя бы в один лицензионный аккаунт Minecraft, мы не рекомендуем запускать Minecraft без лицензионного аккаунта</string>
+    <string name="account_no_microsoft_account_local">Похоже, вы не вошли в лицензионный аккаунт! Локальный аккаунт — это резервный вариант для игроков, когда они не могут подключиться к сети, а не предназначен для игроков, у которых нет лицензионного аккаунта</string>
     <string name="account_no_microsoft_account_other">Похоже, вы не вошли в лицензионный аккаунт! Вы уверены, что хотите использовать внешний вход без лицензионного аккаунта?</string>
     <string name="account_no_microsoft_account_continue">Игнорировать и продолжить</string>
     <string name="account_continue_to_launch_the_game">Продолжить запуск игры</string>
@@ -315,14 +306,13 @@
     <string name="xerr_not_available">Xbox Live недоступен в вашей стране/регионе</string>
     <string name="minecraft_not_owned">Профиль Minecraft не найден</string>
     <string name="no_minecraft_purchase">Пожалуйста, убедитесь, что вы приобрели Minecraft, войдите в свою учетную запись на https://minecraft.net/ и попробуйте снова</string>
-    <!-- Jre -->
     <string name="install_select_jre_environment">Выберите среду JRE</string>
     <string name="install_recommend_use_jre8">Пожалуйста, используйте JRE 8 для обеспечения стабильности</string>
     <string name="install_auto_select">Позвольте лаунчеру решить</string>
     <string name="multirt_runtime_corrupt">Среда выполнения Java повреждена</string>
     <string name="multirt_runtime_incompatiblearch">Несовместимая архитектура: %s</string>
     <string name="multirt_config_title">Среда выполнения Java</string>
-    <string name="multirt_progress_caching">Кэширование…</string>
+    <string name="multirt_progress_caching">Кэширование</string>
     <string name="multirt_config_setdefault">Установить по умолчанию</string>
     <string name="multirt_nocompatiblert">Не найдено совместимой среды выполнения Java, для этой версии требуется Java %d или более новая версия</string>
     <string name="multirt_nojava8rt">Не удалось найти Java 8, для использования этой опции необходимо установить Java 8</string>
@@ -330,7 +320,6 @@
     <string name="multirt_import">Импортировать среду выполнения</string>
     <string name="multirt_swap_setdefault">Выбрать среду по умолчанию</string>
     <string name="multirt_provided_by_launcher">Встроенный</string>
-    <!-- Custom Mouse & Background -->
     <string name="mouse_settings_speed_name">Скорость виртуальной мыши</string>
     <string name="mouse_settings_scale_name">Масштаб виртуальной мыши</string>
     <string name="custom_mouse_add">Добавить виртуальную мышь</string>
@@ -349,7 +338,6 @@
     <string name="custom_background_selected">Фоновое изображение успешно установлено для %s:</string>
     <string name="custom_background_reset">Фоновое изображение для %s сброшено</string>
     <string name="custom_background_nothing">Здесь нет фоновых изображений, добавьте сначала несколько изображений!</string>
-    <!-- File -->
     <string name="file_folder_dialog_insert_name">Вставить имя папки</string>
     <string name="file_create_folder">Создать папку</string>
     <string name="file_select_folder">Выбрать папку</string>
@@ -363,24 +351,22 @@
     <string name="file_added">Файл успешно добавлен</string>
     <string name="file_delete">Вы уверены, что хотите удалить этот файл?</string>
     <string name="file_delete_dir">Вы уверены, что хотите удалить эту папку?</string>
-    <string name="file_delete_dir_message">При удалении папки будут удалены все файлы внутри неё. Если в этой папке есть важные файлы, отмените эту операцию!</string>
+    <string name="file_delete_dir_message">При удалении папки будут удалены все файлы внутри неё, Если в этой папке есть важные файлы, отмените эту операцию!</string>
     <string name="file_delete_multiple_items_title">Вы уверены, что хотите удалить выбранные элементы?</string>
-    <string name="file_delete_multiple_items_message">Это действие навсегда удалит все выбранные элементы. Действуйте осторожно!</string>
+    <string name="file_delete_multiple_items_message">Это действие навсегда удалит все выбранные элементы, Действуйте осторожно!</string>
     <string name="file_rename_exitis">Имя файла конфликтует с существующим файлом!</string>
     <string name="file_external_storage">Внешнее хранилище</string>
     <string name="file_software_private">Приватная папка программы</string>
     <string name="file_multi_select_mode">Включить режим множественного выбора</string>
     <string name="file_multi_select_mode_title">Множественный выбор</string>
     <string name="file_multi_select_mode_message">Выбрано всего %d элементов</string>
-    <string name="file_operation_file">Выполняется операция с файлом… (%s / %s, %d)</string>
+    <string name="file_operation_file">Выполняется операция с файлом (%s / %s, %d)</string>
     <string name="file_jump_to_path">Перейти к пути</string>
     <string name="file_nothing">Файлы не найдены!</string>
     <string name="file_invalid_length">Имя слишком длинное! (Текущая длина: %d, Максимальная длина: %d)</string>
-    <!-- Search View -->
     <string name="search_case_sensitive">Учитывать регистр</string>
     <string name="search_only_show_results">Показывать только результаты поиска</string>
     <string name="search_count">%d результатов поиска</string>
-    <!-- Main Page & Settings -->
     <string name="main_open_main_dir">Открыть главную папку</string>
     <string name="main_install_jar_file">Запустить .jar файл</string>
     <string name="main_share_logs">Поделиться файлами логов</string>
@@ -404,9 +390,9 @@
     <string name="setting_renderer_title">Рендерер</string>
     <string name="setting_renderer_from_plugins">Из плагина %s</string>
     <string name="setting_renderer_local_import_title">Локальный импорт рендерера</string>
-    <string name="setting_renderer_local_import_desc">Помимо установки плагинов программного рендеринга, загрузчик также поддерживает локальный импорт плагинов рендерера. Однако некоторые устройства могут не поддерживать локальные плагины рендерера, будьте осторожны!</string>
-    <string name="setting_renderer_local_import_restart">Новый рендерер импортирован. Пожалуйста, перезапустите загрузчик, чтобы загрузить его!</string>
-    <string name="setting_renderer_local_import_failed">Не удалось импортировать плагин рендерера. Формат сжатого файла может быть неправильным или плагин может конфликтовать с другими плагинами!</string>
+    <string name="setting_renderer_local_import_desc">Помимо установки плагинов программного рендеринга, загрузчик также поддерживает локальный импорт плагинов рендерера, Однако некоторые устройства могут не поддерживать локальные плагины рендерера, будьте осторожны!</string>
+    <string name="setting_renderer_local_import_restart">Новый рендерер импортирован, Пожалуйста, перезапустите загрузчик, чтобы загрузить его!</string>
+    <string name="setting_renderer_local_import_failed">Не удалось импортировать плагин рендерера, Формат сжатого файла может быть неправильным или плагин может конфликтовать с другими плагинами!</string>
     <string name="setting_renderer_local_manage">Управление локальными плагинами рендерера</string>
     <string name="setting_renderer_local_delete">Вы уверены, что хотите удалить этот плагин рендерера? Это действие необратимо!</string>
     <string name="setting_driver_title">Драйвер Vulkan</string>
@@ -428,7 +414,7 @@
     <string name="setting_longpress_trigger_title">Задержка длинного нажатия</string>
     <string name="setting_longpress_trigger_desc">Изменяет задержку для активации длинного нажатия для разрушения блоков и выбрасывания предметов</string>
     <string name="setting_button_scale_title">Масштабирование раскладки управления</string>
-    <string name="setting_button_scale_desc">Настройте общий масштаб макета управления. Если кнопки слишком маленькие, их можно увеличить.</string>
+    <string name="setting_button_scale_desc">Настройте общий масштаб макета управления, Если кнопки слишком маленькие, их можно увеличить</string>
     <string name="setting_mouse_scale_desc">Изменить размер виртуальной мыши</string>
     <string name="setting_mouse_speed_desc">Изменить скорость перемещения виртуальной мыши</string>
     <string name="setting_mouse_start_title">Показывать виртуальную мышь при запуске игры</string>
@@ -465,7 +451,7 @@
     <string name="setting_java_select_runtime_ask_me">Позвольте мне выбрать временно</string>
     <string name="setting_java_select_runtime_default">Текущая среда выполнения по умолчанию</string>
     <string name="setting_java_args_title">Параметры запуска JVM</string>
-    <string name="setting_java_args_desc">Дополнительные параметры JVM, добавляемые при запуске Minecraft. Не рекомендуется изменять без уверенности, так как это может привести к сбоям игры.</string>
+    <string name="setting_java_args_desc">Дополнительные параметры JVM, добавляемые при запуске Minecraft, Не рекомендуется изменять без уверенности, так как это может привести к сбоям игры</string>
     <string name="setting_java_memory_title">Выделение памяти</string>
     <string name="setting_java_memory_desc">Управление количеством памяти, выделяемой для Minecraft</string>
     <string name="setting_java_memory_info">Информация о текущем использовании памяти: %s / %s, свободный объем памяти: %s</string>
@@ -479,7 +465,7 @@
     <string name="setting_force_big_core_title">Принудительное выполнение на больших ядрах</string>
     <string name="setting_force_big_core_desc">Принудительно запускать потоки рендеринга Minecraft на ядре с максимальной частотой</string>
     <string name="setting_touch_controller_vibrate_duration_title">Продолжительность вибрации мода TouchController</string>
-    <string name="setting_touch_controller_vibrate_duration_desc">Настройте продолжительность вибрации для этого мода в зависимости от различных потребностей использования.</string>
+    <string name="setting_touch_controller_vibrate_duration_desc">Настройте продолжительность вибрации для этого мода в зависимости от различных потребностей использования</string>
     <string name="setting_verify_manifest_title">Проверка списка версий игры</string>
     <string name="setting_verify_manifest_desc">После включения лаунчер будет проверять список версий игры и библиотек</string>
     <string name="setting_resource_image_cache_title">Кэшировать изображения ресурсов</string>
@@ -489,11 +475,11 @@
     <string name="setting_download_source_title">Источник загрузки игры</string>
     <string name="setting_download_source_desc">Выберите зеркальный источник загрузки вместо официального</string>
     <string name="setting_max_download_threads_title">Максимальное количество потоков для загрузки</string>
-    <string name="setting_max_download_threads_desc">При одновременной загрузке нескольких файлов максимальное количество параллельных потоков, но слишком много потоков может привести к затормозкам запуска. 64 потока достаточно!</string>
+    <string name="setting_max_download_threads_desc">При одновременной загрузке нескольких файлов максимальное количество параллельных потоков, но слишком много потоков может привести к затормозкам запуска, 64 потока достаточно!</string>
     <string name="setting_version_isolation_title">Изоляция версии</string>
     <string name="setting_version_isolation_desc">Включить изоляцию версий для игры\nПри отключении путь к игре будет .minecraft/\nПри включении путь к игре изменится на .minecraft/versions/&lt;имя версии&gt;/</string>
     <string name="setting_version_custom_info_title">Пользовательская информация</string>
-    <string name="setting_version_custom_info_desc">Пользовательская информация будет отображаться в нижнем левом углу главного меню игры и в верхнем левом углу экрана отладки F3. После добавления поля [zl_version] загрузчик заменит его на номер версии загрузчика.</string>
+    <string name="setting_version_custom_info_desc">Пользовательская информация будет отображаться в нижнем левом углу главного меню игры и в верхнем левом углу экрана отладки F3, После добавления поля [zl_version] загрузчик заменит его на номер версии загрузчика</string>
     <string name="setting_set_game_language_title">Автоматическая настройка языка игры</string>
     <string name="setting_set_game_language_desc">При запуске игры автоматически устанавливать язык игры на выбранный</string>
     <string name="setting_set_game_language_list">Установить язык игры</string>
@@ -525,7 +511,7 @@
     <string name="setting_game_menu_memory_text_title">Текст префикса информации о памяти</string>
     <string name="setting_game_menu_memory_text_desc">Вы можете настроить этот префикс в соответствии с вашими потребностями</string>
     <string name="setting_game_menu_info_refresh_rate_title">Частота обновления информации</string>
-    <string name="setting_game_menu_info_refresh_rate_desc">Управляет частотой обновления информации, отображаемой на всплывающем окне меню игры. Слишком частое обновление может привести к проблемам с производительностью.</string>
+    <string name="setting_game_menu_info_refresh_rate_desc">Управляет частотой обновления информации, отображаемой на всплывающем окне меню игры, Слишком частое обновление может привести к проблемам с производительностью</string>
     <string name="setting_game_menu_location_title">Начальное положение всплывающего меню игры</string>
     <string name="setting_game_menu_location_center">По центру</string>
     <string name="setting_game_menu_location_bottom_or_center">По центру внизу</string>
@@ -537,17 +523,15 @@
     <string name="setting_game_menu_alpha_title">Непрозрачность всплывающего меню</string>
     <string name="setting_game_menu_alpha_desc">Установить непрозрачность всплывающего меню игры</string>
     <string name="setting_reboot_tip">Этот параметр был изменен, но для его применения необходимо перезапустить приложение!</string>
-    <string name="setting_zink_driver_adreno">Лаунчер обнаружил, что ваше устройство оснащено GPU Adreno, включение этой опции может привести к неработоспособности рендерера Zink. Вы уверены, что хотите включить эту опцию?</string>
-    <!-- Game -->
-    <string name="game_exit_message">Приложение/игра завершилось с кодом %d.</string>
-    <string name="game_singnal_message">Приложение/игра было прервано из-за критического сигнала %d.</string>
-    <string name="game_exit_note">Для получения подробностей об ошибке проверьте файл журнала или отчёт о сбое. Если вы не можете решить проблему самостоятельно, отправьте журнал или отчёт о сбое тому, кто может вам помочь!</string>
-    <string name="game_exit_no_screenshot">Пожалуйста, не делайте просто скриншот текущего интерфейса приложения, иначе никто не узнает, что произошло. Поделитесь файлом журнала или отчётом о сбое!</string>
+    <string name="setting_zink_driver_adreno">Лаунчер обнаружил, что ваше устройство оснащено GPU Adreno, включение этой опции может привести к неработоспособности рендерера Zink, Вы уверены, что хотите включить эту опцию?</string>
+    <string name="game_exit_message">Приложение/игра завершилось с кодом %d</string>
+    <string name="game_singnal_message">Приложение/игра было прервано из-за критического сигнала %d</string>
+    <string name="game_exit_note">Для получения подробностей об ошибке проверьте файл журнала или отчёт о сбое, Если вы не можете решить проблему самостоятельно, отправьте журнал или отчёт о сбое тому, кто может вам помочь!</string>
+    <string name="game_exit_no_screenshot">Пожалуйста, не делайте просто скриншот текущего интерфейса приложения, иначе никто не узнает, что произошло, Поделитесь файлом журнала или отчётом о сбое!</string>
     <string name="game_autopick_runtime_failed">Не найдена подходящая среда выполнения, установлено для выбранной среды выполнения текущей версии</string>
     <string name="game_tip">Игра запущена, вы можете включить вывод логов через меню, чтобы следить за её работой</string>
     <string name="game_tip_version">Текущая версия запускаемой игры:</string>
     <string name="game_tip_mc_info">Информация о Minecraft:</string>
-    <!-- Download -->
     <string name="download_classify_mod">Скачать мод</string>
     <string name="download_classify_modpack">Скачать модпак</string>
     <string name="download_classify_resource_pack">Скачать ресурсный пакет</string>
@@ -577,7 +561,7 @@
     <string name="download_install_custom_name">Пользовательское имя файла</string>
     <string name="download_install_download_file">Загрузка ресурсного файла (%.2fMB / %.2fMB, скорость: %s/s)</string>
     <string name="download_install_dependencies">У %s есть следующие зависимости или несовместимые моды</string>
-    <string name="download_install_dependencies_tip">Загрузите необходимые моды-зависимости по мере необходимости. Отсутствие необходимых зависимостей или установка несовместимых модов может привести к тому, что игра не запустится!</string>
+    <string name="download_install_dependencies_tip">Загрузите необходимые моды-зависимости по мере необходимости, Отсутствие необходимых зависимостей или установка несовместимых модов может привести к тому, что игра не запустится!</string>
     <string name="download_install_dependencies_required">Обязательно</string>
     <string name="download_install_dependencies_optional">Опционально</string>
     <string name="download_install_dependencies_incompatible">Несовместимо</string>
@@ -587,22 +571,19 @@
     <string name="download_install">Скачивание %s</string>
     <string name="download_install_is_adapt">Текущая версия %s доступна</string>
     <string name="download_install_unpack_world_error">Не удалось распознать структуру файла, автоматическая распаковка не удалась, пожалуйста, обработайте файл вручную!</string>
-    <!-- ModPack -->
     <string name="select_modpack_local_tip">Пожалуйста, выберите файл модпака, который поддерживается лаунчером для импорта!</string>
-    <string name="select_modpack_local_not_supported">Этот модпак не поддерживается лаунчером! Лаунчер поддерживает только импорт модпаков в формате Modrinth, CurseForge и MCBBS. Пожалуйста, проверьте, соответствует ли ваш модпак указанным форматам!</string>
-    <string name="select_modpack_local_installing_files">Установка игровых файлов… (%d / %d)</string>
+    <string name="select_modpack_local_not_supported">Этот модпак не поддерживается лаунчером! Лаунчер поддерживает только импорт модпаков в формате Modrinth, CurseForge и MCBBS, Пожалуйста, проверьте, соответствует ли ваш модпак указанным форматам!</string>
+    <string name="select_modpack_local_installing_files">Установка игровых файлов (%d / %d)</string>
     <string name="modpack_download_downloading_metadata">Загрузка метаданных модпака (%.2fMB / %.2fMB, скорость: %s/s)</string>
     <string name="modpack_download_downloading_mods">Загрузка модов (%.2fMB / %.2fMB, скорость: %s/s)</string>
     <string name="modpack_download_downloading_mods_fc">Загрузка модов (загружено файлов: %d (%s), всего файлов: %d, скорость: %s/s)</string>
     <string name="modpack_download_applying_overrides">Применение переопределений (%d/%d)</string>
     <string name="modpack_install_download_failed">Не удалось загрузить файлы модпака</string>
     <string name="modpack_prepare_mod_loader_installation">Все моды установлены, готовится установка загрузчика модов</string>
-    <!-- Clear Up -->
     <string name="clear_up_cache">Очистить кэш</string>
-    <string name="clear_up_cache_desc">Проверить и очистить кэш-файлы приложения. Очистка кэш-файлов не влияет на нормальную работу приложения.</string>
+    <string name="clear_up_cache_desc">Проверить и очистить кэш-файлы приложения, Очистка кэш-файлов не влияет на нормальную работу приложения</string>
     <string name="clear_up_cache_not_found">Кэш-файлы не найдены</string>
     <string name="clear_up_cache_clean_up">Очистка завершена, всего удалено кэш-файлов: %s</string>
-    <!-- Check Update -->
     <string name="update">Проверить обновления</string>
     <string name="update_dialog_title">Обнаружена новая версия</string>
     <string name="update_dialog_version">Версия:</string>
@@ -615,9 +596,8 @@
     <string name="update_fail">Сетевая ошибка, временно невозможно получить обновление!</string>
     <string name="update_fail_code">Сетевая ошибка, временно невозможно получить обновление! Код ошибки: %d</string>
     <string name="update_success">Последний установочный файл был успешно загружен, хотите установить? Путь к установочному файлу:</string>
-    <string name="update_downloading">Загрузка установочного файла… (%s / %s)</string>
+    <string name="update_downloading">Загрузка установочного файла (%s / %s)</string>
     <string name="update_downloading_tip">Загрузка в процессе, источник обновления: %s</string>
-    <!-- Other Login -->
     <string name="other_login_server">Сервер авторизации</string>
     <string name="other_login_email">Электронная почта или имя пользователя</string>
     <string name="other_login_password">Пароль</string>
@@ -631,23 +611,21 @@
     <string name="other_login_select_role_message">У текущего аккаунта есть несколько персонажей, пожалуйста, выберите персонажа, которого вы хотите использовать</string>
     <string name="other_login_registry_now">Нет аккаунта? Нажмите здесь, чтобы зарегистрироваться!</string>
     <string name="other_login_role_not_found">Не найдена роль, соответствующая текучему аккаунту, пожалуйста, проверьте, существует ли эта роль на сервере, который вы используете!</string>
-    <!-- Splash -->
-    <string name="splash_screen_desc">Лаунчеру необходимо установить эти компоненты, чтобы обеспечить нормальный запуск Minecraft. Эти компоненты уже включены в приложение и требуют распаковки для нормальной работы. Нажмите на кнопку ниже, чтобы начать распаковку и обновление этих компонентов.</string>
-    <string name="splash_screen_installing">Лаунчер распаковывает эти компоненты. После завершения распаковки вы автоматически перейдете на главный экран, пожалуйста, подождите.</string>
-    <string name="splash_screen_lwjgl">Легковесная Java игра библиотека, на которую зависит Minecraft для работы.</string>
-    <string name="splash_screen_cacio">Предоставляет переносимый GUI-бэкенд для OpenJDK.</string>
-    <string name="splash_screen_authlib_injector">Инжектирует authlib во время выполнения, чтобы разрешить вход в систему вне игры.</string>
-    <string name="splash_screen_components">Некоторые компоненты, от которых зависит запускатор.</string>
-    <string name="splash_screen_jre8">Среда Java 8, Minecraft 1.16- зависит от Java 8.</string>
-    <string name="splash_screen_jre17">Среда Java 17, Minecraft 1.17+ зависит от Java 17.</string>
-    <string name="splash_screen_jre21">Среда Java 21, Minecraft 1.20.5+ зависит от Java 21.</string>
-    <string name="splash_screen_jre25">Среда Java 25, Minecraft 26.1+ зависит от Java 25.</string>
+    <string name="splash_screen_desc">Лаунчеру необходимо установить эти компоненты, чтобы обеспечить нормальный запуск Minecraft, Эти компоненты уже включены в приложение и требуют распаковки для нормальной работы, Нажмите на кнопку ниже, чтобы начать распаковку и обновление этих компонентов</string>
+    <string name="splash_screen_installing">Лаунчер распаковывает эти компоненты, После завершения распаковки вы автоматически перейдете на главный экран, пожалуйста, подождите</string>
+    <string name="splash_screen_lwjgl">Легковесная Java игра библиотека, на которую зависит Minecraft для работы</string>
+    <string name="splash_screen_cacio">Предоставляет переносимый GUI-бэкенд для OpenJDK</string>
+    <string name="splash_screen_authlib_injector">Инжектирует authlib во время выполнения, чтобы разрешить вход в систему вне игры</string>
+    <string name="splash_screen_components">Некоторые компоненты, от которых зависит запускатор</string>
+    <string name="splash_screen_jre8">Среда Java 8, Minecraft 1.16- зависит от Java 8</string>
+    <string name="splash_screen_jre17">Среда Java 17, Minecraft 1.17+ зависит от Java 17</string>
+    <string name="splash_screen_jre21">Среда Java 21, Minecraft 1.20.5+ зависит от Java 21</string>
+    <string name="splash_screen_jre25">Среда Java 25, Minecraft 26.1+ зависит от Java 25</string>
     <string name="splash_screen_apply">Согласиться и установить</string>
-    <!-- About -->
     <string name="about_tab">О %s</string>
-    <string name="about_dec1">%s — это лаунчер Minecraft, основанный на PojavLauncher, который позволяет запускать Minecraft: Java Edition на устройствах Android.</string>
-    <string name="about_dec2">%s ориентирован на оптимизацию пользовательского опыта, переработку интерфейса приложения и добавление более практичных функций, чтобы снизить барьеры для игры и позволить большему количеству людей легко наслаждаться Minecraft.</string>
-    <string name="about_dec3">%s использует лицензию GPL 3.0 с открытым исходным кодом, которая является "вирусной". Любой код, использующий, изменяющий или производный от библиотек или программного обеспечения GPL, также должен использовать лицензию GPL для открытия исходного кода. Если вы собираетесь распространять это программное обеспечение, соблюдайте соответствующие положения лицензии GPL 3.0.</string>
+    <string name="about_dec1">%s — это лаунчер Minecraft, основанный на PojavLauncher, который позволяет запускать Minecraft: Java Edition на устройствах Android</string>
+    <string name="about_dec2">%s ориентирован на оптимизацию пользовательского опыта, переработку интерфейса приложения и добавление более практичных функций, чтобы снизить барьеры для игры и позволить большему количеству людей легко наслаждаться Minecraft</string>
+    <string name="about_dec3">%s использует лицензию GPL 3.0 с открытым исходным кодом, которая является "вирусной". Любой код, использующий, изменяющий или производный от библиотек или программного обеспечения GPL, также должен использовать лицензию GPL для открытия исходного кода, Если вы собираетесь распространять это программное обеспечение, соблюдайте соответствующие положения лицензии GPL 3.0</string>
     <string name="about_contributors">Авторы и Благодарности:</string>
     <string name="about_sponsors">Благодарности спонсорам:</string>
     <string name="about_sponsors_list">Просмотр списка спонсоров</string>
@@ -667,24 +645,22 @@
     <string name="about_version_code">Код версии программного обеспечения:</string>
     <string name="about_last_update_time">Дата последнего обновления:</string>
     <string name="about_version_status">Статус версии:</string>
-    <!-- Newbie Guide -->
-    <string name="newbie_guide_general_close">Нажмите эту кнопку, чтобы закрыть и вернуться на предыдущий экран.</string>
-    <string name="newbie_guide_general_refresh">Нажмите эту кнопку, чтобы обновить текущее содержимое.</string>
+    <string name="newbie_guide_general_close">Нажмите эту кнопку, чтобы закрыть и вернуться на предыдущий экран</string>
+    <string name="newbie_guide_general_refresh">Нажмите эту кнопку, чтобы обновить текущее содержимое</string>
     <string name="newbie_guide_control_search">Когда количество макетов управления слишком велико, нажмите эту кнопку, чтобы вызвать поле поиска и использовать его для поиска нужного макета управления!</string>
     <string name="newbie_guide_control_import">Нажмите, чтобы открыть файловый менеджер Android и выбрать файл макета управления для импорта в лаунчер!</string>
     <string name="newbie_guide_control_create">Нажмите эту кнопку, чтобы быстро создать новую схему управления!</string>
-    <string name="newbie_guide_background_reset">Нажмите эту кнопку, чтобы быстро сбросить фоновое изображение текущего выбранного интерфейса.</string>
+    <string name="newbie_guide_background_reset">Нажмите эту кнопку, чтобы быстро сбросить фоновое изображение текущего выбранного интерфейса</string>
     <string name="newbie_guide_background_import">Нажмите, чтобы открыть файловый менеджер Android и выбрать файл фонового изображения для импорта в лаунчер!</string>
     <string name="newbie_guide_mouse_import">Нажмите, чтобы открыть нативный файловый менеджер, выберите файл изображения виртуальной мыши для импорта в лаунчер!</string>
-    <string name="newbie_guide_file_search">Хотите быстро найти файл? Нажмите эту кнопку, чтобы вызвать панель поиска и использовать её для поиска файлов.</string>
+    <string name="newbie_guide_file_search">Хотите быстро найти файл? Нажмите эту кнопку, чтобы вызвать панель поиска и использовать её для поиска файлов</string>
     <string name="newbie_guide_file_import">Нажмите, чтобы открыть файловый менеджер Android, выберите файл, который хотите импортировать, и он будет импортирован в лаунчер!</string>
-    <string name="newbie_guide_file_create_folder">Нажмите эту кнопку, чтобы создать новую папку в текущем каталоге.</string>
-    <string name="newbie_guide_file_select">Нажмите, чтобы подтвердить выбор этого каталога.</string>
-    <string name="newbie_guide_mod_search">Нажмите, чтобы вызвать панель поиска, с её помощью вы сможете быстро найти нужный вам мод.</string>
-    <string name="newbie_guide_mod_import">Выберите файл мода в нативный файловом менеджере, чтобы импортировать его в текущую папку модов.</string>
-    <string name="newbie_guide_mod_download">Нажмите, чтобы перейти на страницу загрузки модов, где вы можете искать и загружать моды онлайн.</string>
-    <string name="newbie_guide_game_menu">Вы можете переместить плавающее окно игрового меню в любое место на экране.</string>
-    <!-- Sponsorship Related -->
+    <string name="newbie_guide_file_create_folder">Нажмите эту кнопку, чтобы создать новую папку в текущем каталоге</string>
+    <string name="newbie_guide_file_select">Нажмите, чтобы подтвердить выбор этого каталога</string>
+    <string name="newbie_guide_mod_search">Нажмите, чтобы вызвать панель поиска, с её помощью вы сможете быстро найти нужный вам мод</string>
+    <string name="newbie_guide_mod_import">Выберите файл мода в нативный файловом менеджере, чтобы импортировать его в текущую папку модов</string>
+    <string name="newbie_guide_mod_download">Нажмите, чтобы перейти на страницу загрузки модов, где вы можете искать и загружать моды онлайн</string>
+    <string name="newbie_guide_game_menu">Вы можете переместить плавающее окно игрового меню в любое место на экране</string>
     <string name="request_sponsorship_title">Поддержите мою разработку</string>
-    <string name="request_sponsorship_message">Большую часть этого программного обеспечения разработал и поддерживаю только я. Если вы считаете, что это программное обеспечение полезно для вас и у вас есть возможность, пожалуйста, рассмотрите возможность поддержки меня, чтобы у меня было больше мотивации продолжать разработку и улучшение. Спасибо за вашу поддержку!</string>
+    <string name="request_sponsorship_message">Большую часть этого программного обеспечения разработал и поддерживаю только я, Если вы считаете, что это программное обеспечение полезно для вас и у вас есть возможность, пожалуйста, рассмотрите возможность поддержки меня, чтобы у меня было больше мотивации продолжать разработку и улучшение, Спасибо за вашу поддержку!</string>
 </resources>

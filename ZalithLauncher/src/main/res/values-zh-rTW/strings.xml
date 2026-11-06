@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Zalith Launcher -->
     <string name="generic_open">開啟</string>
     <string name="generic_close">關閉</string>
     <string name="generic_return">返回</string>
@@ -52,12 +51,10 @@
     <string name="generic_pre_release">預發布版</string>
     <string name="generic_beta">測試版</string>
     <string name="generic_alpha">內測版</string>
-    <!-- Error -->
     <string name="error_fatal">%s 意外地當機了</string>
     <string name="error_no_version">沒有版本！</string>
     <string name="error_show_more">顯示詳細資訊</string>
     <string name="error_show_less">關閉詳細資訊</string>
-    <!-- Launcher -->
     <string name="option_category_debug">調試</string>
     <string name="option_category_control">控制</string>
     <string name="option_category_hotbar">快捷欄判定框</string>
@@ -107,10 +104,10 @@
     <string name="notification_permission_dialog_title">權限請求</string>
     <string name="notification_permission_dialog_text">%s 需要通知的權限，以防止你離開應用程式時，停止遊戲檔案的下載。如果沒有此權限，當你將 %s 置於背景時，Android 可能會停止你的下載進度。</string>
     <string name="notification_permission_toast">你可以隨時通過進入「系統設定」改變你的決定</string>
-    <string name="newdl_starting">讀取遊戲元數據中…</string>
+    <string name="newdl_starting">讀取遊戲元數據中</string>
     <string name="newdl_downloading_metadata">下載遊戲元數據中 (%s)</string>
-    <string name="newdl_downloading_game_files">下載遊戲檔案中… (%d/%d, %.2f MB)</string>
-    <string name="newdl_downloading_game_files_size">下載遊戲文件中… (%.2f/%.2f MB, %.2f MB/s)</string>
+    <string name="newdl_downloading_game_files">下載遊戲檔案中 (%d/%d, %.2f MB)</string>
+    <string name="newdl_downloading_game_files_size">下載遊戲文件中 (%.2f/%.2f MB, %.2f MB/s)</string>
     <string name="newdl_extracting_native_libraries">提取原生庫 (%d/%d)</string>
     <string name="log_view_button_scroll_off">自動滾動: 關閉</string>
     <string name="log_view_button_scroll_on">自動滾動: 開啟</string>
@@ -132,12 +129,11 @@
     <string name="mod_check_sodium_or_embeddium">檢測到已安裝 Sodium 或 Embeddium 模組 (%s)。啟動器將會停用該模組的警告，或防止其在 Android 設備上刻意導致崩潰。但請注意，該模組的社群已明確表態不再受理任何與 Android 設備相關的問題。因此，如果你在使用該模組時遇到任何問題，請勿向該模組的社群回報！</string>
     <string name="mod_check_physics">當前使用的物理模組 (%s) 未經修補 (將 libPhysXJniBindings_64.so 從 x86_64 架構替換到 arm64)，啟動後將會崩潰。</string>
     <string name="mod_check_mcef">MCEF (%s) 無法在 Android 上運行。它通常被用來作為 WebDisplays/In-game Browser（瀏覽器）的前置依賴。</string>
-    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) 無法直接在單人模式下運行。你必須使用伺服器運行（可以使用 Termux），否則遊戲會崩潰.</string>
-    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 無法在 Android 系統上運行.</string>
+    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) 無法直接在單人模式下運行。你必須使用伺服器運行（可以使用 Termux），否則遊戲會崩潰</string>
+    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 無法在 Android 系統上運行</string>
     <string name="mod_check_imblocker">IMBlocker/In-GameIME (%s) 不適用於 Android，會導致遊戲在啟動時崩潰。</string>
     <string name="mod_check_replay_mod">ReplayMod (%s) 需要 FFmpeg 來渲染影片，請另外安裝 FFmpeg 插件\n%s\n%s</string>
     <string name="mod_check_borderlesswindow">Borderless Window (%s) 不適用於 Android，會導致遊戲在啟動時崩潰。</string>
-    <!-- Controls -->
     <string name="control_primary">左鍵</string>
     <string name="control_secondary">右鍵</string>
     <string name="control_mouse">滑鼠</string>
@@ -186,7 +182,7 @@
     <string name="controls_info_desc">描述說明:</string>
     <string name="controls_info_more">詳細信息</string>
     <string name="controls_info_view">查看信息</string>
-    <string name="controls_info_no_info">此控制佈局沒有描述說明…</string>
+    <string name="controls_info_no_info">此控制佈局沒有描述說明</string>
     <string name="controls_info_invalid">無效的文件:</string>
     <string name="controls_info_default_title">默認的控制佈局</string>
     <string name="controls_info_default_desc">這是默認的控制佈局文件，點擊可操作此控制佈局。</string>
@@ -212,7 +208,6 @@
     <string name="controller_dpad_right">方向鍵右</string>
     <string name="controller_remapper_operating_mode">當前模式</string>
     <string name="controller_remapper_expand_entry">展開以更改按鍵碼</string>
-    <!-- Version -->
     <string name="version_manager_title">版本管理</string>
     <string name="version_no_versions">沒有安裝版本</string>
     <string name="version_install_new">安裝新版本</string>
@@ -252,11 +247,9 @@
     <string name="version_manager_favorites_write_folder_name">為新的收藏夾命名</string>
     <string name="version_manager_favorites_dialog_title">添加到收藏夾</string>
     <string name="version_manager_favorites_dialog_no_folders">還沒有收藏夾，請先新增收藏夾！</string>
-    <!-- Permissions -->
     <string name="permissions_manage_external_storage">%s 需要管理裝置所有檔案的權限，以便正常使用這個功能，請開啟權限！</string>
     <string name="permissions_write_external_storage">%s 需要授予存儲管理權限。如果未開啟權限，可能會導致遊戲文件無法正常保存、解壓等問題。請授予權限，以確保功能正常運行。</string>
     <string name="permissions_storage_for_renderer_config">所選的渲染器插件 %s 可能有設定。如果 %s 未獲授存儲權限，設定將無法讀取。請授權以確保正常運作。</string>
-    <!-- Profiles Path -->
     <string name="profiles_path_title">遊戲路徑管理</string>
     <string name="profiles_path_default">預設路徑</string>
     <string name="profiles_path_settings">打開路徑設定</string>
@@ -265,7 +258,6 @@
     <string name="profiles_path_create_new_title">為此路徑命名</string>
     <string name="profiles_path_delete_title">刪除此路徑</string>
     <string name="profiles_path_delete_message">啟動器將刪除此路徑，但不會刪除對應路徑內保存的檔案，刪除之後仍然可以重新添加此路徑</string>
-    <!-- Profile -->
     <string name="pedit_isolation_enabled">啟用版本隔離</string>
     <string name="pedit_reset_icon">這將會重置你設定的自訂圖示，且操作不可逆，你確定要重置版本圖示嗎？</string>
     <string name="pedit_unsaved_tip">您已對這個版本配置進行了修改，直接返回將會丢失這些更改。您確定要直接返回嗎？</string>
@@ -279,7 +271,6 @@
     <string name="profile_mods_disable">禁用</string>
     <string name="profile_mods_enable">啟用</string>
     <string name="profile_mods_disable_or_enable">禁用/啟用</string>
-    <!-- Account -->
     <string name="account_login_done">登入完成</string>
     <string name="account_add">添加帳戶</string>
     <string name="account_no_saved_accounts">沒有已保存的帳戶</string>
@@ -315,14 +306,13 @@
     <string name="xerr_not_available">Xbox Live 在你所在的國家/地區不可用</string>
     <string name="minecraft_not_owned">未找到 Minecraft 設定檔</string>
     <string name="no_minecraft_purchase">請確保你已購買 Minecraft，前往 https://minecraft.net/ 上登入你的帳號，然後重試</string>
-    <!-- Jre -->
     <string name="install_select_jre_environment">選擇 JRE 環境</string>
     <string name="install_recommend_use_jre8">在執行環境內，請盡量使用 JRE 8，以保證穩定性</string>
     <string name="install_auto_select">讓啟動器決定</string>
     <string name="multirt_runtime_corrupt">Java 執行環境損壞</string>
     <string name="multirt_runtime_incompatiblearch">不相容的架構：%s</string>
     <string name="multirt_config_title">Java 執行環境</string>
-    <string name="multirt_progress_caching">正在快取……</string>
+    <string name="multirt_progress_caching">正在快取</string>
     <string name="multirt_config_setdefault">設為預設</string>
     <string name="multirt_nocompatiblert">找不到任何相容的 Java 執行環境，此版本需要 Java %d 或更新版本</string>
     <string name="multirt_nojava8rt">無法找到 Java 8，要使用此選項，你必須安裝 Java 8</string>
@@ -330,7 +320,6 @@
     <string name="multirt_import">匯入運行環境</string>
     <string name="multirt_swap_setdefault">選擇預設環境</string>
     <string name="multirt_provided_by_launcher">內建</string>
-    <!-- Custom Mouse & Background -->
     <string name="mouse_settings_speed_name">虛擬滑鼠速度</string>
     <string name="mouse_settings_scale_name">虛擬滑鼠縮放</string>
     <string name="custom_mouse_add">添加虛擬滑鼠</string>
@@ -349,7 +338,6 @@
     <string name="custom_background_selected">成功為 %s 設定背景圖片:</string>
     <string name="custom_background_reset">已重置 %s 的背景圖片</string>
     <string name="custom_background_nothing">這裡沒有任何背景圖片，請先添加一些圖片！</string>
-    <!-- File -->
     <string name="file_folder_dialog_insert_name">插入資料夾名稱</string>
     <string name="file_create_folder">建立資料夾</string>
     <string name="file_select_folder">選擇資料夾</string>
@@ -372,15 +360,13 @@
     <string name="file_multi_select_mode">開啟多選模式</string>
     <string name="file_multi_select_mode_title">多選項目</string>
     <string name="file_multi_select_mode_message">目前總共選擇了 %d 個項目</string>
-    <string name="file_operation_file">正在操作檔案中… (%s / %s, %d)</string>
+    <string name="file_operation_file">正在操作檔案中 (%s / %s, %d)</string>
     <string name="file_jump_to_path">跳轉至路徑</string>
     <string name="file_nothing">沒有找到任何檔案哦！</string>
     <string name="file_invalid_length">名稱過長！(目前長度：%d，最大長度：%d)</string>
-    <!-- Search View -->
     <string name="search_case_sensitive">區分大小寫</string>
     <string name="search_only_show_results">僅展示搜尋結果</string>
     <string name="search_count">%d 個搜尋結果</string>
-    <!-- Main Page & Settings -->
     <string name="main_open_main_dir">打開主目錄</string>
     <string name="main_install_jar_file">執行 .jar 檔案</string>
     <string name="main_share_logs">分享日誌檔案</string>
@@ -538,7 +524,6 @@
     <string name="setting_game_menu_alpha_desc">設定遊戲菜單懸浮窗的不透明度</string>
     <string name="setting_reboot_tip">此項設定已被更改，但需要重啟應用才能生效！</string>
     <string name="setting_zink_driver_adreno">啟動器檢測到你的設備為 Adreno GPU，開啟這個選項可能會導致 Zink 渲染器無法正常工作，你確定要打開這個選項嗎？</string>
-    <!-- Game -->
     <string name="game_exit_message">應用程式/遊戲以代碼 %d 退出。</string>
     <string name="game_singnal_message">應用程式/遊戲因致命信號 %d 而中止。</string>
     <string name="game_exit_note">具體錯誤原因請查看日誌檔案或崩潰報告。如果你無法自行解決此問題，請將日誌檔案或崩潰報告發送給有能力解決的人協助解決！</string>
@@ -547,7 +532,6 @@
     <string name="game_tip">遊戲正在運行中，可以通過菜單開啟日誌輸出，查看遊戲運行狀況</string>
     <string name="game_tip_version">當前啟動的遊戲版本:</string>
     <string name="game_tip_mc_info">Minecraft 資訊:</string>
-    <!-- Download -->
     <string name="download_classify_mod">下載模組</string>
     <string name="download_classify_modpack">下載模組包</string>
     <string name="download_classify_resource_pack">下載資源包</string>
@@ -587,22 +571,19 @@
     <string name="download_install">下載 %s</string>
     <string name="download_install_is_adapt">當前版本 %s 可用</string>
     <string name="download_install_unpack_world_error">無法識別文件結構，自動解壓失敗，請自行處理此文件！</string>
-    <!-- ModPack -->
     <string name="select_modpack_local_tip">請選擇一個啟動器支持導入的模組包檔案！</string>
     <string name="select_modpack_local_not_supported">此模組包不受啟動器支援！啟動器僅支援導入 Modrinth、CurseForge、MCBBS 格式的模組包，請檢查您的模組包是否依照規定格式製作！</string>
-    <string name="select_modpack_local_installing_files">安裝遊戲檔案中… (%d / %d)</string>
+    <string name="select_modpack_local_installing_files">安裝遊戲檔案中 (%d / %d)</string>
     <string name="modpack_download_downloading_metadata">正在下載模組包元數據（%.2fMB / %.2fMB，速度：%s/s）</string>
     <string name="modpack_download_downloading_mods">正在下載模組（%.2fMB / %.2fMB，速度：%s/s）</string>
     <string name="modpack_download_downloading_mods_fc">正在下載模組（已下載檔案：%d (%s), 總檔案數：%d, 速度：%s/s）</string>
     <string name="modpack_download_applying_overrides">正在應用覆蓋（%d/%d）</string>
     <string name="modpack_install_download_failed">模組包檔案下載失敗</string>
     <string name="modpack_prepare_mod_loader_installation">已安裝所有模組，正在準備安裝模組載入器</string>
-    <!-- Clear Up -->
     <string name="clear_up_cache">清理快取</string>
     <string name="clear_up_cache_desc">檢查並清理應用的快取檔案，清除快取檔案不影響應用正常使用</string>
     <string name="clear_up_cache_not_found">未搜尋到快取檔案</string>
     <string name="clear_up_cache_clean_up">清理完畢，本次總共清除了 %s 的快取檔案</string>
-    <!-- Check Update -->
     <string name="update">檢查更新</string>
     <string name="update_dialog_title">檢測到新版本</string>
     <string name="update_dialog_version">版本：</string>
@@ -615,9 +596,8 @@
     <string name="update_fail">網路異常，暫時無法獲取更新！</string>
     <string name="update_fail_code">網路異常，暫時無法獲取更新！錯誤碼：%d</string>
     <string name="update_success">最新的安裝包已經下載完成，是否安裝？安裝包位置：</string>
-    <string name="update_downloading">正在下載安裝包… (%s / %s)</string>
+    <string name="update_downloading">正在下載安裝包 (%s / %s)</string>
     <string name="update_downloading_tip">正在獲取中，更新源：%s</string>
-    <!-- Other Login -->
     <string name="other_login_server">認證伺服器</string>
     <string name="other_login_email">電子郵件或使用者名稱</string>
     <string name="other_login_password">密碼</string>
@@ -631,7 +611,6 @@
     <string name="other_login_select_role_message">當前帳號存在多個角色，請選擇想要使用的角色</string>
     <string name="other_login_registry_now">沒有帳號？點我跳轉註冊一個！</string>
     <string name="other_login_role_not_found">未找到與當前帳號相匹配的角色，請在您使用的伺服器上檢查該角色是否存在！</string>
-    <!-- Splash -->
     <string name="splash_screen_desc">啟動器需要安裝這些內容，以確保 Minecraft 能夠正常啟動。這些內容已包含在應用中，需要解壓縮後才能正常使用，請點擊下方按鈕開始解壓縮並更新這些內容。</string>
     <string name="splash_screen_installing">啟動器正在解壓縮這些內容，解壓縮完成後將自動進入主界面，請耐心等待。</string>
     <string name="splash_screen_lwjgl">輕量級 Java 遊戲庫，Minecraft 依賴它運行遊戲。</string>
@@ -643,7 +622,6 @@
     <string name="splash_screen_jre21">Java 21 環境，Minecraft 1.20.5+ 依賴 Java 21。</string>
     <string name="splash_screen_jre25">Java 25 環境，Minecraft 26.1+ 依賴 Java 25。</string>
     <string name="splash_screen_apply">同意並安裝</string>
-    <!-- About -->
     <string name="about_tab">關於 %s</string>
     <string name="about_dec1">%s 是一款基於 PojavLauncher 開發的 Minecraft 啟動器，它能夠在 Android 設備上運行 Minecraft: Java Edition。</string>
     <string name="about_dec2">%s 致力於優化使用者體驗，重新設計了應用介面，新增了更多實用的功能，旨在最大程度地降低遊玩門檻，讓更多人能夠輕鬆體驗 Minecraft 的樂趣。</string>
@@ -667,7 +645,6 @@
     <string name="about_version_code">軟體版本碼:</string>
     <string name="about_last_update_time">上一次更新時間:</string>
     <string name="about_version_status">版本狀態:</string>
-    <!-- Newbie Guide -->
     <string name="newbie_guide_general_close">可點擊此按鈕以關閉並返回上一個介面。</string>
     <string name="newbie_guide_general_refresh">可點擊此按鈕以刷新當前的內容。</string>
     <string name="newbie_guide_control_search">當控制佈局數量過多時，可點擊此按鈕召喚出搜尋框，利用它來搜尋想要的控制佈局！</string>
@@ -684,7 +661,6 @@
     <string name="newbie_guide_mod_import">在原生的檔案管理器內選擇一個模組檔案，可將其匯入當前模組資料夾。</string>
     <string name="newbie_guide_mod_download">點擊可以進入模組下載頁面，你可以在那裡線上搜尋與下載模組。</string>
     <string name="newbie_guide_game_menu">可以拖動遊戲選單浮動視窗至螢幕的任意位置。</string>
-    <!-- Sponsorship Related -->
     <string name="request_sponsorship_title">支持我的開發</string>
     <string name="request_sponsorship_message">這款軟體的大部分內容都是我一個人開發和維護的。如果你覺得這款軟體對你有幫助，並且條件允許的話，希望你能考慮贊助我，讓我有更多動力繼續開發和改進，謝謝你的支持！</string>
 </resources>

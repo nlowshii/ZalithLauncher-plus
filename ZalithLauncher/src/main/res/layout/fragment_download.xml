@@ -11,53 +11,45 @@
         android:id="@+id/download_viewpager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="@dimen/_minus4sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/classify_layout"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
         android:id="@+id/classify_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <View
-            android:id="@+id/classify_shadowView"
-            android:layout_width="@dimen/_4sdp"
-            android:layout_height="0dp"
-            android:background="@drawable/shadow_gradient_left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="@dimen/rail_width"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/background_rail"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.angcyo.tablayout.DslTabLayout
             android:id="@+id/classify_tab"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/rail_item_width"
             android:layout_height="match_parent"
-            android:background="@drawable/background_rail"
-            android:layout_margin="@dimen/_8sdp"
-            android:paddingHorizontal="@dimen/_4sdp"
-            android:paddingVertical="@dimen/_8sdp"
-            app:layout_constraintEnd_toStartOf="@+id/classify_shadowView"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center_horizontal"
             app:tab_draw_indicator="true"
-            app:tab_indicator_enable_flow="true"
             app:tab_indicator_drawable="@drawable/selector_bar_vertical"
+            app:tab_indicator_enable_flow="true"
             app:tab_orientation="VERTICAL">
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
-                android:layout_width="@dimen/_80sdp"
+                android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/_64sdp"
+                android:minHeight="@dimen/rail_item_height"
                 android:paddingHorizontal="@dimen/_4sdp"
                 android:paddingVertical="@dimen/_10sdp">
 
                 <ImageView
                     android:id="@+id/mod_image"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_width="@dimen/rail_icon_size"
+                    android:layout_height="@dimen/rail_icon_size"
                     android:layout_centerHorizontal="true"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
@@ -68,25 +60,25 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/mod_image"
                     android:layout_marginTop="@dimen/_4sdp"
+                    android:ellipsize="end"
                     android:gravity="center_horizontal"
                     android:maxLines="1"
-                    android:ellipsize="end"
-                    android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:text="@string/download_classify_mod"
+                    android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:textColor="@color/black_or_white" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
-                android:layout_width="@dimen/_80sdp"
+                android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/_64sdp"
+                android:minHeight="@dimen/rail_item_height"
                 android:paddingHorizontal="@dimen/_4sdp"
                 android:paddingVertical="@dimen/_10sdp">
 
                 <ImageView
                     android:id="@+id/modpack_image"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_width="@dimen/rail_icon_size"
+                    android:layout_height="@dimen/rail_icon_size"
                     android:layout_centerHorizontal="true"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
@@ -106,16 +98,16 @@
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
-                android:layout_width="@dimen/_80sdp"
+                android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/_64sdp"
+                android:minHeight="@dimen/rail_item_height"
                 android:paddingHorizontal="@dimen/_4sdp"
                 android:paddingVertical="@dimen/_10sdp">
 
                 <ImageView
                     android:id="@+id/resource_pack_image"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_width="@dimen/rail_icon_size"
+                    android:layout_height="@dimen/rail_icon_size"
                     android:layout_centerHorizontal="true"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
@@ -135,16 +127,16 @@
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
-                android:layout_width="@dimen/_80sdp"
+                android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/_64sdp"
+                android:minHeight="@dimen/rail_item_height"
                 android:paddingHorizontal="@dimen/_4sdp"
                 android:paddingVertical="@dimen/_10sdp">
 
                 <ImageView
                     android:id="@+id/world_image"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_width="@dimen/rail_icon_size"
+                    android:layout_height="@dimen/rail_icon_size"
                     android:layout_centerHorizontal="true"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
@@ -164,16 +156,16 @@
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
 
             <com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout
-                android:layout_width="@dimen/_80sdp"
+                android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/_64sdp"
+                android:minHeight="@dimen/rail_item_height"
                 android:paddingHorizontal="@dimen/_4sdp"
                 android:paddingVertical="@dimen/_10sdp">
 
                 <ImageView
                     android:id="@+id/shader_pack_image"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_width="@dimen/rail_icon_size"
+                    android:layout_height="@dimen/rail_icon_size"
                     android:layout_centerHorizontal="true"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
@@ -191,6 +183,9 @@
                     android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:textColor="@color/black_or_white" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
+
         </com.angcyo.tablayout.DslTabLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

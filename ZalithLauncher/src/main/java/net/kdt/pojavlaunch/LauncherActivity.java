@@ -77,17 +77,15 @@ import com.movtery.zalithlauncher.ui.fragment.AccountFragment;
 import com.movtery.zalithlauncher.ui.fragment.BaseFragment;
 import com.movtery.zalithlauncher.ui.fragment.DownloadFragment;
 import com.movtery.zalithlauncher.ui.fragment.DownloadModFragment;
+import com.movtery.zalithlauncher.ui.fragment.FilesFragment;
 import com.movtery.zalithlauncher.ui.fragment.SettingsFragment;
-import com.movtery.zalithlauncher.ui.subassembly.settingsbutton.ButtonType;
-import com.movtery.zalithlauncher.ui.subassembly.settingsbutton.SettingsButtonWrapper;
 import com.movtery.zalithlauncher.ui.subassembly.view.DraggableViewWrapper;
 import com.movtery.zalithlauncher.utils.StoragePermissionsUtils;
 import com.movtery.zalithlauncher.utils.ZHTools;
+import com.movtery.zalithlauncher.utils.path.PathManager;
 import com.movtery.zalithlauncher.utils.anim.ViewAnimUtils;
 import com.movtery.zalithlauncher.utils.file.FileTools;
 import com.movtery.zalithlauncher.utils.image.ImageUtils;
-import com.movtery.zalithlauncher.utils.stringutils.ShiftDirection;
-import com.movtery.zalithlauncher.utils.stringutils.StringUtils;
 
 import net.kdt.pojavlaunch.authenticator.microsoft.MicrosoftBackgroundLogin;
 import net.kdt.pojavlaunch.contracts.OpenDocumentWithExtension;
@@ -109,7 +107,6 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.Random;
 import java.util.concurrent.Future;
 
 public class LauncherActivity extends BaseActivity {
@@ -122,26 +119,19 @@ public class LauncherActivity extends BaseActivity {
             });
 
     private ActivityLauncherBinding binding;
-    private SettingsButtonWrapper mSettingsButtonWrapper;
     private ProgressServiceKeeper mProgressServiceKeeper;
     private NotificationManager mNotificationManager;
     private Future<?> checkNotice;
 
-    /* Allows to switch from one button "type" to another */
     private final FragmentManager.FragmentLifecycleCallbacks mFragmentCallbackListener = new FragmentManager.FragmentLifecycleCallbacks() {
         @Override
         public void onFragmentResumed(@NonNull FragmentManager fm, @NonNull Fragment f) {
-            if (f instanceof MainMenuFragment) {
-                mSettingsButtonWrapper.setButtonType(ButtonType.SETTINGS);
-            } else {
-                mSettingsButtonWrapper.setButtonType(ButtonType.HOME);
-            }
+            refreshTopBarState();
         }
     };
 
     private final TaskCountListener mDoubleLaunchPreventionListener = taskCount -> {
-        // Hide the notification that starts the game if there are tasks executing.
-        // Prevents the user from trying to launch the game with tasks ongoing.
+
         if (taskCount > 0) {
             TaskExecutors.runInUIThread(() -> mNotificationManager.cancel(NotificationUtils.NOTIFICATION_ID_GAME_START));
         }
@@ -164,7 +154,7 @@ public class LauncherActivity extends BaseActivity {
     @Subscribe()
     public void event(SwapToLoginEvent event) {
         Fragment currentFragment = getCurrentFragment();
-        //如果当前可见的Fragment不为空，则判断当前的Fragment是否为AccountFragment，不是就跳转至AccountFragment
+
         if (currentFragment == null || getVisibleFragment(AccountFragment.TAG) != null) return;
         ZHTools.swapFragmentWithAnim(currentFragment, AccountFragment.class, AccountFragment.TAG, null);
     }
@@ -383,7 +373,6 @@ public class LauncherActivity extends BaseActivity {
 
         checkNotice();
 
-        //检查已经下载后的包，或者检查更新
         Task.runTask(() -> {
             UpdateUtils.checkDownloadedPackage(this, false, true);
             return null;
@@ -396,11 +385,10 @@ public class LauncherActivity extends BaseActivity {
             public void handleOnBackPressed() {
                 Fragment currentFragment = getCurrentFragment();
                 if (currentFragment instanceof BaseFragment && !((BaseFragment) currentFragment).onBackPressed()) {
-                    //Fragment那边拒绝了返回事件
+
                     return;
                 }
 
-                //如果栈中只剩下1个或没有Fragment，则直接退出启动器
                 if (getSupportFragmentManager().getBackStackEntryCount() <= 1) {
                     finish();
                 } else {
@@ -410,7 +398,7 @@ public class LauncherActivity extends BaseActivity {
         });
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        //如果栈中没有Fragment，那么就将主Fragment添加进来
+
         if (fragmentManager.getBackStackEntryCount() < 1) {
             fragmentManager.beginTransaction()
                     .setReorderingAllowed(true)
@@ -422,34 +410,36 @@ public class LauncherActivity extends BaseActivity {
     private void processViews() {
         refreshBackground();
         setPageOpacity(AllSettings.getPageOpacity().getValue());
-        mSettingsButtonWrapper = new SettingsButtonWrapper(binding.settingButton);
-        mSettingsButtonWrapper.setOnTypeChangeListener(type -> ViewAnimUtils.setViewAnim(binding.settingButton, Animations.Pulse));
+        binding.backButton.setOnClickListener(v -> getOnBackPressedDispatcher().onBackPressed());
+        binding.homeButton.setOnClickListener(v -> Tools.backToMainMenu(this));
+        binding.filesButton.setOnClickListener(v -> {
+            Fragment fragment = getCurrentFragment();
+            if (fragment == null || fragment instanceof FilesFragment) return;
+            ViewAnimUtils.setViewAnim(binding.filesButton, Animations.Pulse);
+            Bundle bundle = new Bundle();
+            bundle.putString(FilesFragment.BUNDLE_LIST_PATH, PathManager.DIR_GAME_HOME);
+            ZHTools.swapFragmentWithAnim(fragment, FilesFragment.class, FilesFragment.TAG, bundle);
+        });
+        binding.accountButton.setOnClickListener(v -> {
+            Fragment fragment = getCurrentFragment();
+            if (fragment == null || fragment instanceof AccountFragment) return;
+            ViewAnimUtils.setViewAnim(binding.accountButton, Animations.Pulse);
+            ZHTools.swapFragmentWithAnim(fragment, AccountFragment.class, AccountFragment.TAG, null);
+        });
         binding.downloadButton.setOnClickListener(v -> {
-            Fragment fragment = getSupportFragmentManager().findFragmentById(binding.containerFragment.getId());
-            if (fragment != null && !(fragment instanceof DownloadFragment || fragment instanceof DownloadModFragment)) {
-                ViewAnimUtils.setViewAnim(binding.downloadButton, Animations.Pulse);
-                ZHTools.swapFragmentWithAnim(fragment, DownloadFragment.class, DownloadFragment.TAG, null);
-            }
+            Fragment fragment = getCurrentFragment();
+            if (fragment == null || isDownloadPage(fragment)) return;
+            ViewAnimUtils.setViewAnim(binding.downloadButton, Animations.Pulse);
+            ZHTools.swapFragmentWithAnim(fragment, DownloadFragment.class, DownloadFragment.TAG, null);
         });
         binding.settingButton.setOnClickListener(v -> {
+            Fragment fragment = getCurrentFragment();
+            if (fragment == null || fragment instanceof SettingsFragment) return;
             ViewAnimUtils.setViewAnim(binding.settingButton, Animations.Pulse);
-            Fragment fragment = getSupportFragmentManager().findFragmentById(binding.containerFragment.getId());
-            if (fragment instanceof MainMenuFragment) {
-                ZHTools.swapFragmentWithAnim(fragment, SettingsFragment.class, SettingsFragment.TAG, null);
-            } else {
-                // The setting button doubles as a home button now
-                Tools.backToMainMenu(this);
-            }
+            ZHTools.swapFragmentWithAnim(fragment, SettingsFragment.class, SettingsFragment.TAG, null);
         });
         binding.appTitleText.setText(InfoDistributor.APP_NAME);
-        binding.appTitleText.setOnClickListener(v -> {
-            String shiftedString = StringUtils.shiftString(binding.appTitleText.getText().toString(), ShiftDirection.RIGHT, 1);
-            if (new Random().nextInt(100) < 20 && shiftedString.equals(InfoDistributor.APP_NAME)) {
-                ErrorActivity.showEasterEgg(this);
-                return;
-            }
-            binding.appTitleText.setText(shiftedString);
-        });
+        refreshTopBarState();
 
         binding.progressLayout.observe(ProgressLayout.DOWNLOAD_MINECRAFT);
         binding.progressLayout.observe(ProgressLayout.UNPACK_RUNTIME);
@@ -484,7 +474,6 @@ public class LauncherActivity extends BaseActivity {
             }
         }).init();
 
-        //愚人节彩蛋
         if (ZHTools.checkDate(4, 1)) binding.hair.setVisibility(View.VISIBLE);
         else binding.hair.setVisibility(View.GONE);
     }
@@ -546,7 +535,7 @@ public class LauncherActivity extends BaseActivity {
             if (checkNotice.isCancelled() || noticeInfo == null) {
                 return;
             }
-            //当偏好设置内是开启通知栏 或者 检测到通知编号不为偏好设置里保存的值时，显示通知栏
+
             if (AllSettings.getNoticeDefault().getValue() ||
                     (noticeInfo.numbering != AllSettings.getNoticeNumbering().getValue())) {
                 TaskExecutors.runInUIThread(() -> setNotice(true));
@@ -598,8 +587,29 @@ public class LauncherActivity extends BaseActivity {
         binding.topLayout.setBackgroundColor(barColor);
         binding.appTitleText.setTextColor(titleColor);
         ColorStateList colorStateList = ColorStateList.valueOf(iconColor);
+        binding.backButton.setImageTintList(colorStateList);
+        binding.homeButton.setImageTintList(colorStateList);
+        binding.filesButton.setImageTintList(colorStateList);
+        binding.accountButton.setImageTintList(colorStateList);
         binding.downloadButton.setImageTintList(colorStateList);
         binding.settingButton.setImageTintList(colorStateList);
+    }
+
+    private boolean isDownloadPage(Fragment fragment) {
+        return fragment instanceof DownloadFragment || fragment instanceof DownloadModFragment;
+    }
+
+    private void refreshTopBarState() {
+        if (binding == null) return;
+        Fragment fragment = getSupportFragmentManager().findFragmentById(binding.containerFragment.getId());
+        boolean isMain = fragment == null || fragment instanceof MainMenuFragment;
+        int subVisibility = isMain ? View.GONE : View.VISIBLE;
+        binding.backButton.setVisibility(subVisibility);
+        binding.homeButton.setVisibility(subVisibility);
+        binding.settingButton.setActivated(fragment instanceof SettingsFragment);
+        binding.downloadButton.setActivated(fragment != null && isDownloadPage(fragment));
+        binding.accountButton.setActivated(fragment instanceof AccountFragment);
+        binding.filesButton.setActivated(fragment instanceof FilesFragment);
     }
 
     @SuppressWarnings("SameParameterValue")

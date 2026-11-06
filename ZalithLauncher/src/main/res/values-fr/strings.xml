@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Zalith Launcher -->
     <string name="generic_open">Ouvrir</string>
     <string name="generic_close">Fermer</string>
     <string name="generic_return">Retour</string>
@@ -40,7 +39,7 @@
     <string name="generic_login">Connexion</string>
     <string name="generic_wrong_tip">Il y a eu un problème</string>
     <string name="generic_no_more_reminders">Ne plus rappeler</string>
-    <string name="generic_no_network">Pas connecté à Internet. Veuillez vérifier la connexion réseau de votre appareil !</string>
+    <string name="generic_no_network">Pas connecté à Internet, Veuillez vérifier la connexion réseau de votre appareil !</string>
     <string name="generic_input_invalid">Le contenu saisi n\'est pas valide, veuillez réessayer</string>
     <string name="generic_input_invalid_character">Le nom contient un caractère invalide : "%s"</string>
     <string name="generic_input_too_small">La valeur saisie est trop petite, elle doit être au moins %s</string>
@@ -52,12 +51,10 @@
     <string name="generic_pre_release">Version préliminaire</string>
     <string name="generic_beta">Version bêta</string>
     <string name="generic_alpha">Version alpha</string>
-    <!-- Error -->
     <string name="error_fatal">%s a rencontré une erreur fatale</string>
     <string name="error_no_version">Aucune version disponible !</string>
     <string name="error_show_more">Afficher les détails</string>
     <string name="error_show_less">Masquer les détails</string>
-    <!-- Launcher -->
     <string name="option_category_debug">Débogage</string>
     <string name="option_category_control">Contrôle</string>
     <string name="option_category_hotbar">Boîte de détection du hotbar</string>
@@ -71,7 +68,7 @@
     <string name="option_hotbar_width">Largeur de la boîte de détection</string>
     <string name="option_hotbar_height">Hauteur de la boîte de détection</string>
     <string name="customctrl_editor_exit_title">Quitter ?</string>
-    <string name="customctrl_editor_exit_msg">Les modifications en cours ne seront pas enregistrées. Êtes-vous sûr de vouloir quitter directement ?</string>
+    <string name="customctrl_editor_exit_msg">Les modifications en cours ne seront pas enregistrées, Êtes-vous sûr de vouloir quitter directement ?</string>
     <string name="customctrl_editor_exit">Quitter l\'éditeur</string>
     <string name="global_save_and_exit">Sauvegarder et quitter</string>
     <string name="version_snapshot">Version snapshot</string>
@@ -79,38 +76,38 @@
     <string name="version_beta">Version Beta</string>
     <string name="force_exit_confirm">Êtes-vous sûr de vouloir forcer la fermeture ?</string>
     <string name="autoram_info_msg">La mémoire a été réglée à %d Mo</string>
-    <string name="memory_warning_msg">La mémoire disponible actuelle (%d) est inférieure à la mémoire allouée (%d), ce qui pourrait entraîner un plantage du jeu. Si le jeu plante, veuillez modifier la configuration !</string>
-    <string name="address_memory_warning_msg">L\'espace mémoire libre disponible (%d) est inférieur à la mémoire allouée (%d), ce qui entraînera un plantage. Si le jeu plante, veuillez ajuster l\'allocation de mémoire.</string>
+    <string name="memory_warning_msg">La mémoire disponible actuelle (%d) est inférieure à la mémoire allouée (%d), ce qui pourrait entraîner un plantage du jeu, Si le jeu plante, veuillez modifier la configuration !</string>
+    <string name="address_memory_warning_msg">L\'espace mémoire libre disponible (%d) est inférieur à la mémoire allouée (%d), ce qui entraînera un plantage, Si le jeu plante, veuillez ajuster l\'allocation de mémoire</string>
     <string name="notif_channel_name">Général</string>
     <string name="lazy_service_default_title">Service de Réception %s</string>
     <string name="progresslayout_tasks_in_progress">%d tâches en cours</string>
     <string name="notification_terminate">Terminer</string>
     <string name="notification_game_runs">Le jeu est en cours d\'exécution !</string>
     <string name="tasks_ongoing">Tâches en cours d\'exécution, veuillez patienter</string>
-    <string name="mc_download_failed">Échec du téléchargement de Minecraft ! Cela pourrait être dû à une mauvaise connexion réseau, à un mauvais placement des fichiers, etc.</string>
+    <string name="mc_download_failed">Échec du téléchargement de Minecraft ! Cela pourrait être dû à une mauvaise connexion réseau, à un mauvais placement des fichiers, etc</string>
     <string name="microsoft_login_retry_later">Vous avez effectué trop d\'opérations, veuillez réessayer plus tard</string>
     <string name="storage_required">%s nécessite une connexion à un stockage externe, veuillez reconnecter et redémarrer l\'application</string>
     <string name="dialog_select_jar">Sélectionner un fichier Jar</string>
-    <string name="version_select_hint">Choisir version (Appui long pour réinit.)</string>
+    <string name="version_select_hint">Choisir version (Appui long pour réinit)</string>
     <string name="notif_error_occured">Une erreur est survenue</string>
     <string name="notif_error_occured_desc">Cliquez pour voir les détails</string>
     <string name="input_preview_tip">Aperçu du champ de saisie, capture l\'entrée du clavier virtuel, à titre de référence uniquement :</string>
     <string name="dl_tampered_manifest_title">Avertissement de vérification de fichier</string>
-    <string name="dl_tampered_manifest"><![CDATA[La liste des versions de jeu sur la source miroir ne correspond pas à celle de Mojang, ce qui signifie qu\'elle pourrait avoir été modifiée.<br/>
-        <b>Cela n\'est pas sûr. Si vous continuez, vos informations personnelles pourraient être en danger !</b><br/>
-        Si vous souhaitez toujours utiliser la source miroir, cliquez sur "Désactiver la vérification de la liste des versions du jeu" pour recommencer le téléchargement.<br/>
-        Si vous souhaitez utiliser la source officielle, cliquez sur "Passer à la source officielle" pour recommencer le téléchargement.<br/>]]></string>
+    <string name="dl_tampered_manifest"><![CDATA[La liste des versions de jeu sur la source miroir ne correspond pas à celle de Mojang, ce qui signifie qu\'elle pourrait avoir été modifiée<br/>
+        <b>Cela n\'est pas sûr, Si vous continuez, vos informations personnelles pourraient être en danger !</b><br/>
+        Si vous souhaitez toujours utiliser la source miroir, cliquez sur "Désactiver la vérification de la liste des versions du jeu" pour recommencer le téléchargement<br/>
+        Si vous souhaitez utiliser la source officielle, cliquez sur "Passer à la source officielle" pour recommencer le téléchargement<br/>]]></string>
     <string name="dl_turn_off_manifest_checks">Désactiver la vérification de la liste des versions du jeu</string>
     <string name="dl_switch_to_official_site">Passer à la source de téléchargement officielle</string>
     <string name="notif_download_finished">Le jeu est prêt à être lancé</string>
     <string name="notif_download_finished_desc">Cliquez ici pour le lancer !</string>
     <string name="notification_permission_dialog_title">Demande d\'autorisation</string>
-    <string name="notification_permission_dialog_text">%s a besoin de l\'autorisation de publier des notifications pour empêcher l\'arrêt du téléchargement des fichiers du jeu lorsque vous quittez l\'application. Sans cette autorisation, Android pourrait arrêter votre progression de téléchargement lorsque vous mettez %s en arrière-plan.</string>
+    <string name="notification_permission_dialog_text">%s a besoin de l\'autorisation de publier des notifications pour empêcher l\'arrêt du téléchargement des fichiers du jeu lorsque vous quittez l\'application, Sans cette autorisation, Android pourrait arrêter votre progression de téléchargement lorsque vous mettez %s en arrière-plan</string>
     <string name="notification_permission_toast">Vous pouvez changer d\'avis à tout moment en accédant aux \"Paramètres système\"</string>
-    <string name="newdl_starting">Lecture des métadonnées du jeu en cours…</string>
+    <string name="newdl_starting">Lecture des métadonnées du jeu en cours</string>
     <string name="newdl_downloading_metadata">Téléchargement des métadonnées du jeu en cours (%s)</string>
-    <string name="newdl_downloading_game_files">Téléchargement des fichiers du jeu… (%d/%d, %.2f MB)</string>
-    <string name="newdl_downloading_game_files_size">Téléchargement des fichiers du jeu… (%.2f/%.2f Mo, %.2f Mo/s)</string>
+    <string name="newdl_downloading_game_files">Téléchargement des fichiers du jeu (%d/%d, %.2f MB)</string>
+    <string name="newdl_downloading_game_files_size">Téléchargement des fichiers du jeu (%.2f/%.2f Mo, %.2f Mo/s)</string>
     <string name="newdl_extracting_native_libraries">Extraction des bibliothèques natives (%d/%d)</string>
     <string name="log_view_button_scroll_off">Défilement automatique : Désactivé</string>
     <string name="log_view_button_scroll_on">Défilement automatique : Activé</string>
@@ -128,16 +125,15 @@
     <string name="mod_optifine_progress">Téléchargement de %s</string>
     <string name="mod_check_dialog_title">Rapport de vérification des mods</string>
     <string name="mod_check_progress_message">Vérification des mods (%d / %d)</string>
-    <string name="mod_check_touch_controller">Détection du mod Touch Controller (%s) installé, le lanceur est prêt à activer le proxy de contrôle pour adapter le mod.</string>
-    <string name="mod_check_sodium_or_embeddium">Sodium ou Embeddium mod détecté (%s). Le lanceur désactivera les avertissements de ce mod ou empêchera son plantage intentionnel sur les appareils Android. Cependant, veuillez noter que la communauté du mod a explicitement déclaré qu\'elle ne prendra plus en charge les problèmes liés aux appareils Android. Par conséquent, si vous rencontrez des problèmes avec ce mod, ne les signalez pas à la communauté du mod !</string>
-    <string name="mod_check_physics">Le mod physique utilisé actuellement (%s) n\'est pas patché (libPhysXJniBindings_64.so est remplacé de l\'architecture x86_64 à arm64), il va planter au lancement.</string>
-    <string name="mod_check_mcef">MCEF (%s) ne peut pas fonctionner sur Android. Il est généralement utilisé comme dépendance préalable pour WebDisplays/In-game Browser (navigateur).</string>
-    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) ne peut pas s\'exécuter directement en mode solo. Vous devez l\'exécuter sur un serveur (Termux peut être utilisé), sinon le jeu plantera.</string>
-    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 ne peut pas fonctionner sur Android.</string>
-    <string name="mod_check_imblocker">IMBlocker/In-GameIME (%s) n\'est pas compatible avec Android et fera planter le jeu au démarrage.</string>
-    <string name="mod_check_replay_mod">ReplayMod (%s) nécessite FFmpeg pour rendre les vidéos. Veuillez installer le plugin FFmpeg séparément\n%s\n%s</string>
-    <string name="mod_check_borderlesswindow">Borderless Window (%s) n\'est pas compatible avec Android et fera planter le jeu au démarrage.</string>
-    <!-- Controls -->
+    <string name="mod_check_touch_controller">Détection du mod Touch Controller (%s) installé, le lanceur est prêt à activer le proxy de contrôle pour adapter le mod</string>
+    <string name="mod_check_sodium_or_embeddium">Sodium ou Embeddium mod détecté (%s), Le lanceur désactivera les avertissements de ce mod ou empêchera son plantage intentionnel sur les appareils Android, Cependant, veuillez noter que la communauté du mod a explicitement déclaré qu\'elle ne prendra plus en charge les problèmes liés aux appareils Android, Par conséquent, si vous rencontrez des problèmes avec ce mod, ne les signalez pas à la communauté du mod !</string>
+    <string name="mod_check_physics">Le mod physique utilisé actuellement (%s) n\'est pas patché (libPhysXJniBindings_64.so est remplacé de l\'architecture x86_64 à arm64), il va planter au lancement</string>
+    <string name="mod_check_mcef">MCEF (%s) ne peut pas fonctionner sur Android, Il est généralement utilisé comme dépendance préalable pour WebDisplays/In-game Browser (navigateur)</string>
+    <string name="mod_check_valkyrien_skies">Valkyrien Skies/Valkyrien Warfare (%s) ne peut pas s\'exécuter directement en mode solo, Vous devez l\'exécuter sur un serveur (Termux peut être utilisé), sinon le jeu plantera</string>
+    <string name="mod_check_yes_steve_model">Yes Steve Model (%s) 2.2.2–2.5.1 ne peut pas fonctionner sur Android</string>
+    <string name="mod_check_imblocker">IMBlocker/In-GameIME (%s) n\'est pas compatible avec Android et fera planter le jeu au démarrage</string>
+    <string name="mod_check_replay_mod">ReplayMod (%s) nécessite FFmpeg pour rendre les vidéos, Veuillez installer le plugin FFmpeg séparément\n%s\n%s</string>
+    <string name="mod_check_borderlesswindow">Borderless Window (%s) n\'est pas compatible avec Android et fera planter le jeu au démarrage</string>
     <string name="control_primary">Clic gauche</string>
     <string name="control_secondary">Clic droit</string>
     <string name="control_mouse">Souris</string>
@@ -186,10 +182,10 @@
     <string name="controls_info_desc">Description :</string>
     <string name="controls_info_more">Détails</string>
     <string name="controls_info_view">Voir les informations</string>
-    <string name="controls_info_no_info">Aucune description pour cette disposition de contrôles…</string>
+    <string name="controls_info_no_info">Aucune description pour cette disposition de contrôles</string>
     <string name="controls_info_invalid">Fichier invalide :</string>
     <string name="controls_info_default_title">Disposition de contrôles par défaut</string>
-    <string name="controls_info_default_desc">Ceci est le fichier de disposition de contrôles par défaut, cliquez pour manipuler cette disposition de contrôles.</string>
+    <string name="controls_info_default_desc">Ceci est le fichier de disposition de contrôles par défaut, cliquez pour manipuler cette disposition de contrôles</string>
     <string name="controls_set_default_message">Êtes-vous sûr de vouloir définir cette disposition de contrôles comme disposition par défaut ?</string>
     <string name="controls_nothing">Il n\'y a aucune disposition de contrôles ici, redémarrer l\'application générera une nouvelle disposition de contrôles par défaut</string>
     <string name="controls_tip_set_default">Appuyez longuement sur la disposition des commandes pour la définir comme disposition de contrôle par défaut !</string>
@@ -212,7 +208,6 @@
     <string name="controller_dpad_right">Flèche directionnelle droite</string>
     <string name="controller_remapper_operating_mode">Mode actuel</string>
     <string name="controller_remapper_expand_entry">Développer pour modifier le code de la touche</string>
-    <!-- Version -->
     <string name="version_manager_title">Gestion des versions</string>
     <string name="version_no_versions">Aucune version installée</string>
     <string name="version_install_new">Installer une nouvelle version</string>
@@ -221,7 +216,7 @@
     <string name="version_install_incompatible">Incompatible avec %s</string>
     <string name="version_install_exists">Une version avec ce nom existe déjà !</string>
     <string name="version_install_no_versions">Aucune version disponible pour le choix !</string>
-    <string name="version_install_cannot_use_mc_name">Le contenu supplémentaire a été sélectionné, et l\'indépendance du noyau d\'origine doit être assurée. Veuillez ne pas utiliser le nom d\'origine !</string>
+    <string name="version_install_cannot_use_mc_name">Le contenu supplémentaire a été sélectionné, et l\'indépendance du noyau d\'origine doit être assurée, Veuillez ne pas utiliser le nom d\'origine !</string>
     <string name="version_install_type_version">Télécharger et installer en tant que version</string>
     <string name="version_install_type_mod">Télécharger et installer en tant que Mod</string>
     <string name="version_install_optifine_and_forge">Certaines versions d\'OptiFine peuvent ne pas fonctionner sur Forge, si vous rencontrez des plantages ou des problèmes de compatibilité, veuillez envisager de supprimer OptiFine en priorité !</string>
@@ -237,11 +232,11 @@
     <string name="version_manager_shortcuts_crash_report_path">Dossier des rapports de crash</string>
     <string name="version_manager_rename">Renommer la version</string>
     <string name="version_manager_copy">Copier la version</string>
-    <string name="version_manager_copy_tip">Copier la version actuelle en une nouvelle avec l\'isolation des versions activée par défaut. Si "Copier tous les fichiers" ci-dessous est activé, tous les fichiers générés par la version actuelle (packs de ressources, sauvegardes, paramètres du jeu, etc.) seront également copiés.</string>
+    <string name="version_manager_copy_tip">Copier la version actuelle en une nouvelle avec l\'isolation des versions activée par défaut, Si "Copier tous les fichiers" ci-dessous est activé, tous les fichiers générés par la version actuelle (packs de ressources, sauvegardes, paramètres du jeu, etc) seront également copiés</string>
     <string name="version_manager_copy_all">Copier tous les fichiers</string>
     <string name="version_manager_delete">Supprimer la version</string>
-    <string name="version_manager_delete_tip">La suppression d\'une version entraînera la suppression de tous les fichiers du répertoire \"./versions/%s\", y compris des ressources importantes telles que les sauvegardes de jeu, les packs de ressources, les modules, etc., même si l\'isolation des versions n\'est pas activée. Veuillez donc faire une sauvegarde avant d\'effectuer cette opération!</string>
-    <string name="version_manager_delete_tip_invalid">La version actuelle manque du fichier JSON de la version et est donc considérée comme une version invalide. Vous ne pouvez pas sélectionner cette version. Cliquez sur Confirmer pour supprimer cette version erronée.</string>
+    <string name="version_manager_delete_tip">La suppression d\'une version entraînera la suppression de tous les fichiers du répertoire \"./versions/%s\", y compris des ressources importantes telles que les sauvegardes de jeu, les packs de ressources, les modules, etc, même si l\'isolation des versions n\'est pas activée, Veuillez donc faire une sauvegarde avant d\'effectuer cette opération!</string>
+    <string name="version_manager_delete_tip_invalid">La version actuelle manque du fichier JSON de la version et est donc considérée comme une version invalide, Vous ne pouvez pas sélectionner cette version, Cliquez sur Confirmer pour supprimer cette version erronée</string>
     <string name="version_manager_task_in_progress">Tâche en cours, la gestion des versions est temporairement indisponible</string>
     <string name="version_manager_invalid">Cette version est invalide</string>
     <string name="version_manager_no_installed_version">Le lanceur n\'a trouvé aucune version de Minecraft installée!</string>
@@ -252,11 +247,9 @@
     <string name="version_manager_favorites_write_folder_name">Nommer le nouveau favori</string>
     <string name="version_manager_favorites_dialog_title">Ajouter aux favoris</string>
     <string name="version_manager_favorites_dialog_no_folders">Pas de favoris pour le moment, veuillez en ajouter un d\'abord !</string>
-    <!-- Permissions -->
-    <string name="permissions_manage_external_storage">%s nécessite l\'autorisation de gérer tous les fichiers de l\'appareil pour fonctionner correctement. Veuillez activer les autorisations !</string>
-    <string name="permissions_write_external_storage">%s nécessite l\'autorisation de gestion du stockage. Si l\'autorisation n\'est pas activée, cela peut entraîner des problèmes tels que l\'échec de l\'enregistrement ou de la décompression des fichiers de jeu. Veuillez accorder l\'autorisation pour assurer le bon fonctionnement.</string>
-    <string name="permissions_storage_for_renderer_config">Le plugin de rendu %s peut avoir des paramètres. Si %s n\'a pas l\'accès au stockage, ils ne seront pas lus. Veuillez autoriser l\'accès.</string>
-    <!-- Profiles Path -->
+    <string name="permissions_manage_external_storage">%s nécessite l\'autorisation de gérer tous les fichiers de l\'appareil pour fonctionner correctement, Veuillez activer les autorisations !</string>
+    <string name="permissions_write_external_storage">%s nécessite l\'autorisation de gestion du stockage, Si l\'autorisation n\'est pas activée, cela peut entraîner des problèmes tels que l\'échec de l\'enregistrement ou de la décompression des fichiers de jeu, Veuillez accorder l\'autorisation pour assurer le bon fonctionnement</string>
+    <string name="permissions_storage_for_renderer_config">Le plugin de rendu %s peut avoir des paramètres, Si %s n\'a pas l\'accès au stockage, ils ne seront pas lus, Veuillez autoriser l\'accès</string>
     <string name="profiles_path_title">Gestion du chemin du jeu</string>
     <string name="profiles_path_default">Chemin par défaut</string>
     <string name="profiles_path_settings">Ouvrir les paramètres de chemin</string>
@@ -264,11 +257,10 @@
     <string name="profiles_path_create_new">Ajouter un nouveau chemin</string>
     <string name="profiles_path_create_new_title">Nommer ce chemin</string>
     <string name="profiles_path_delete_title">Supprimer ce chemin</string>
-    <string name="profiles_path_delete_message">Le lanceur supprimera ce chemin, mais ne supprimera pas les fichiers enregistrés dans ce chemin. Vous pourrez ajouter ce chemin à nouveau après la suppression.</string>
-    <!-- Profile -->
+    <string name="profiles_path_delete_message">Le lanceur supprimera ce chemin, mais ne supprimera pas les fichiers enregistrés dans ce chemin, Vous pourrez ajouter ce chemin à nouveau après la suppression</string>
     <string name="pedit_isolation_enabled">Activer l\'isolement des versions</string>
-    <string name="pedit_reset_icon">Cela réinitialisera l\'icône personnalisée que vous avez définie, et l\'opération est irréversible. Êtes-vous sûr de vouloir réinitialiser l\'icône de la version ?</string>
-    <string name="pedit_unsaved_tip">Vous avez modifié la configuration de cette version. Un retour direct perdra ces modifications. Êtes-vous sûr de vouloir revenir directement ?</string>
+    <string name="pedit_reset_icon">Cela réinitialisera l\'icône personnalisée que vous avez définie, et l\'opération est irréversible, Êtes-vous sûr de vouloir réinitialiser l\'icône de la version ?</string>
+    <string name="pedit_unsaved_tip">Vous avez modifié la configuration de cette version, Un retour direct perdra ces modifications, Êtes-vous sûr de vouloir revenir directement ?</string>
     <string name="pedit_control">Disposition de contrôle</string>
     <string name="pedit_custom_path">Chemin personnalisé</string>
     <string name="pedit_default">(Utiliser la valeur par défaut globale)</string>
@@ -279,18 +271,17 @@
     <string name="profile_mods_disable">Désactiver</string>
     <string name="profile_mods_enable">Activer</string>
     <string name="profile_mods_disable_or_enable">Désactiver/Activer</string>
-    <!-- Account -->
     <string name="account_login_done">Connexion terminée</string>
     <string name="account_add">Ajouter un compte</string>
     <string name="account_no_saved_accounts">Aucun compte enregistré</string>
-    <string name="account_remove">Ce compte sera supprimé du lanceur. Êtes-vous sûr de vouloir faire cela ?</string>
+    <string name="account_remove">Ce compte sera supprimé du lanceur, Êtes-vous sûr de vouloir faire cela ?</string>
     <string name="account_remove_login_type_title">Supprimer le type de connexion : %s</string>
-    <string name="account_remove_login_type_message">Ce type de connexion sera supprimé du lanceur, mais il ne supprimera pas votre compte existant. Êtes-vous sûr de vouloir faire cela ?</string>
+    <string name="account_remove_login_type_message">Ce type de connexion sera supprimé du lanceur, mais il ne supprimera pas votre compte existant, Êtes-vous sûr de vouloir faire cela ?</string>
     <string name="account_microsoft_account">Compte Microsoft</string>
-    <string name="account_microsoft_xerr_unauthorized">Vos informations de connexion à votre compte Microsoft semblent avoir expiré, ce qui se produit souvent après la modification du mot de passe du compte. Veuillez supprimer le compte actuel et vous reconnecter pour réinitialiser vos informations de connexion.</string>
+    <string name="account_microsoft_xerr_unauthorized">Vos informations de connexion à votre compte Microsoft semblent avoir expiré, ce qui se produit souvent après la modification du mot de passe du compte, Veuillez supprimer le compte actuel et vous reconnecter pour réinitialiser vos informations de connexion</string>
     <string name="account_local_account">Compte hors ligne</string>
     <string name="account_local_account_empty">Le nom d\'utilisateur ne peut pas être vide !</string>
-    <string name="account_local_account_invalid">Un nom d\'utilisateur valide ne prend en charge que les lettres anglaises (majuscules et minuscules), les chiffres et les traits de soulignement. La longueur du nom d\'utilisateur doit être comprise entre 3 et 16 caractères. [RED;BOLD]Sinon, le jeu peut ne pas fonctionner correctement.[/RED;BOLD]\nExemples de noms d\'utilisateur valides : Name, Name_, Name123\nExemples de noms d\'utilisateur invalides : Name@, N ame, name_name_name_name\nCependant, si vous utilisez des mods ou des plugins qui suppriment cette restriction, vous pouvez continuer à utiliser ce nom. Sinon, veuillez le renommer !</string>
+    <string name="account_local_account_invalid">Un nom d\'utilisateur valide ne prend en charge que les lettres anglaises (majuscules et minuscules), les chiffres et les traits de soulignement, La longueur du nom d\'utilisateur doit être comprise entre 3 et 16 caractères, [RED;BOLD]Sinon, le jeu peut ne pas fonctionner correctement[/RED;BOLD]\nExemples de noms d\'utilisateur valides : Name, Name_, Name123\nExemples de noms d\'utilisateur invalides : Name@, N ame, name_name_name_name\nCependant, si vous utilisez des mods ou des plugins qui suppriment cette restriction, vous pouvez continuer à utiliser ce nom, Sinon, veuillez le renommer !</string>
     <string name="account_login_local_name">Nom d\'utilisateur</string>
     <string name="account_login_start">Commencer la connexion !</string>
     <string name="account_login_microsoft_progress">Connexion au compte Microsoft en cours : %s</string>
@@ -301,8 +292,8 @@
     <string name="account_login_progress_checking">Vérification du jeton</string>
     <string name="account_login_no_network">Pas connecté à Internet, connexion sautée!</string>
     <string name="account_login_skip">Échec de la connexion au compte, souhaitez-vous sauter l\'étape de connexion ?</string>
-    <string name="account_no_microsoft_account">Veuillez vous connecter avec au moins un compte Minecraft officiel. Nous déconseillons de lancer Minecraft sans compte officiel.</string>
-    <string name="account_no_microsoft_account_local">Il semble que vous n\'êtes pas connecté avec un compte officiel ! Le compte hors ligne est une solution de secours pour les joueurs qui ne peuvent pas se connecter à Internet, et non pour ceux qui n\'ont pas de compte officiel.</string>
+    <string name="account_no_microsoft_account">Veuillez vous connecter avec au moins un compte Minecraft officiel, Nous déconseillons de lancer Minecraft sans compte officiel</string>
+    <string name="account_no_microsoft_account_local">Il semble que vous n\'êtes pas connecté avec un compte officiel ! Le compte hors ligne est une solution de secours pour les joueurs qui ne peuvent pas se connecter à Internet, et non pour ceux qui n\'ont pas de compte officiel</string>
     <string name="account_no_microsoft_account_other">Il semble que vous n\'êtes pas connecté avec un compte officiel ! Êtes-vous sûr de vouloir utiliser une connexion externe sans compte officiel ?</string>
     <string name="account_no_microsoft_account_continue">Ignorer et continuer</string>
     <string name="account_continue_to_launch_the_game">Lancer le jeu quand même</string>
@@ -315,14 +306,13 @@
     <string name="xerr_not_available">Xbox Live n\'est pas disponible dans votre pays/région</string>
     <string name="minecraft_not_owned">Profil Minecraft non trouvé</string>
     <string name="no_minecraft_purchase">Veuillez vous assurer que vous avez acheté Minecraft, connectez-vous à votre compte sur https://minecraft.net/ et réessayez</string>
-    <!-- Jre -->
     <string name="install_select_jre_environment">Sélectionner l\'environnement JRE</string>
     <string name="install_recommend_use_jre8">Dans l\'environnement d\'exécution, veuillez utiliser JRE 8 autant que possible pour garantir la stabilité</string>
     <string name="install_auto_select">Laisser le lanceur décider</string>
     <string name="multirt_runtime_corrupt">Environnement d\'exécution Java corrompu</string>
     <string name="multirt_runtime_incompatiblearch">Architecture incompatible : %s</string>
     <string name="multirt_config_title">Environnement d\'exécution Java</string>
-    <string name="multirt_progress_caching">Mise en cache en cours…</string>
+    <string name="multirt_progress_caching">Mise en cache en cours</string>
     <string name="multirt_config_setdefault">Définir par défaut</string>
     <string name="multirt_nocompatiblert">Aucun environnement d\'exécution Java compatible trouvé, cette version nécessite Java %d ou une version plus récente</string>
     <string name="multirt_nojava8rt">Impossible de trouver Java 8, pour utiliser cette option, vous devez installer Java 8</string>
@@ -330,7 +320,6 @@
     <string name="multirt_import">Importer l\'environnement d\'exécution</string>
     <string name="multirt_swap_setdefault">Sélectionner l\'environnement par défaut</string>
     <string name="multirt_provided_by_launcher">Intégré</string>
-    <!-- Custom Mouse & Background -->
     <string name="mouse_settings_speed_name">Vitesse de la souris virtuelle</string>
     <string name="mouse_settings_scale_name">Échelle de la souris virtuelle</string>
     <string name="custom_mouse_add">Ajouter une souris virtuelle</string>
@@ -349,7 +338,6 @@
     <string name="custom_background_selected">Image de fond définie avec succès pour %s :</string>
     <string name="custom_background_reset">Image de fond réinitialisée pour %s</string>
     <string name="custom_background_nothing">Il n\'y a aucune image de fond ici, veuillez d\'abord en ajouter quelques-unes !</string>
-    <!-- File -->
     <string name="file_folder_dialog_insert_name">Insérer le nom du dossier</string>
     <string name="file_create_folder">Créer un dossier</string>
     <string name="file_select_folder">Sélectionner un dossier</string>
@@ -363,24 +351,22 @@
     <string name="file_added">Fichier ajouté avec succès</string>
     <string name="file_delete">Êtes-vous sûr de vouloir supprimer ce fichier ?</string>
     <string name="file_delete_dir">Êtes-vous sûr de vouloir supprimer ce dossier ?</string>
-    <string name="file_delete_dir_message">La suppression du dossier supprimera également tous les fichiers qu\'il contient. Si ce dossier contient des fichiers importants, veuillez annuler cette opération !</string>
+    <string name="file_delete_dir_message">La suppression du dossier supprimera également tous les fichiers qu\'il contient, Si ce dossier contient des fichiers importants, veuillez annuler cette opération !</string>
     <string name="file_delete_multiple_items_title">Êtes-vous sûr de vouloir supprimer les éléments sélectionnés ?</string>
-    <string name="file_delete_multiple_items_message">Cette action supprimera définitivement tous les éléments sélectionnés. Veuillez procéder avec prudence !</string>
+    <string name="file_delete_multiple_items_message">Cette action supprimera définitivement tous les éléments sélectionnés, Veuillez procéder avec prudence !</string>
     <string name="file_rename_exitis">Le nom du fichier est en conflit avec un fichier existant !</string>
     <string name="file_external_storage">Répertoire de stockage externe</string>
     <string name="file_software_private">Répertoire privé du logiciel</string>
     <string name="file_multi_select_mode">Activer le mode de sélection multiple</string>
     <string name="file_multi_select_mode_title">Sélection multiple</string>
     <string name="file_multi_select_mode_message">Un total de %d éléments ont été sélectionnés</string>
-    <string name="file_operation_file">Opération sur le fichier en cours… (%s / %s, %d)</string>
+    <string name="file_operation_file">Opération sur le fichier en cours (%s / %s, %d)</string>
     <string name="file_jump_to_path">Aller au chemin</string>
     <string name="file_nothing">Aucun fichier trouvé !</string>
     <string name="file_invalid_length">Nom trop long ! (Longueur actuelle : %d, Longueur maximale : %d)</string>
-    <!-- Search View -->
     <string name="search_case_sensitive">Sensible à la casse</string>
     <string name="search_only_show_results">Afficher uniquement les résultats de la recherche</string>
     <string name="search_count">%d résultats de recherche</string>
-    <!-- Main Page & Settings -->
     <string name="main_open_main_dir">Ouvrir le répertoire principal</string>
     <string name="main_install_jar_file">Exécuter le fichier .jar</string>
     <string name="main_share_logs">Partager les fichiers journaux</string>
@@ -404,9 +390,9 @@
     <string name="setting_renderer_title">Moteur de rendu</string>
     <string name="setting_renderer_from_plugins">Depuis le plugin %s</string>
     <string name="setting_renderer_local_import_title">Importation du rendu local</string>
-    <string name="setting_renderer_local_import_desc">En plus d\'installer des plugins de rendu logiciel, le lanceur prend également en charge l\'importation de plugins de rendu localement. Cependant, certains appareils peuvent ne pas pouvoir utiliser les plugins de rendu local, veuillez donc l\'utiliser avec précaution !</string>
-    <string name="setting_renderer_local_import_restart">Nouveau rendu importé. Veuillez redémarrer le lanceur pour le charger !</string>
-    <string name="setting_renderer_local_import_failed">L\'importation du plugin de rendu a échoué. Le format du fichier compressé pourrait être incorrect, ou le plugin pourrait entrer en conflit avec d\'autres plugins !</string>
+    <string name="setting_renderer_local_import_desc">En plus d\'installer des plugins de rendu logiciel, le lanceur prend également en charge l\'importation de plugins de rendu localement, Cependant, certains appareils peuvent ne pas pouvoir utiliser les plugins de rendu local, veuillez donc l\'utiliser avec précaution !</string>
+    <string name="setting_renderer_local_import_restart">Nouveau rendu importé, Veuillez redémarrer le lanceur pour le charger !</string>
+    <string name="setting_renderer_local_import_failed">L\'importation du plugin de rendu a échoué, Le format du fichier compressé pourrait être incorrect, ou le plugin pourrait entrer en conflit avec d\'autres plugins !</string>
     <string name="setting_renderer_local_manage">Gérer les plugins de rendu locaux</string>
     <string name="setting_renderer_local_delete">Êtes-vous sûr de vouloir supprimer ce plugin de rendu ? Cette action est irréversible !</string>
     <string name="setting_driver_title">Pilote Vulkan</string>
@@ -428,7 +414,7 @@
     <string name="setting_longpress_trigger_title">Délai de déclenchement de la pression longue</string>
     <string name="setting_longpress_trigger_desc">Modifie le délai de déclenchement pour détruire un bloc ou jeter un objet</string>
     <string name="setting_button_scale_title">Mise à l\'échelle de la disposition des contrôles</string>
-    <string name="setting_button_scale_desc">Ajustez l\'échelle globale de la disposition des contrôles. Si les boutons sont trop petits, vous pouvez les agrandir.</string>
+    <string name="setting_button_scale_desc">Ajustez l\'échelle globale de la disposition des contrôles, Si les boutons sont trop petits, vous pouvez les agrandir</string>
     <string name="setting_mouse_scale_desc">Modifier la taille de la souris virtuelle</string>
     <string name="setting_mouse_speed_desc">Modifier la vitesse de la souris virtuelle</string>
     <string name="setting_mouse_start_title">Afficher la souris virtuelle au démarrage du jeu</string>
@@ -465,7 +451,7 @@
     <string name="setting_java_select_runtime_ask_me">Laissez-moi choisir temporairement</string>
     <string name="setting_java_select_runtime_default">Environnement d\'exécution par défaut actuel</string>
     <string name="setting_java_args_title">Paramètres de démarrage JVM</string>
-    <string name="setting_java_args_desc">Paramètres JVM supplémentaires ajoutés au démarrage de Minecraft. Il est déconseillé de les modifier sans être certain, car cela pourrait entraîner un plantage du jeu</string>
+    <string name="setting_java_args_desc">Paramètres JVM supplémentaires ajoutés au démarrage de Minecraft, Il est déconseillé de les modifier sans être certain, car cela pourrait entraîner un plantage du jeu</string>
     <string name="setting_java_memory_title">Allocation de mémoire</string>
     <string name="setting_java_memory_desc">Contrôler la quantité de mémoire allouée à Minecraft</string>
     <string name="setting_java_memory_info">Informations actuelles sur l\'utilisation de la mémoire : %s / %s, mémoire libre : %s</string>
@@ -479,7 +465,7 @@
     <string name="setting_force_big_core_title">Forcer le rendu sur le grand cœur</string>
     <string name="setting_force_big_core_desc">Forcer le thread de rendu de Minecraft à fonctionner sur le cœur à la fréquence la plus élevée</string>
     <string name="setting_touch_controller_vibrate_duration_title">Durée de vibration du mod TouchController</string>
-    <string name="setting_touch_controller_vibrate_duration_desc">Définissez la durée de vibration pour ce mod afin de répondre à différents besoins d\'utilisation.</string>
+    <string name="setting_touch_controller_vibrate_duration_desc">Définissez la durée de vibration pour ce mod afin de répondre à différents besoins d\'utilisation</string>
     <string name="setting_verify_manifest_title">Vérification de la liste des versions du jeu</string>
     <string name="setting_verify_manifest_desc">Lorsqu\'elle est activée, le lanceur vérifie la liste des versions du jeu ainsi que les bibliothèques</string>
     <string name="setting_resource_image_cache_title">Mettre en cache les images des ressources</string>
@@ -489,11 +475,11 @@
     <string name="setting_download_source_title">Source de téléchargement du jeu</string>
     <string name="setting_download_source_desc">Choisir une source de téléchargement miroir au lieu d\'utiliser la source officielle</string>
     <string name="setting_max_download_threads_title">Nombre maximal de threads de téléchargement</string>
-    <string name="setting_max_download_threads_desc">Nombre maximal de téléchargements concurrents lors du téléchargement simultané de plusieurs fichiers, mais trop de threads peuvent ralentir le lanceur. 64 threads sont suffisants!</string>
+    <string name="setting_max_download_threads_desc">Nombre maximal de téléchargements concurrents lors du téléchargement simultané de plusieurs fichiers, mais trop de threads peuvent ralentir le lanceur, 64 threads sont suffisants!</string>
     <string name="setting_version_isolation_title">Isolation de Version</string>
     <string name="setting_version_isolation_desc">Activer l\'isolement des versions pour la version du jeu\nLorsqu\'il est désactivé, le chemin du jeu sera .minecraft/\nLorsqu\'il est activé, le chemin du jeu changera en .minecraft/versions/&lt;nom de la version&gt;/</string>
     <string name="setting_version_custom_info_title">Informations personnalisées</string>
-    <string name="setting_version_custom_info_desc">Les informations personnalisées seront affichées dans le coin inférieur gauche du menu principal du jeu et dans le coin supérieur gauche de l\'écran de débogage F3. Après avoir ajouté le champ [zl_version], le lanceur le remplacera par le numéro de version du lanceur.</string>
+    <string name="setting_version_custom_info_desc">Les informations personnalisées seront affichées dans le coin inférieur gauche du menu principal du jeu et dans le coin supérieur gauche de l\'écran de débogage F3, Après avoir ajouté le champ [zl_version], le lanceur le remplacera par le numéro de version du lanceur</string>
     <string name="setting_set_game_language_title">Définir automatiquement la langue du jeu</string>
     <string name="setting_set_game_language_desc">Définir automatiquement la langue du jeu sur la langue sélectionnée au démarrage</string>
     <string name="setting_set_game_language_list">Définir la langue du jeu</string>
@@ -525,7 +511,7 @@
     <string name="setting_game_menu_memory_text_title">Texte préfixe des informations sur la mémoire</string>
     <string name="setting_game_menu_memory_text_desc">Vous pouvez personnaliser ce texte préfixe selon vos besoins</string>
     <string name="setting_game_menu_info_refresh_rate_title">Fréquence de rafraîchissement des informations</string>
-    <string name="setting_game_menu_info_refresh_rate_desc">Contrôle la fréquence de rafraîchissement des informations affichées dans la fenêtre flottante du menu de jeu. Un rafraîchissement trop fréquent peut provoquer des problèmes de performance.</string>
+    <string name="setting_game_menu_info_refresh_rate_desc">Contrôle la fréquence de rafraîchissement des informations affichées dans la fenêtre flottante du menu de jeu, Un rafraîchissement trop fréquent peut provoquer des problèmes de performance</string>
     <string name="setting_game_menu_location_title">Position initiale de la fenêtre flottante du menu du jeu</string>
     <string name="setting_game_menu_location_center">Centre</string>
     <string name="setting_game_menu_location_bottom_or_center">Centre en bas</string>
@@ -538,16 +524,14 @@
     <string name="setting_game_menu_alpha_desc">Définir l\'opacité de la fenêtre flottante du menu du jeu</string>
     <string name="setting_reboot_tip">Ce paramètre a été modifié, mais nécessite un redémarrage de l\'application pour prendre effet !</string>
     <string name="setting_zink_driver_adreno">Le lanceur a détecté que votre appareil est équipé d\'un GPU Adreno, activer cette option pourrait empêcher le rendu Zink de fonctionner correctement, êtes-vous sûr de vouloir activer cette option ?</string>
-    <!-- Game -->
-    <string name="game_exit_message">L\'application/le jeu a quitté avec le code %d.</string>
-    <string name="game_singnal_message">L\'application/le jeu s\'est arrêté en raison du signal fatal %d.</string>
-    <string name="game_exit_note">Pour plus de détails sur l\'erreur, consultez le fichier journal ou le rapport de plantage. Si vous ne pouvez pas résoudre le problème vous-même, envoyez le fichier journal ou le rapport de plantage à quelqu\'un qui peut vous aider à le résoudre !</string>
-    <string name="game_exit_no_screenshot">Veuillez ne pas simplement faire une capture d\'écran de l\'interface actuelle de l\'application, sinon personne ne saura ce qui s\'est passé. Partagez votre fichier journal ou votre rapport de plantage !</string>
+    <string name="game_exit_message">L\'application/le jeu a quitté avec le code %d</string>
+    <string name="game_singnal_message">L\'application/le jeu s\'est arrêté en raison du signal fatal %d</string>
+    <string name="game_exit_note">Pour plus de détails sur l\'erreur, consultez le fichier journal ou le rapport de plantage, Si vous ne pouvez pas résoudre le problème vous-même, envoyez le fichier journal ou le rapport de plantage à quelqu\'un qui peut vous aider à le résoudre !</string>
+    <string name="game_exit_no_screenshot">Veuillez ne pas simplement faire une capture d\'écran de l\'interface actuelle de l\'application, sinon personne ne saura ce qui s\'est passé, Partagez votre fichier journal ou votre rapport de plantage !</string>
     <string name="game_autopick_runtime_failed">Aucun environnement d\'exécution approprié trouvé, défini sur l\'environnement d\'exécution sélectionné pour la version actuelle</string>
     <string name="game_tip">Le jeu est en cours d\'exécution, vous pouvez activer la sortie du journal via le menu pour surveiller l\'état du jeu</string>
     <string name="game_tip_version">Version du jeu actuellement lancée :</string>
     <string name="game_tip_mc_info">Informations Minecraft :</string>
-    <!-- Download -->
     <string name="download_classify_mod">Télécharger le Mod</string>
     <string name="download_classify_modpack">Télécharger le Modpack</string>
     <string name="download_classify_resource_pack">Télécharger le pack de ressources</string>
@@ -577,7 +561,7 @@
     <string name="download_install_custom_name">Nom de Fichier Personnalisé</string>
     <string name="download_install_download_file">Téléchargement du fichier de ressources (%.2fMB / %.2fMB, vitesse : %s/s)</string>
     <string name="download_install_dependencies">%s a les dépendances suivantes ou des mods incompatibles</string>
-    <string name="download_install_dependencies_tip">Veuillez télécharger les mods de dépendance requis selon vos besoins. L\'absence de dépendances essentielles ou l\'installation de mods incompatibles peut empêcher le jeu de fonctionner !</string>
+    <string name="download_install_dependencies_tip">Veuillez télécharger les mods de dépendance requis selon vos besoins, L\'absence de dépendances essentielles ou l\'installation de mods incompatibles peut empêcher le jeu de fonctionner !</string>
     <string name="download_install_dependencies_required">Requis</string>
     <string name="download_install_dependencies_optional">Optionnel</string>
     <string name="download_install_dependencies_incompatible">Incompatible</string>
@@ -587,22 +571,19 @@
     <string name="download_install">Téléchargement de %s</string>
     <string name="download_install_is_adapt">La version actuelle %s est disponible</string>
     <string name="download_install_unpack_world_error">Impossible de reconnaître la structure du fichier, l\'extraction automatique a échoué, veuillez traiter le fichier manuellement !</string>
-    <!-- ModPack -->
     <string name="select_modpack_local_tip">Veuillez sélectionner un fichier de pack compatible avec l\'importation du lanceur !</string>
-    <string name="select_modpack_local_not_supported">Ce modpack n\'est pas pris en charge par le lanceur! Le lanceur ne supporte que l\'importation de modpacks au format Modrinth, CurseForge et MCBBS. Veuillez vérifier si votre modpack est créé selon les formats spécifiés!</string>
-    <string name="select_modpack_local_installing_files">Installation des fichiers du jeu… (%d / %d)</string>
+    <string name="select_modpack_local_not_supported">Ce modpack n\'est pas pris en charge par le lanceur! Le lanceur ne supporte que l\'importation de modpacks au format Modrinth, CurseForge et MCBBS, Veuillez vérifier si votre modpack est créé selon les formats spécifiés!</string>
+    <string name="select_modpack_local_installing_files">Installation des fichiers du jeu (%d / %d)</string>
     <string name="modpack_download_downloading_metadata">Téléchargement des métadonnées du modpack (%.2fMB / %.2fMB, vitesse : %s/s)</string>
     <string name="modpack_download_downloading_mods">Téléchargement des mods (%.2fMB / %.2fMB, vitesse : %s/s)</string>
     <string name="modpack_download_downloading_mods_fc">Téléchargement des mods (fichiers téléchargés: %d (%s), nombre total de fichiers: %d, vitesse: %s/s)</string>
     <string name="modpack_download_applying_overrides">Application des remplacements (%d/%d)</string>
     <string name="modpack_install_download_failed">Échec du téléchargement du fichier du modpack</string>
     <string name="modpack_prepare_mod_loader_installation">Tous les mods ont été installés, en préparation de l\'installation du chargeur de mods</string>
-    <!-- Clear Up -->
     <string name="clear_up_cache">Nettoyer le cache</string>
     <string name="clear_up_cache_desc">Vérifiez et nettoyez les fichiers de cache de l\'application, la suppression des fichiers de cache n\'affecte pas le fonctionnement normal de l\'application</string>
     <string name="clear_up_cache_not_found">Aucun fichier de cache trouvé</string>
     <string name="clear_up_cache_clean_up">Nettoyage terminé, un total de %s de fichiers de cache ont été supprimés</string>
-    <!-- Check Update -->
     <string name="update">Vérifier les mises à jour</string>
     <string name="update_dialog_title">Nouvelle version détectée</string>
     <string name="update_dialog_version">Version :</string>
@@ -615,9 +596,8 @@
     <string name="update_fail">Problème de réseau, impossible de vérifier les mises à jour pour le moment !</string>
     <string name="update_fail_code">Problème de réseau, impossible de vérifier les mises à jour pour le moment ! Code d\'erreur : %d</string>
     <string name="update_success">Le paquet d\'installation le plus récent a été téléchargé, voulez-vous l\'installer ? Emplacement du paquet d\'installation :</string>
-    <string name="update_downloading">Téléchargement du paquet d\'installation… (%s / %s)</string>
+    <string name="update_downloading">Téléchargement du paquet d\'installation (%s / %s)</string>
     <string name="update_downloading_tip">En cours de récupération, source de mise à jour : %s</string>
-    <!-- Other Login -->
     <string name="other_login_server">Serveur Auth</string>
     <string name="other_login_email">Adresse e-mail ou nom d\'utilisateur</string>
     <string name="other_login_password">Mot de passe</string>
@@ -631,23 +611,21 @@
     <string name="other_login_select_role_message">Ce compte possède plusieurs rôles, veuillez sélectionner le rôle que vous souhaitez utiliser</string>
     <string name="other_login_registry_now">Pas de compte ? Cliquez ici pour vous inscrire !</string>
     <string name="other_login_role_not_found">Rôle correspondant au compte actuel non trouvé, veuillez vérifier l\'existence de ce rôle sur le serveur que vous utilisez!</string>
-    <!-- Splash -->
-    <string name="splash_screen_desc">Le lanceur a besoin d\'installer ces éléments pour garantir le bon démarrage de Minecraft. Ces éléments sont inclus dans l\'application et doivent être décompressés pour être utilisés. Cliquez sur le bouton ci-dessous pour commencer la décompression et la mise à jour de ces éléments.</string>
-    <string name="splash_screen_installing">Le lanceur est en train de décompresser ces éléments, l\'interface principale s\'ouvrira automatiquement une fois la décompression terminée, veuillez patienter.</string>
-    <string name="splash_screen_lwjgl">Bibliothèque Java légère pour les jeux, Minecraft en dépend pour exécuter le jeu.</string>
-    <string name="splash_screen_cacio">Fournit un backend GUI portable pour OpenJDK.</string>
-    <string name="splash_screen_authlib_injector">Injecte authlib via l\'exécution pour permettre la connexion en dehors du jeu.</string>
-    <string name="splash_screen_components">Certains composants dont dépend le lanceur.</string>
-    <string name="splash_screen_jre8">Environnement Java 8, Minecraft 1.16- dépend de Java 8.</string>
-    <string name="splash_screen_jre17">Environnement Java 17, Minecraft 1.17+ dépend de Java 17.</string>
-    <string name="splash_screen_jre21">Environnement Java 21, Minecraft 1.20.5+ dépend de Java 21.</string>
-    <string name="splash_screen_jre25">Environnement Java 25, Minecraft 26.1+ dépend de Java 25.</string>
+    <string name="splash_screen_desc">Le lanceur a besoin d\'installer ces éléments pour garantir le bon démarrage de Minecraft, Ces éléments sont inclus dans l\'application et doivent être décompressés pour être utilisés, Cliquez sur le bouton ci-dessous pour commencer la décompression et la mise à jour de ces éléments</string>
+    <string name="splash_screen_installing">Le lanceur est en train de décompresser ces éléments, l\'interface principale s\'ouvrira automatiquement une fois la décompression terminée, veuillez patienter</string>
+    <string name="splash_screen_lwjgl">Bibliothèque Java légère pour les jeux, Minecraft en dépend pour exécuter le jeu</string>
+    <string name="splash_screen_cacio">Fournit un backend GUI portable pour OpenJDK</string>
+    <string name="splash_screen_authlib_injector">Injecte authlib via l\'exécution pour permettre la connexion en dehors du jeu</string>
+    <string name="splash_screen_components">Certains composants dont dépend le lanceur</string>
+    <string name="splash_screen_jre8">Environnement Java 8, Minecraft 1.16- dépend de Java 8</string>
+    <string name="splash_screen_jre17">Environnement Java 17, Minecraft 1.17+ dépend de Java 17</string>
+    <string name="splash_screen_jre21">Environnement Java 21, Minecraft 1.20.5+ dépend de Java 21</string>
+    <string name="splash_screen_jre25">Environnement Java 25, Minecraft 26.1+ dépend de Java 25</string>
     <string name="splash_screen_apply">Accepter et installer</string>
-    <!-- About -->
     <string name="about_tab">À propos de %s</string>
-    <string name="about_dec1">%s est un lanceur Minecraft basé sur PojavLauncher qui permet de faire fonctionner Minecraft: Java Edition sur les appareils Android.</string>
-    <string name="about_dec2">%s se concentre sur l\'optimisation de l\'expérience utilisateur, la refonte de l\'interface de l\'application et l\'ajout de fonctionnalités pratiques, visant à réduire les barrières à l\'entrée et à permettre à davantage de personnes de profiter facilement du plaisir de Minecraft.</string>
-    <string name="about_dec3">%s utilise la licence open source GPL 3.0, qui est "virale". Tout code utilisant, modifiant ou dérivant de bibliothèques ou logiciels sous GPL doit également adopter la licence GPL pour l\'open source. Si vous envisagez de distribuer ce logiciel, veuillez respecter les dispositions pertinentes de la licence open source GPL 3.0.</string>
+    <string name="about_dec1">%s est un lanceur Minecraft basé sur PojavLauncher qui permet de faire fonctionner Minecraft: Java Edition sur les appareils Android</string>
+    <string name="about_dec2">%s se concentre sur l\'optimisation de l\'expérience utilisateur, la refonte de l\'interface de l\'application et l\'ajout de fonctionnalités pratiques, visant à réduire les barrières à l\'entrée et à permettre à davantage de personnes de profiter facilement du plaisir de Minecraft</string>
+    <string name="about_dec3">%s utilise la licence open source GPL 3.0, qui est "virale". Tout code utilisant, modifiant ou dérivant de bibliothèques ou logiciels sous GPL doit également adopter la licence GPL pour l\'open source, Si vous envisagez de distribuer ce logiciel, veuillez respecter les dispositions pertinentes de la licence open source GPL 3.0</string>
     <string name="about_contributors">Contributeurs et Remerciements :</string>
     <string name="about_sponsors">Remerciements aux sponsors :</string>
     <string name="about_sponsors_list">Voir la liste des sponsors</string>
@@ -667,24 +645,22 @@
     <string name="about_version_code">Code de version du logiciel :</string>
     <string name="about_last_update_time">Dernière date de mise à jour :</string>
     <string name="about_version_status">État de la version :</string>
-    <!-- Newbie Guide -->
-    <string name="newbie_guide_general_close">Vous pouvez cliquer sur ce bouton pour fermer et revenir à l\'écran précédent.</string>
-    <string name="newbie_guide_general_refresh">Vous pouvez cliquer sur ce bouton pour actualiser le contenu actuel.</string>
+    <string name="newbie_guide_general_close">Vous pouvez cliquer sur ce bouton pour fermer et revenir à l\'écran précédent</string>
+    <string name="newbie_guide_general_refresh">Vous pouvez cliquer sur ce bouton pour actualiser le contenu actuel</string>
     <string name="newbie_guide_control_search">Lorsque le nombre de dispositions de contrôle est trop élevé, vous pouvez cliquer sur ce bouton pour faire apparaître la barre de recherche et l\'utiliser pour trouver la disposition de contrôle souhaitée !</string>
     <string name="newbie_guide_control_import">Cliquez pour faire apparaître le gestionnaire de fichiers Android, sélectionnez votre fichier de disposition de contrôle pour l\'importer dans le lanceur !</string>
     <string name="newbie_guide_control_create">Cliquez sur ce bouton pour créer rapidement une nouvelle disposition de contrôle !</string>
-    <string name="newbie_guide_background_reset">Cliquez sur ce bouton pour réinitialiser rapidement l\'image de fond de l\'interface actuellement sélectionnée.</string>
+    <string name="newbie_guide_background_reset">Cliquez sur ce bouton pour réinitialiser rapidement l\'image de fond de l\'interface actuellement sélectionnée</string>
     <string name="newbie_guide_background_import">Cliquez pour ouvrir le gestionnaire de fichiers Android, sélectionnez votre fichier d\'image de fond, puis importez-le dans le lanceur !</string>
     <string name="newbie_guide_mouse_import">Cliquez pour accéder au gestionnaire de fichiers natif, sélectionnez votre fichier d\'image de souris virtuelle, puis importez-le dans le lanceur !</string>
-    <string name="newbie_guide_file_search">Vous souhaitez rechercher rapidement un fichier ? Cliquez sur ce bouton pour invoquer la barre de recherche et utilisez-la pour rechercher des fichiers.</string>
+    <string name="newbie_guide_file_search">Vous souhaitez rechercher rapidement un fichier ? Cliquez sur ce bouton pour invoquer la barre de recherche et utilisez-la pour rechercher des fichiers</string>
     <string name="newbie_guide_file_import">Cliquez pour accéder au gestionnaire de fichiers Android, sélectionnez le fichier que vous souhaitez importer, puis importez-le dans le lanceur !</string>
-    <string name="newbie_guide_file_create_folder">Cliquez sur ce bouton pour créer un nouveau dossier dans le répertoire actuel.</string>
-    <string name="newbie_guide_file_select">Cliquez pour confirmer la sélection de ce répertoire.</string>
-    <string name="newbie_guide_mod_search">Cliquez pour invoquer la barre de recherche et utilisez-la pour trouver rapidement le mod que vous recherchez.</string>
-    <string name="newbie_guide_mod_import">Sélectionnez un fichier de mod dans le gestionnaire de fichiers natif pour l\'importer dans le dossier de mods actuel.</string>
-    <string name="newbie_guide_mod_download">Cliquez pour accéder à la page de téléchargement de mods, où vous pouvez rechercher et télécharger des mods en ligne.</string>
-    <string name="newbie_guide_game_menu">Vous pouvez déplacer la fenêtre flottante du menu de jeu à n\'importe quel endroit de l\'écran.</string>
-    <!-- Sponsorship Related -->
+    <string name="newbie_guide_file_create_folder">Cliquez sur ce bouton pour créer un nouveau dossier dans le répertoire actuel</string>
+    <string name="newbie_guide_file_select">Cliquez pour confirmer la sélection de ce répertoire</string>
+    <string name="newbie_guide_mod_search">Cliquez pour invoquer la barre de recherche et utilisez-la pour trouver rapidement le mod que vous recherchez</string>
+    <string name="newbie_guide_mod_import">Sélectionnez un fichier de mod dans le gestionnaire de fichiers natif pour l\'importer dans le dossier de mods actuel</string>
+    <string name="newbie_guide_mod_download">Cliquez pour accéder à la page de téléchargement de mods, où vous pouvez rechercher et télécharger des mods en ligne</string>
+    <string name="newbie_guide_game_menu">Vous pouvez déplacer la fenêtre flottante du menu de jeu à n\'importe quel endroit de l\'écran</string>
     <string name="request_sponsorship_title">Soutenez mon développement</string>
-    <string name="request_sponsorship_message">La plupart du contenu de ce logiciel a été développé et maintenu par moi seul. Si vous trouvez ce logiciel utile et que vos conditions le permettent, j\'espère que vous pourrez envisager de me parrainer pour que j\'ai plus de motivation à continuer à développer et à améliorer, merci pour votre soutien !</string>
+    <string name="request_sponsorship_message">La plupart du contenu de ce logiciel a été développé et maintenu par moi seul, Si vous trouvez ce logiciel utile et que vos conditions le permettent, j\'espère que vous pourrez envisager de me parrainer pour que j\'ai plus de motivation à continuer à développer et à améliorer, merci pour votre soutien !</string>
 </resources>

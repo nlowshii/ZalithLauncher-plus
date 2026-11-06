@@ -92,6 +92,15 @@ class LauncherSettingsFragment() : AbstractSettingsFragment(R.layout.settings_fr
 
         ListSettingsWrapper(
             context,
+            AllSettings.launcherLanguage,
+            binding.launcherLanguageLayout,
+            binding.launcherLanguageTitle,
+            binding.launcherLanguageValue,
+            R.array.launcher_language_names, R.array.launcher_language_values
+        ).setRequiresReboot()
+
+        ListSettingsWrapper(
+            context,
             AllSettings.launcherTheme,
             binding.launcherThemeLayout,
             binding.launcherThemeTitle,
