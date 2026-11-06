@@ -16,7 +16,7 @@
             android:id="@+id/download_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_card"
+            android:background="@android:color/transparent"
             android:orientation="vertical"
             android:paddingHorizontal="@dimen/_2sdp"
             android:paddingVertical="@dimen/_12sdp">
@@ -33,7 +33,8 @@
                 android:id="@+id/checkLibraries_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -70,7 +71,8 @@
                 android:id="@+id/verifyManifest_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -107,7 +109,8 @@
                 android:id="@+id/resourceImageCache_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -143,7 +146,8 @@
                 android:id="@+id/addFullResourceName_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -180,7 +184,8 @@
                 android:id="@+id/downloadSource_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -217,7 +222,8 @@
                 android:id="@+id/maxDownloadThreads_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground">
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row">
 
                 <TextView
                     android:id="@+id/maxDownloadThreads_title"
@@ -271,7 +277,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:background="@drawable/background_card"
+            android:background="@android:color/transparent"
             android:orientation="vertical"
             android:paddingHorizontal="@dimen/_2sdp"
             android:paddingVertical="@dimen/_12sdp">
@@ -288,7 +294,8 @@
                 android:id="@+id/launcherLanguage_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -325,7 +332,8 @@
                 android:id="@+id/launcherTheme_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -352,7 +360,8 @@
                 android:id="@+id/custom_background_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -379,7 +388,8 @@
                 android:id="@+id/animation_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -416,7 +426,8 @@
                 android:id="@+id/animationSpeed_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground">
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row">
 
                 <TextView
                     android:id="@+id/animationSpeed_title"
@@ -467,7 +478,8 @@
                 android:id="@+id/pageOpacity_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground">
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row">
 
                 <TextView
                     android:id="@+id/pageOpacity_title"
@@ -521,7 +533,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:background="@drawable/background_card"
+            android:background="@android:color/transparent"
             android:orientation="vertical"
             android:paddingHorizontal="@dimen/_2sdp"
             android:paddingVertical="@dimen/_12sdp">
@@ -538,7 +550,8 @@
                 android:id="@+id/enableLogOutput_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -574,7 +587,8 @@
                 android:id="@+id/quitLauncher_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -611,7 +625,8 @@
                 android:id="@+id/clean_up_cache_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -638,7 +653,8 @@
                 android:id="@+id/check_update_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -665,7 +681,8 @@
                 android:id="@+id/acceptPreReleaseUpdates_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -702,7 +719,8 @@
                 android:id="@+id/notification_permission_request_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView

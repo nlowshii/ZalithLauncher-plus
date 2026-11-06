@@ -10,6 +10,9 @@ import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
+import com.movtery.zalithlauncher.event.value.SettingsPageSwapEvent;
+import com.movtery.zalithlauncher.event.value.DownloadPageEvent;
+import android.widget.ImageView;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
 import android.view.View;
@@ -119,6 +122,8 @@ public class LauncherActivity extends BaseActivity {
             });
 
     private ActivityLauncherBinding binding;
+    private int mSettingsTabIndex = 0;
+    private int mDownloadTabIndex = 0;
     private ProgressServiceKeeper mProgressServiceKeeper;
     private NotificationManager mNotificationManager;
     private Future<?> checkNotice;
@@ -438,7 +443,6 @@ public class LauncherActivity extends BaseActivity {
             ViewAnimUtils.setViewAnim(binding.settingButton, Animations.Pulse);
             ZHTools.swapFragmentWithAnim(fragment, SettingsFragment.class, SettingsFragment.TAG, null);
         });
-        binding.appTitleText.setText(InfoDistributor.APP_NAME);
         refreshTopBarState();
 
         binding.progressLayout.observe(ProgressLayout.DOWNLOAD_MINECRAFT);
@@ -582,21 +586,35 @@ public class LauncherActivity extends BaseActivity {
     private void refreshTopBarColor(boolean loadFromBackground) {
         int barColor = MaterialColors.getColor(binding.topLayout, com.google.android.material.R.attr.colorSurfaceContainer);
         int titleColor = MaterialColors.getColor(binding.topLayout, com.google.android.material.R.attr.colorOnSurface);
-        int iconColor = MaterialColors.getColor(binding.topLayout, com.google.android.material.R.attr.colorOnSurfaceVariant);
 
         binding.topLayout.setBackgroundColor(barColor);
         binding.appTitleText.setTextColor(titleColor);
-        ColorStateList colorStateList = ColorStateList.valueOf(iconColor);
-        binding.backButton.setImageTintList(colorStateList);
-        binding.homeButton.setImageTintList(colorStateList);
-        binding.filesButton.setImageTintList(colorStateList);
-        binding.accountButton.setImageTintList(colorStateList);
-        binding.downloadButton.setImageTintList(colorStateList);
-        binding.settingButton.setImageTintList(colorStateList);
+        applyTopBarTint();
+    }
+
+    private void tintTopIcon(ImageView icon, boolean active) {
+        int attr = active
+                ? com.google.android.material.R.attr.colorOnSecondaryContainer
+                : com.google.android.material.R.attr.colorOnSurfaceVariant;
+        icon.setImageTintList(ColorStateList.valueOf(MaterialColors.getColor(binding.topLayout, attr)));
+    }
+
+    private void applyTopBarTint() {
+        tintTopIcon(binding.backButton, false);
+        tintTopIcon(binding.homeButton, false);
+        tintTopIcon(binding.filesButton, binding.filesButton.isActivated());
+        tintTopIcon(binding.accountButton, binding.accountButton.isActivated());
+        tintTopIcon(binding.downloadIcon, binding.downloadButton.isActivated());
+        tintTopIcon(binding.settingIcon, binding.settingButton.isActivated());
     }
 
     private boolean isDownloadPage(Fragment fragment) {
         return fragment instanceof DownloadFragment || fragment instanceof DownloadModFragment;
+    }
+
+    private String getTabName(int arrayId, int index) {
+        String[] names = getResources().getStringArray(arrayId);
+        return index >= 0 && index < names.length ? names[index] : null;
     }
 
     private void refreshTopBarState() {
@@ -606,10 +624,41 @@ public class LauncherActivity extends BaseActivity {
         int subVisibility = isMain ? View.GONE : View.VISIBLE;
         binding.backButton.setVisibility(subVisibility);
         binding.homeButton.setVisibility(subVisibility);
-        binding.settingButton.setActivated(fragment instanceof SettingsFragment);
-        binding.downloadButton.setActivated(fragment != null && isDownloadPage(fragment));
+
+        boolean settings = fragment instanceof SettingsFragment;
+        boolean download = fragment != null && isDownloadPage(fragment);
+        binding.settingButton.setActivated(settings);
+        binding.downloadButton.setActivated(download);
         binding.accountButton.setActivated(fragment instanceof AccountFragment);
         binding.filesButton.setActivated(fragment instanceof FilesFragment);
+        binding.settingLabel.setVisibility(settings ? View.VISIBLE : View.GONE);
+        binding.downloadLabel.setVisibility(download ? View.VISIBLE : View.GONE);
+
+        String title = InfoDistributor.APP_NAME;
+        if (settings) {
+            String tab = getTabName(R.array.settings_tab_names, mSettingsTabIndex);
+            title = getString(R.string.top_title_settings) + (tab == null ? "" : " - " + tab);
+        } else if (fragment instanceof DownloadFragment) {
+            String tab = getTabName(R.array.download_tab_names, mDownloadTabIndex);
+            title = getString(R.string.top_title_download) + (tab == null ? "" : " - " + tab);
+        } else if (download) {
+            title = getString(R.string.top_title_download);
+        }
+        binding.appTitleText.setText(title);
+        applyTopBarTint();
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void event(SettingsPageSwapEvent event) {
+        mSettingsTabIndex = event.getIndex();
+        refreshTopBarState();
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void event(DownloadPageEvent.PageSwapEvent event) {
+        if (event.getClassify() != DownloadPageEvent.PageSwapEvent.IN) return;
+        mDownloadTabIndex = event.getIndex();
+        refreshTopBarState();
     }
 
     @SuppressWarnings("SameParameterValue")

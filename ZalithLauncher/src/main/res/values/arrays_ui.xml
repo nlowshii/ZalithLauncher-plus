@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_tab_names">
+        <item>@string/setting_tab_video</item>
+        <item>@string/setting_tab_control</item>
+        <item>@string/setting_tab_game</item>
+        <item>@string/setting_tab_launcher</item>
+        <item>@string/setting_tab_experimental</item>
+    </string-array>
+    <string-array name="download_tab_names">
+        <item>@string/download_tab_mod</item>
+        <item>@string/download_tab_modpack</item>
+        <item>@string/download_tab_resource_pack</item>
+        <item>@string/download_tab_world</item>
+        <item>@string/download_tab_shader_pack</item>
+    </string-array>
+</resources>

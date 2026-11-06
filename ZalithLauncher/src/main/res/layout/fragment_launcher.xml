@@ -28,6 +28,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/background_group"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/_6sdp">
@@ -269,6 +274,55 @@
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
                         android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/last_log_card"
+                style="@style/Widget.Launcher.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/menu_overlay"
+                app:cardCornerRadius="@dimen/_24sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_16sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_game_log_title"
+                        android:textAppearance="@style/TextAppearance.Launcher.Headline" />
+
+                    <TextView
+                        android:id="@+id/last_log_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:ellipsize="end"
+                        android:maxLines="8"
+                        android:text="@string/last_game_log_empty"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="@dimen/_9ssp"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/last_log_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/last_game_log_hint"
+                        android:textColor="?attr/colorPrimary"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 

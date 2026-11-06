@@ -666,4 +666,20 @@
         <b>Ini tidak aman, informasi pribadi Anda mungkin berisiko jika Anda melanjutkan</b><br/>
         Jika Anda tetap ingin memakai mirror, tekan \"Matikan pemeriksaan daftar versi game\" lalu mulai unduhan lagi<br/>
         Jika Anda ingin memakai sumber unduhan resmi, tekan \"Beralih ke sumber unduhan resmi\" lalu mulai unduhan lagi<br/>]]></string>
+    <string name="setting_tab_video">Video</string>
+    <string name="setting_tab_control">Kontrol</string>
+    <string name="setting_tab_game">Game</string>
+    <string name="setting_tab_launcher">Launcher</string>
+    <string name="setting_tab_experimental">Eksperimen</string>
+    <string name="download_tab_mod">Mod</string>
+    <string name="download_tab_modpack">Modpack</string>
+    <string name="download_tab_resource_pack">Paket Sumber</string>
+    <string name="download_tab_world">Dunia</string>
+    <string name="download_tab_shader_pack">Shader</string>
+    <string name="top_title_settings">Pengaturan</string>
+    <string name="top_title_download">Unduh</string>
+    <string name="last_game_log_title">Log Game Terakhir</string>
+    <string name="last_game_log_empty">Belum ada log</string>
+    <string name="last_game_log_hint">Ketuk untuk melihat dan menyalin</string>
+    <string name="generic_copy">Salin</string>
 </resources>

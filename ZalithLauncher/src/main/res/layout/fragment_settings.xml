@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.movtery.zalithlauncher.ui.fragment.SettingsFragment">
+    android:background="@android:color/transparent"
+    tools:ignore="ContentDescription">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/settings_viewpager"
@@ -12,18 +13,16 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/settings_layout"
+        app:layout_constraintStart_toEndOf="@id/settings_layout"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/settings_layout"
         android:layout_width="@dimen/rail_width"
         android:layout_height="0dp"
-        android:layout_marginVertical="@dimen/_8sdp"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:background="@drawable/background_rail"
-        android:paddingHorizontal="@dimen/_4sdp"
-        android:paddingVertical="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:paddingHorizontal="@dimen/_2sdp"
+        android:paddingVertical="@dimen/_6sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -42,16 +41,17 @@
                 android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/rail_item_height"
-                android:paddingHorizontal="@dimen/_4sdp"
-                android:paddingVertical="@dimen/_10sdp">
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_6sdp">
 
                 <ImageView
                     android:id="@+id/video_image"
-                    android:layout_width="@dimen/rail_icon_size"
-                    android:layout_height="@dimen/rail_icon_size"
-                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/rail_pill_height"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/setting_category_video"
+                    android:padding="@dimen/_6sdp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/ic_setting_video" />
 
@@ -63,7 +63,7 @@
                     android:ellipsize="end"
                     android:gravity="center_horizontal"
                     android:maxLines="1"
-                    android:text="@string/setting_category_video"
+                    android:text="@string/setting_tab_video"
                     android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:textColor="@color/black_or_white" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
@@ -72,16 +72,17 @@
                 android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/rail_item_height"
-                android:paddingHorizontal="@dimen/_4sdp"
-                android:paddingVertical="@dimen/_10sdp">
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_6sdp">
 
                 <ImageView
                     android:id="@+id/controls_image"
-                    android:layout_width="@dimen/rail_icon_size"
-                    android:layout_height="@dimen/rail_icon_size"
-                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/rail_pill_height"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/setting_category_control"
+                    android:padding="@dimen/_6sdp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/ic_menu_custom_controls" />
 
@@ -93,7 +94,7 @@
                     android:ellipsize="end"
                     android:gravity="center_horizontal"
                     android:maxLines="1"
-                    android:text="@string/setting_category_control"
+                    android:text="@string/setting_tab_control"
                     android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:textColor="@color/black_or_white" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
@@ -102,16 +103,17 @@
                 android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/rail_item_height"
-                android:paddingHorizontal="@dimen/_4sdp"
-                android:paddingVertical="@dimen/_10sdp">
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_6sdp">
 
                 <ImageView
                     android:id="@+id/game_image"
-                    android:layout_width="@dimen/rail_icon_size"
-                    android:layout_height="@dimen/rail_icon_size"
-                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/rail_pill_height"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/setting_category_game"
+                    android:padding="@dimen/_6sdp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/ic_setting_game" />
 
@@ -123,7 +125,7 @@
                     android:ellipsize="end"
                     android:gravity="center_horizontal"
                     android:maxLines="1"
-                    android:text="@string/setting_category_game"
+                    android:text="@string/setting_tab_game"
                     android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:textColor="@color/black_or_white" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
@@ -132,16 +134,17 @@
                 android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/rail_item_height"
-                android:paddingHorizontal="@dimen/_4sdp"
-                android:paddingVertical="@dimen/_10sdp">
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_6sdp">
 
                 <ImageView
                     android:id="@+id/launcher_image"
-                    android:layout_width="@dimen/rail_icon_size"
-                    android:layout_height="@dimen/rail_icon_size"
-                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/rail_pill_height"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/setting_category_launcher"
+                    android:padding="@dimen/_6sdp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/ic_setting_launcher" />
 
@@ -153,7 +156,7 @@
                     android:ellipsize="end"
                     android:gravity="center_horizontal"
                     android:maxLines="1"
-                    android:text="@string/setting_category_launcher"
+                    android:text="@string/setting_tab_launcher"
                     android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:textColor="@color/black_or_white" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>
@@ -162,16 +165,17 @@
                 android:layout_width="@dimen/rail_item_width"
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/rail_item_height"
-                android:paddingHorizontal="@dimen/_4sdp"
-                android:paddingVertical="@dimen/_10sdp">
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_6sdp">
 
                 <ImageView
                     android:id="@+id/experimental_image"
-                    android:layout_width="@dimen/rail_icon_size"
-                    android:layout_height="@dimen/rail_icon_size"
-                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/rail_pill_height"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/setting_category_experimental"
+                    android:padding="@dimen/_6sdp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/ic_setting_experimental" />
 
@@ -183,7 +187,7 @@
                     android:ellipsize="end"
                     android:gravity="center_horizontal"
                     android:maxLines="1"
-                    android:text="@string/setting_category_experimental"
+                    android:text="@string/setting_tab_experimental"
                     android:textAppearance="@style/TextAppearance.Launcher.Label"
                     android:textColor="@color/black_or_white" />
             </com.movtery.zalithlauncher.ui.layout.AnimRelativeLayout>

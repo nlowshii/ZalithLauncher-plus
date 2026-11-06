@@ -16,7 +16,7 @@
             android:id="@+id/experimental_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_card"
+            android:background="@android:color/transparent"
             android:orientation="vertical"
             android:paddingHorizontal="@dimen/_2sdp"
             android:paddingVertical="@dimen/_12sdp">
@@ -33,7 +33,8 @@
                 android:id="@+id/dump_shaders_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -69,7 +70,8 @@
                 android:id="@+id/bigCoreAffinity_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row"
                 android:padding="@dimen/_12sdp">
 
                 <TextView
@@ -108,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:background="@drawable/background_card"
+            android:background="@android:color/transparent"
             android:orientation="vertical"
             android:paddingHorizontal="@dimen/_2sdp"
             android:paddingVertical="@dimen/_12sdp">
@@ -125,7 +127,8 @@
                 android:id="@+id/tcVibrateDuration_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground">
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/background_setting_row">
 
                 <TextView
                     android:id="@+id/tcVibrateDuration_title"

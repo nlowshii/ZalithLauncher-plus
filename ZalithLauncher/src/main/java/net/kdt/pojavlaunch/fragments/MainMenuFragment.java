@@ -24,7 +24,9 @@ import com.movtery.zalithlauncher.feature.version.utils.VersionIconUtils;
 import com.movtery.zalithlauncher.feature.version.VersionInfo;
 import com.movtery.zalithlauncher.feature.version.VersionsManager;
 import com.movtery.zalithlauncher.task.TaskExecutors;
+import com.movtery.zalithlauncher.ui.dialog.GameLogDialog;
 import com.movtery.zalithlauncher.ui.fragment.AboutFragment;
+import com.movtery.zalithlauncher.utils.GameLogReader;
 import com.movtery.zalithlauncher.ui.fragment.ControlButtonFragment;
 import com.movtery.zalithlauncher.ui.fragment.FilesFragment;
 import com.movtery.zalithlauncher.ui.fragment.FragmentWithAnim;
@@ -46,6 +48,7 @@ public class MainMenuFragment extends FragmentWithAnim {
     public static final String TAG = "MainMenuFragment";
     private FragmentLauncherBinding binding;
     private AccountViewWrapper accountViewWrapper;
+    private String mLastLogContent;
 
     public MainMenuFragment() {
         super(R.layout.fragment_launcher);
@@ -97,10 +100,35 @@ public class MainMenuFragment extends FragmentWithAnim {
 
         binding.playButton.setOnClickListener(v -> EventBus.getDefault().post(new LaunchGameEvent()));
 
+        binding.lastLogCard.setOnClickListener(v -> {
+            if (mLastLogContent == null) {
+                ViewAnimUtils.setViewAnim(binding.lastLogCard, Animations.Shake);
+                return;
+            }
+            new GameLogDialog(requireContext(), mLastLogContent).show();
+        });
+
         binding.versionName.setSelected(true);
         binding.versionInfo.setSelected(true);
 
         refreshCurrentVersion();
+    }
+
+    private void refreshLastLog() {
+        TaskExecutors.getDefault().execute(() -> {
+            String content = GameLogReader.readTail();
+            TaskExecutors.runInUIThread(() -> {
+                if (binding == null) return;
+                mLastLogContent = content;
+                if (content == null) {
+                    binding.lastLogText.setText(R.string.last_game_log_empty);
+                    binding.lastLogHint.setVisibility(View.GONE);
+                } else {
+                    binding.lastLogText.setText(GameLogReader.preview(content, 8));
+                    binding.lastLogHint.setVisibility(View.VISIBLE);
+                }
+            });
+        });
     }
 
     private void refreshCurrentVersion() {
@@ -140,6 +168,7 @@ public class MainMenuFragment extends FragmentWithAnim {
     @Override
     public void onStart() {
         super.onStart();
+        refreshLastLog();
         EventBus.getDefault().register(this);
     }
 
