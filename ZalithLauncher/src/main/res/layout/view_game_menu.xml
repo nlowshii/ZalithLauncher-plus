@@ -63,6 +63,44 @@
                 app:ripple_for_text="true"/>
 
             <com.movtery.zalithlauncher.ui.view.AnimTextView
+                android:id="@+id/screen_recorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/background_item"
+                android:text="@string/recorder_start"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                app:ripple_for_text="true"/>
+
+            <com.movtery.zalithlauncher.ui.view.AnimTextView
+                android:id="@+id/screen_recorder_pause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/background_item"
+                android:text="@string/recorder_pause"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:visibility="gone"
+                app:ripple_for_text="true"/>
+
+            <com.movtery.zalithlauncher.ui.view.AnimTextView
+                android:id="@+id/screen_recorder_mic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/background_item"
+                android:text="@string/recorder_mic_off"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:visibility="gone"
+                app:ripple_for_text="true"/>
+
+            <com.movtery.zalithlauncher.ui.view.AnimTextView
                 android:id="@+id/send_custom_key"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

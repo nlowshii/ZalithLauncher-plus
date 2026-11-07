@@ -81,6 +81,7 @@ import com.movtery.zalithlauncher.ui.fragment.BaseFragment;
 import com.movtery.zalithlauncher.ui.fragment.DownloadFragment;
 import com.movtery.zalithlauncher.ui.fragment.DownloadModFragment;
 import com.movtery.zalithlauncher.ui.fragment.FilesFragment;
+import com.movtery.zalithlauncher.ui.fragment.RecordingsFragment;
 import com.movtery.zalithlauncher.ui.fragment.SettingsFragment;
 import com.movtery.zalithlauncher.ui.subassembly.view.DraggableViewWrapper;
 import com.movtery.zalithlauncher.utils.StoragePermissionsUtils;
@@ -425,6 +426,12 @@ public class LauncherActivity extends BaseActivity {
             bundle.putString(FilesFragment.BUNDLE_LIST_PATH, PathManager.DIR_GAME_HOME);
             ZHTools.swapFragmentWithAnim(fragment, FilesFragment.class, FilesFragment.TAG, bundle);
         });
+        binding.recordButton.setOnClickListener(v -> {
+            Fragment fragment = getCurrentFragment();
+            if (fragment == null || fragment instanceof RecordingsFragment) return;
+            ViewAnimUtils.setViewAnim(binding.recordButton, Animations.Pulse);
+            ZHTools.swapFragmentWithAnim(fragment, RecordingsFragment.class, RecordingsFragment.TAG, null);
+        });
         binding.accountButton.setOnClickListener(v -> {
             Fragment fragment = getCurrentFragment();
             if (fragment == null || fragment instanceof AccountFragment) return;
@@ -602,7 +609,8 @@ public class LauncherActivity extends BaseActivity {
     private void applyTopBarTint() {
         tintTopIcon(binding.backButton, false);
         tintTopIcon(binding.homeButton, false);
-        tintTopIcon(binding.filesButton, binding.filesButton.isActivated());
+        tintTopIcon(binding.filesIcon, binding.filesButton.isActivated());
+        tintTopIcon(binding.recordIcon, binding.recordButton.isActivated());
         tintTopIcon(binding.accountButton, binding.accountButton.isActivated());
         tintTopIcon(binding.downloadIcon, binding.downloadButton.isActivated());
         tintTopIcon(binding.settingIcon, binding.settingButton.isActivated());
@@ -630,7 +638,12 @@ public class LauncherActivity extends BaseActivity {
         binding.settingButton.setActivated(settings);
         binding.downloadButton.setActivated(download);
         binding.accountButton.setActivated(fragment instanceof AccountFragment);
-        binding.filesButton.setActivated(fragment instanceof FilesFragment);
+        boolean files = fragment instanceof FilesFragment;
+        boolean recordings = fragment instanceof RecordingsFragment;
+        binding.filesButton.setActivated(files);
+        binding.recordButton.setActivated(recordings);
+        binding.filesLabel.setVisibility(files ? View.VISIBLE : View.GONE);
+        binding.recordLabel.setVisibility(recordings ? View.VISIBLE : View.GONE);
         binding.settingLabel.setVisibility(settings ? View.VISIBLE : View.GONE);
         binding.downloadLabel.setVisibility(download ? View.VISIBLE : View.GONE);
 
@@ -643,6 +656,10 @@ public class LauncherActivity extends BaseActivity {
             title = getString(R.string.top_title_download) + (tab == null ? "" : " - " + tab);
         } else if (download) {
             title = getString(R.string.top_title_download);
+        } else if (files) {
+            title = getString(R.string.top_title_files);
+        } else if (recordings) {
+            title = getString(R.string.top_title_recordings);
         }
         binding.appTitleText.setText(title);
         applyTopBarTint();

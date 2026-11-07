@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Launcher.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/menu_overlay"
+    app:cardCornerRadius="@dimen/_22sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/_96sdp"
+            android:layout_height="@dimen/_54sdp"
+            android:background="@drawable/background_tile_icon"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            xmlns:tools="http://schemas.android.com/tools" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recording_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.Launcher.Headline" />
+
+            <TextView
+                android:id="@+id/recording_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/ripple_rounded"
+            android:contentDescription="@string/recordings_play"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_play"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageButton
+            android:id="@+id/share_button"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/ripple_rounded"
+            android:contentDescription="@string/recordings_share"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_share"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/ripple_rounded"
+            android:contentDescription="@string/recordings_delete"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_menu_delete_forever"
+            app:tint="?attr/colorError" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

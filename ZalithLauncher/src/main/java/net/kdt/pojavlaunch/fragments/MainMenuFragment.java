@@ -27,6 +27,7 @@ import com.movtery.zalithlauncher.task.TaskExecutors;
 import com.movtery.zalithlauncher.ui.dialog.GameLogDialog;
 import com.movtery.zalithlauncher.ui.fragment.AboutFragment;
 import com.movtery.zalithlauncher.utils.GameLogReader;
+import com.movtery.zalithlauncher.utils.UiMotion;
 import com.movtery.zalithlauncher.ui.fragment.ControlButtonFragment;
 import com.movtery.zalithlauncher.ui.fragment.FilesFragment;
 import com.movtery.zalithlauncher.ui.fragment.FragmentWithAnim;
@@ -99,6 +100,9 @@ public class MainMenuFragment extends FragmentWithAnim {
         });
 
         binding.playButton.setOnClickListener(v -> EventBus.getDefault().post(new LaunchGameEvent()));
+
+        UiMotion.enter(binding.aboutButton, binding.customControlButton, binding.openMainDirButton,
+                binding.installJarButton, binding.shareLogsButton, binding.lastLogCard);
 
         binding.lastLogCard.setOnClickListener(v -> {
             if (mLastLogContent == null) {

@@ -59,17 +59,73 @@
             android:textAppearance="@style/TextAppearance.Launcher.Title"
             android:textColor="@color/menu_bar_text" />
 
-        <ImageButton
+        <LinearLayout
             android:id="@+id/files_button"
-            android:layout_width="@dimen/top_action_size"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/top_action_size"
             android:layout_marginStart="@dimen/_4sdp"
             android:background="@drawable/background_top_action"
+            android:clickable="true"
             android:contentDescription="@string/main_open_main_dir"
-            android:padding="@dimen/top_action_padding"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_folder"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            android:focusable="true"
+            android:gravity="center"
+            android:minWidth="@dimen/top_action_size"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/top_action_padding">
+
+            <ImageView
+                android:id="@+id/files_icon"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_folder"
+                app:tint="?attr/colorOnSurfaceVariant" />
+
+            <TextView
+                android:id="@+id/files_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:text="@string/top_title_files"
+                android:textAppearance="@style/TextAppearance.Launcher.Headline"
+                android:textColor="?attr/colorOnSecondaryContainer"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_action_size"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/background_top_action"
+            android:clickable="true"
+            android:contentDescription="@string/top_title_recordings"
+            android:focusable="true"
+            android:gravity="center"
+            android:minWidth="@dimen/top_action_size"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/top_action_padding">
+
+            <ImageView
+                android:id="@+id/record_icon"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_record"
+                app:tint="?attr/colorOnSurfaceVariant" />
+
+            <TextView
+                android:id="@+id/record_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:text="@string/top_title_recordings"
+                android:textAppearance="@style/TextAppearance.Launcher.Headline"
+                android:textColor="?attr/colorOnSecondaryContainer"
+                android:visibility="gone" />
+        </LinearLayout>
 
         <ImageButton
             android:id="@+id/account_button"
